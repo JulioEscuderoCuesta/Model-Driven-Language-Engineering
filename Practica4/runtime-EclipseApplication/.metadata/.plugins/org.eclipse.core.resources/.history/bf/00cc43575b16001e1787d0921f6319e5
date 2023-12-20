@@ -1,0 +1,38 @@
+Factory {
+	elements {
+		CandyProducer candyProducer1 {
+			processingTime 5 counter 0
+		},
+		StickProducer stickProducer1 {
+			processingTime 8 counter 0
+		},
+		Assembler assembler1 {
+			processingTime 10
+		},
+		Wrapper wrapper1 {
+			processingTime 5
+		},
+		ConveyorBelt belt1 {
+			capacity 10
+		},
+		ConveyorBelt belt2 {
+			
+			capacity 10
+		},
+		ConveyorBelt belt3 {
+			capacity 20
+		},
+		ConveyorBelt lollipopOut {
+			capacity 20
+		}
+	}
+	connections {
+		candyProducer1 -> belt1,
+		stickProducer1 -> belt2,
+		belt1 -> assembler1,
+		belt2 -> assembler1,
+		assembler1 -> belt3,
+		belt3 -> wrapper1,
+		wrapper1 -> lollipopOut
+	}
+}

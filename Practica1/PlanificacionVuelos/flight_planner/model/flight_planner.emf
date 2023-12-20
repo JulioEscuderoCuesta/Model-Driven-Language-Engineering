@@ -1,0 +1,39 @@
+@namespace(uri="http://www.unican.es/ildm/flight_planner", prefix="flight_planner")
+package flight_planner;
+
+class Plane {
+	attr String name;
+	attr String model;
+	attr String licensePlate;
+	attr boolean availability = true;
+	ref Flight#plane flight;
+}
+
+abstract class Place {
+}
+
+class Flight {
+	attr int number;
+	attr int takeoff;
+	attr int landing;
+	ref Plane[1]#flight plane;
+	ref Place[1] origin;
+	ref Place[1] destination;
+}
+
+class Base extends Place {
+	ref Infrastructure[+] infrastructure;
+}
+
+abstract class Infrastructure {
+}
+
+class MaintenanceHangar extends Infrastructure {
+}
+
+class AdministrationOficine extends Infrastructure {
+}
+
+class NoBase extends Place {
+}
+

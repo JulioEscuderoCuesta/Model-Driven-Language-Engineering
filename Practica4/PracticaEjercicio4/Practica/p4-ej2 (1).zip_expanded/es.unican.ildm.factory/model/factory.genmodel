@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/es.unican.ildm.factory/src" modelPluginID="es.unican.ildm.factory"
+    modelName="Factory" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>factory.ecore</foreignModel>
+  <genPackages prefix="Factory" basePackage="es.unican.ildm.factory" disposableProviderFactory="true"
+      ecorePackage="factory.ecore#/">
+    <genClasses ecoreClass="factory.ecore#//Factory">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference factory.ecore#//Factory/elements"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute factory.ecore#//Factory/totalCounter"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute factory.ecore#//Factory/currentParts"/>
+      <genFeatures property="Readonly" notify="false" createChild="false" ecoreFeature="ecore:EReference factory.ecore#//Factory/trays"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute factory.ecore#//Factory/name"/>
+    </genClasses>
+    <genClasses ecoreClass="factory.ecore#//Element">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute factory.ecore#//Element/x"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute factory.ecore#//Element/y"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute factory.ecore#//Element/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute factory.ecore#//Element/z"/>
+    </genClasses>
+    <genClasses ecoreClass="factory.ecore#//Machine">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute factory.ecore#//Machine/tiempoProcesado"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference factory.ecore#//Machine/input"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference factory.ecore#//Machine/output"/>
+    </genClasses>
+    <genClasses ecoreClass="factory.ecore#//Maker">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute factory.ecore#//Maker/counter"/>
+    </genClasses>
+    <genClasses ecoreClass="factory.ecore#//Assembler"/>
+    <genClasses ecoreClass="factory.ecore#//Wrapper"/>
+    <genClasses ecoreClass="factory.ecore#//CuerpoMaker"/>
+    <genClasses ecoreClass="factory.ecore#//MangoMaker"/>
+    <genClasses ecoreClass="factory.ecore#//Tray">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute factory.ecore#//Tray/capacity"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference factory.ecore#//Tray/source"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference factory.ecore#//Tray/target"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference factory.ecore#//Tray/parts"/>
+    </genClasses>
+    <genClasses ecoreClass="factory.ecore#//Part"/>
+    <genClasses ecoreClass="factory.ecore#//Mango"/>
+    <genClasses ecoreClass="factory.ecore#//Cuerpo"/>
+    <genClasses ecoreClass="factory.ecore#//Sarten"/>
+  </genPackages>
+</genmodel:GenModel>

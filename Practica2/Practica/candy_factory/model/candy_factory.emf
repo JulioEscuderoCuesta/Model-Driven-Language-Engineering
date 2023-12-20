@@ -1,0 +1,59 @@
+@namespace(uri="http://www.unican.es/ildm/candy_factory", prefix="candy_factory")
+package candy_factory;
+
+class Factory {
+	attr String name;
+	val Element[*] elements;
+}
+
+abstract class Element {
+	attr String ~id;
+}
+
+abstract class Machine extends Element {
+	attr int[1] processingTime;
+	ref ConveyorBelt#source output;
+	ref ConveyorBelt[*]#target input;
+}
+
+class ConveyorBelt extends Element {
+	attr int[1] capacity;
+	ref Machine#input target;
+	ref Machine#output source;
+	val Component[*] component;
+}
+
+abstract class Producer extends Machine {
+	attr int[1] counter;
+}
+
+class Assembler extends Machine {
+}
+
+class Wrapper extends Machine {
+}
+
+class Flattener extends Machine {
+}
+
+abstract class Component {
+}
+
+class CandyProducer extends Producer {
+}
+
+class StickProducer extends Producer {
+}
+
+class Stick extends Component {
+}
+
+class CandyFlat extends Component {
+}
+
+class CandyBall extends Component {
+}
+
+class Lollipop extends Component {
+}
+

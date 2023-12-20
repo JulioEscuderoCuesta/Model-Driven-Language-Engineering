@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<factory:Factory xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:factory="http://www.unican.es/ildm/factory" name="Fabrica A">
+  <elements xsi:type="factory:CuerpoMaker" x="1" y="2" name="cuerpo1" output="//@elements.4"/>
+  <elements xsi:type="factory:MangoMaker" x="2" y="3" name="mango1" output="//@elements.5"/>
+  <elements xsi:type="factory:Assembler" x="3" y="2" name="assem1" z="2" input="//@elements.4 //@elements.5" output="//@elements.6"/>
+  <elements xsi:type="factory:Wrapper" x="4" y="3" name="wrap1" z="4" input="//@elements.6" output="//@elements.7"/>
+  <elements xsi:type="factory:Tray" x="1" y="3" name="tray1" source="//@elements.0" target="//@elements.2">
+    <parts xsi:type="factory:Cuerpo"/>
+    <parts xsi:type="factory:Cuerpo"/>
+  </elements>
+  <elements xsi:type="factory:Tray" x="3" y="4" name="tray2" source="//@elements.1" target="//@elements.2">
+    <parts xsi:type="factory:Mango"/>
+  </elements>
+  <elements xsi:type="factory:Tray" x="3" y="1" name="tray3" z="2" source="//@elements.2" target="//@elements.3">
+    <parts xsi:type="factory:Sarten"/>
+  </elements>
+  <elements xsi:type="factory:Tray" x="4" y="4" name="tray4" z="4" source="//@elements.3">
+    <parts xsi:type="factory:Sarten"/>
+    <parts xsi:type="factory:Sarten"/>
+  </elements>
+</factory:Factory>

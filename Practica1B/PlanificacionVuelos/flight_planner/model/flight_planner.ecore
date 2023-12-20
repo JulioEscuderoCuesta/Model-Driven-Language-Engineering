@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="flight_planner" nsURI="http://www.unican.es/ildm/flight_planner"
+    nsPrefix="flight_planner">
+  <eAnnotations source="http://www.eclipse.org/OCL/Import">
+    <details key="ecore" value="http://www.eclipse.org/emf/2002/Ecore"/>
+  </eAnnotations>
+  <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+    <details key="invocationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
+    <details key="settingDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
+    <details key="validationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" name="FlightDeparment">
+    <eOperations name="PlanesOrderedByNumberOfHoursFlyingAscendant" upperBound="-1"
+        eType="#//Plane">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details key="body" value="self.planes -> sortedBy(p | p.TimePlaneIsFlighting()) -> reverse()"/>
+      </eAnnotations>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="flights" upperBound="-1"
+        eType="#//Flight" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="planes" upperBound="-1"
+        eType="#//Plane" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bases" upperBound="-1"
+        eType="#//Place" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Plane">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="PlaneCanOnlyFlight16HoursADay OneHourBetweenLandingAndNextTakeOff"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="PlaneCanOnlyFlight16HoursADay" value="Tuple {&#xA;&#x9;message : String = 'Plane can only flight for 16 hours a day',&#xA;&#x9;status : Boolean = &#xA;&#x9;&#x9;&#x9;TimePlaneIsFlighting() &lt; 16&#xA;}.status"/>
+      <details key="OneHourBetweenLandingAndNextTakeOff" value="Tuple {&#xA;&#x9;message : String = 'It must pass 1 hour between landing and next takeoff',&#xA;&#x9;status : Boolean = &#xA;&#x9;&#x9;&#x9;TimeBetweenLandingAndNextTakeOff()&#xA;}.status"/>
+    </eAnnotations>
+    <eOperations name="FligtshScheduledByTakeOff" upperBound="-1" eType="#//Flight">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details key="body" value="self.flights -> sortedBy(f | f.takeoff)"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="TimePlaneIsFlighting" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBigInteger">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details key="body" value="self.flights -> collect(f | f.landing - f.takeoff) -> sum()"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="TimeBetweenLandingAndNextTakeOff" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details key="body" value="&#xA;&#x9;&#x9;&#x9;&#x9;if (self.flights -> size() &lt;= 1) then true&#xA;&#x9;&#x9;        else&#xA;&#x9;&#x9;            self.flights-> sortedBy(f | f.takeoff) ->  &#xA;&#x9;&#x9;            forAll(f1, f2 | f1 &lt;> f2 and (f2.takeoff - f1.landing >= 1))&#xA;&#x9;&#x9;        endif"/>
+      </eAnnotations>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="model" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="licensePlate" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="availability" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean" defaultValueLiteral="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="flights" lowerBound="1"
+        upperBound="-1" eType="#//Flight" eOpposite="#//Flight/plane"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Place" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Flight">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="OriginAndDestinationAreDifferent OriginAndDestinationAreBases PlaneIsAvailable TimeTakeOffBeforeTimeLanding TakeoffAndLandingBetween0And23"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="OriginAndDestinationAreDifferent" value="Tuple {&#xA;&#x9;message : String = 'Origin and destination must be different',&#xA;&#x9;status : Boolean = &#xA;&#x9;&#x9;&#x9;self.origin &lt;> self.destination&#xA;}.status"/>
+      <details key="OriginAndDestinationAreBases" value="Tuple {&#xA;&#x9;message : String = 'Origin and destination must be Bases',&#xA;&#x9;status : Boolean = &#xA;&#x9;&#x9;&#x9;self.origin.oclIsTypeOf(Base) and self.destination.oclIsTypeOf(Base)&#xA;}.status"/>
+      <details key="PlaneIsAvailable" value="Tuple {&#xA;&#x9;message : String = 'Plane'' + name + '' is not available to fly',&#xA;&#x9;status : Boolean = &#xA;&#x9;&#x9;&#x9;self.plane.availability = true&#xA;}.status"/>
+      <details key="TimeTakeOffBeforeTimeLanding" value="Tuple {&#xA;&#x9;message : String = 'Takeoff must be before landing',&#xA;&#x9;status : Boolean = &#xA;&#x9;&#x9;&#x9;TimeMakesSense()&#xA;}.status"/>
+      <details key="TakeoffAndLandingBetween0And23" value="Tuple {&#xA;&#x9;message : String = 'Takeoff and landing must be within 0 and 23',&#xA;&#x9;status : Boolean = &#xA;&#x9;&#x9;&#x9;TimeWithinRange()&#xA;}.status"/>
+    </eAnnotations>
+    <eOperations name="TimeWithinRange" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details key="body" value="self.takeoff >= 0 and self.takeoff &lt;= 23 and self.landing >= 0 and self.landing &lt;= 23"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="TimeMakesSense" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details key="body" value="if 23 - self.takeoff &lt;= 1 and self.landing - 1 &lt;= 1 then true&#xA;&#x9;&#x9;&#x9;&#x9;else&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;self.takeoff &lt; self.landing&#xA;&#x9;&#x9;&#x9;&#x9;endif"/>
+      </eAnnotations>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="number" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="takeoff" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="landing" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="plane" lowerBound="1" eType="#//Plane"
+        eOpposite="#//Plane/flights"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="origin" lowerBound="1"
+        eType="#//Place"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="destination" lowerBound="1"
+        eType="#//Place"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Base" eSuperTypes="#//Place">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="infrastructure" lowerBound="1"
+        upperBound="-1" eType="#//Infrastructure" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Infrastructure" abstract="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="MaintenanceHangar" eSuperTypes="#//Infrastructure"/>
+  <eClassifiers xsi:type="ecore:EClass" name="AdministrationOffice" eSuperTypes="#//Infrastructure"/>
+  <eClassifiers xsi:type="ecore:EClass" name="NoBase" eSuperTypes="#//Place"/>
+</ecore:EPackage>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<candy_factory:Factory
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:candy_factory="http://www.unican.es/ildm/candy_factory"
+    xsi:schemaLocation="http://www.unican.es/ildm/candy_factory candy_factory.ecore"
+    name="MyFactory">
+  <elements
+      xsi:type="candy_factory:CandyProducer"
+      id="candyProducer1"
+      output="//@elements.4"/>
+  <elements
+      xsi:type="candy_factory:StickProducer"
+      id="stickProducer1"
+      output="//@elements.5"/>
+  <elements
+      xsi:type="candy_factory:Assembler"
+      id="assembler1"
+      output="//@elements.6"
+      input="//@elements.4 //@elements.5"/>
+  <elements
+      xsi:type="candy_factory:Wrapper"
+      id="wrapper1"
+      output="//@elements.7"
+      input="//@elements.6"/>
+  <elements
+      xsi:type="candy_factory:ConveyorBelt"
+      id="belt1"
+      capacity="1"
+      target="//@elements.2"
+      source="//@elements.0">
+    <component
+        xsi:type="candy_factory:CandyBall"/>
+  </elements>
+  <elements
+      xsi:type="candy_factory:ConveyorBelt"
+      id="belt2"
+      capacity="1"
+      target="//@elements.2"
+      source="//@elements.1">
+    <component
+        xsi:type="candy_factory:Stick"/>
+  </elements>
+  <elements
+      xsi:type="candy_factory:ConveyorBelt"
+      id="belt3"
+      capacity="1"
+      target="//@elements.3"
+      source="//@elements.2">
+    <component
+        xsi:type="candy_factory:Lollipop"/>
+  </elements>
+  <elements
+      xsi:type="candy_factory:ConveyorBelt"
+      id="lollipopOut"
+      capacity="1"
+      source="//@elements.3"/>
+</candy_factory:Factory>

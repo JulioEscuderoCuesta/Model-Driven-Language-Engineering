@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated candy_factory -->
+      <package
+            uri="http://www.unican.es/ildm/candy_factory"
+            class="candy_factory.Candy_factoryPackage"
+            genModel="model/candy_factory.genmodel"/>
+   </extension>
+
+</plugin>

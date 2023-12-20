@@ -1,0 +1,2037 @@
+!SESSION 2023-06-03 11:28:04.329 -----------------------------------------------
+eclipse.buildId=4.26.0.20221201-1200
+java.version=17.0.7
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.modeling.product
+
+This is a continuation of log file C:\Users\Hp\Desktop\Julio\Master\Segundo Cuatrimestre\IngenieriaLenguajesDirigidaModelos\Practica\Practica1B\FabricaCaramelos\.metadata\.bak_0.log
+Created Time: 2023-06-03 11:44:03.333
+
+!ENTRY org.eclipse.ui.ide 4 4 2023-06-03 11:44:03.333
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:120)
+	at org.eclipse.swt.graphics.Pattern.<init>(Pattern.java:182)
+	at org.eclipse.swt.graphics.Pattern.<init>(Pattern.java:139)
+	at org.eclipse.sirius.ui.tools.api.color.VisualBindingManager$PatternDescriptor.createPattern(VisualBindingManager.java:546)
+	at org.eclipse.sirius.ui.tools.api.color.VisualBindingManager.getPatternFromCache(VisualBindingManager.java:557)
+	at org.eclipse.sirius.ui.tools.api.color.VisualBindingManager.getPatternFromValue(VisualBindingManager.java:588)
+	at org.eclipse.sirius.diagram.ui.tools.api.figure.GradientHelper.getGradientDiag(GradientHelper.java:166)
+	at org.eclipse.sirius.diagram.ui.tools.api.figure.GradientHelper.getGradientPattern(GradientHelper.java:85)
+	at org.eclipse.sirius.diagram.ui.tools.api.figure.GradientHelper.setColorsGradation(GradientHelper.java:54)
+	at org.eclipse.sirius.diagram.ui.tools.api.figure.GradientRoundedRectangle.fillShape(GradientRoundedRectangle.java:191)
+	at org.eclipse.draw2d.Shape.paintFill(Shape.java:187)
+	at org.eclipse.draw2d.Shape.paintFigure(Shape.java:139)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1082)
+	at org.eclipse.sirius.diagram.ui.tools.api.figure.GradientRoundedRectangle.paint(GradientRoundedRectangle.java:108)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.emf.ecoretools.design.ui.parts.DNodeListEditPartWithAlpha$TransparencyFigure.paintChildren(DNodeListEditPartWithAlpha.java:72)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1167)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.sirius.diagram.ui.edit.api.part.AbstractDiagramElementContainerEditPart$1.paint(AbstractDiagramElementContainerEditPart.java:584)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.ScalableFreeformLayeredPane.paintClientArea(ScalableFreeformLayeredPane.java:59)
+	at org.eclipse.gmf.runtime.draw2d.ui.internal.graphics.ScalableFreeformLayeredPane.paintClientArea(ScalableFreeformLayeredPane.java:82)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1158)
+	at org.eclipse.draw2d.Viewport.paintClientArea(Viewport.java:155)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.DeferredUpdateManager.paint(DeferredUpdateManager.java:158)
+	at org.eclipse.draw2d.LightweightSystem.paint(LightweightSystem.java:201)
+	at org.eclipse.draw2d.LightweightSystem$2.handleEvent(LightweightSystem.java:109)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4256)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075)
+	at org.eclipse.swt.widgets.Composite.WM_PAINT(Composite.java:1536)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4800)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5022)
+	at org.eclipse.swt.internal.win32.OS.RedrawWindow(Native Method)
+	at org.eclipse.swt.widgets.Canvas.scrollInPixels(Canvas.java:221)
+	at org.eclipse.swt.widgets.Canvas.scroll(Canvas.java:208)
+	at org.eclipse.draw2d.FigureCanvas.scrollToY(FigureCanvas.java:453)
+	at org.eclipse.draw2d.FigureCanvas.scrollTo(FigureCanvas.java:365)
+	at org.eclipse.draw2d.FigureCanvas.scrollSmoothTo(FigureCanvas.java:346)
+	at org.eclipse.gef.ui.parts.ScrollingGraphicalViewer.reveal(ScrollingGraphicalViewer.java:100)
+	at org.eclipse.gmf.runtime.diagram.ui.tools.DragEditPartsTrackerEx.reveal(DragEditPartsTrackerEx.java:174)
+	at org.eclipse.sirius.diagram.ui.tools.internal.ui.NoCopyDragEditPartsTrackerEx.reveal(NoCopyDragEditPartsTrackerEx.java:63)
+	at org.eclipse.gmf.runtime.diagram.ui.tools.DragEditPartsTrackerEx.executeCurrentCommand(DragEditPartsTrackerEx.java:164)
+	at org.eclipse.gef.tools.DragEditPartsTracker.performDrag(DragEditPartsTracker.java:519)
+	at org.eclipse.sirius.diagram.ui.tools.internal.ui.NoCopyDragEditPartsTrackerEx.handleButtonUp(NoCopyDragEditPartsTrackerEx.java:123)
+	at org.eclipse.gef.tools.AbstractTool.mouseUp(AbstractTool.java:1140)
+	at org.eclipse.gef.tools.SelectionTool.mouseUp(SelectionTool.java:555)
+	at org.eclipse.gef.EditDomain.mouseUp(EditDomain.java:277)
+	at org.eclipse.gef.ui.parts.DomainEventDispatcher.dispatchMouseReleased(DomainEventDispatcher.java:374)
+	at org.eclipse.draw2d.LightweightSystem$EventHandler.mouseUp(LightweightSystem.java:536)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:224)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4256)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4054)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3642)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.ui.ide 4 4 2023-06-03 11:44:03.334
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:120)
+	at org.eclipse.swt.graphics.Pattern.<init>(Pattern.java:182)
+	at org.eclipse.swt.graphics.Pattern.<init>(Pattern.java:139)
+	at org.eclipse.sirius.ui.tools.api.color.VisualBindingManager$PatternDescriptor.createPattern(VisualBindingManager.java:546)
+	at org.eclipse.sirius.ui.tools.api.color.VisualBindingManager.getPatternFromCache(VisualBindingManager.java:557)
+	at org.eclipse.sirius.ui.tools.api.color.VisualBindingManager.getPatternFromValue(VisualBindingManager.java:588)
+	at org.eclipse.sirius.diagram.ui.tools.api.figure.GradientHelper.getGradientDiag(GradientHelper.java:166)
+	at org.eclipse.sirius.diagram.ui.tools.api.figure.GradientHelper.getGradientPattern(GradientHelper.java:85)
+	at org.eclipse.sirius.diagram.ui.tools.api.figure.GradientHelper.setColorsGradation(GradientHelper.java:54)
+	at org.eclipse.sirius.diagram.ui.tools.api.figure.GradientRoundedRectangle.fillShape(GradientRoundedRectangle.java:191)
+	at org.eclipse.draw2d.Shape.paintFill(Shape.java:187)
+	at org.eclipse.draw2d.Shape.paintFigure(Shape.java:139)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1082)
+	at org.eclipse.sirius.diagram.ui.tools.api.figure.GradientRoundedRectangle.paint(GradientRoundedRectangle.java:108)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.emf.ecoretools.design.ui.parts.DNodeListEditPartWithAlpha$TransparencyFigure.paintChildren(DNodeListEditPartWithAlpha.java:72)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1167)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.sirius.diagram.ui.edit.api.part.AbstractDiagramElementContainerEditPart$1.paint(AbstractDiagramElementContainerEditPart.java:584)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.ScalableFreeformLayeredPane.paintClientArea(ScalableFreeformLayeredPane.java:59)
+	at org.eclipse.gmf.runtime.draw2d.ui.internal.graphics.ScalableFreeformLayeredPane.paintClientArea(ScalableFreeformLayeredPane.java:82)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1158)
+	at org.eclipse.draw2d.Viewport.paintClientArea(Viewport.java:155)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.DeferredUpdateManager.paint(DeferredUpdateManager.java:158)
+	at org.eclipse.draw2d.LightweightSystem.paint(LightweightSystem.java:201)
+	at org.eclipse.draw2d.LightweightSystem$2.handleEvent(LightweightSystem.java:109)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4256)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075)
+	at org.eclipse.swt.widgets.Composite.WM_PAINT(Composite.java:1536)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4800)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5022)
+	at org.eclipse.swt.internal.win32.OS.RedrawWindow(Native Method)
+	at org.eclipse.swt.widgets.Canvas.scrollInPixels(Canvas.java:221)
+	at org.eclipse.swt.widgets.Canvas.scroll(Canvas.java:208)
+	at org.eclipse.draw2d.FigureCanvas.scrollToY(FigureCanvas.java:453)
+	at org.eclipse.draw2d.FigureCanvas.scrollTo(FigureCanvas.java:365)
+	at org.eclipse.draw2d.FigureCanvas.scrollSmoothTo(FigureCanvas.java:346)
+	at org.eclipse.gef.ui.parts.ScrollingGraphicalViewer.reveal(ScrollingGraphicalViewer.java:100)
+	at org.eclipse.gmf.runtime.diagram.ui.tools.DragEditPartsTrackerEx.reveal(DragEditPartsTrackerEx.java:174)
+	at org.eclipse.sirius.diagram.ui.tools.internal.ui.NoCopyDragEditPartsTrackerEx.reveal(NoCopyDragEditPartsTrackerEx.java:63)
+	at org.eclipse.gmf.runtime.diagram.ui.tools.DragEditPartsTrackerEx.executeCurrentCommand(DragEditPartsTrackerEx.java:164)
+	at org.eclipse.gef.tools.DragEditPartsTracker.performDrag(DragEditPartsTracker.java:519)
+	at org.eclipse.sirius.diagram.ui.tools.internal.ui.NoCopyDragEditPartsTrackerEx.handleButtonUp(NoCopyDragEditPartsTrackerEx.java:123)
+	at org.eclipse.gef.tools.AbstractTool.mouseUp(AbstractTool.java:1140)
+	at org.eclipse.gef.tools.SelectionTool.mouseUp(SelectionTool.java:555)
+	at org.eclipse.gef.EditDomain.mouseUp(EditDomain.java:277)
+	at org.eclipse.gef.ui.parts.DomainEventDispatcher.dispatchMouseReleased(DomainEventDispatcher.java:374)
+	at org.eclipse.draw2d.LightweightSystem$EventHandler.mouseUp(LightweightSystem.java:536)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:224)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4256)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4054)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3642)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.ui.ide 4 4 2023-06-03 11:44:03.335
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:120)
+	at org.eclipse.swt.graphics.Pattern.<init>(Pattern.java:182)
+	at org.eclipse.swt.graphics.Pattern.<init>(Pattern.java:139)
+	at org.eclipse.sirius.ui.tools.api.color.VisualBindingManager$PatternDescriptor.createPattern(VisualBindingManager.java:546)
+	at org.eclipse.sirius.ui.tools.api.color.VisualBindingManager.getPatternFromCache(VisualBindingManager.java:557)
+	at org.eclipse.sirius.ui.tools.api.color.VisualBindingManager.getPatternFromValue(VisualBindingManager.java:588)
+	at org.eclipse.sirius.diagram.ui.tools.api.figure.GradientHelper.getGradientDiag(GradientHelper.java:166)
+	at org.eclipse.sirius.diagram.ui.tools.api.figure.GradientHelper.getGradientPattern(GradientHelper.java:85)
+	at org.eclipse.sirius.diagram.ui.tools.api.figure.GradientHelper.setColorsGradation(GradientHelper.java:54)
+	at org.eclipse.sirius.diagram.ui.tools.api.figure.GradientRoundedRectangle.fillShape(GradientRoundedRectangle.java:191)
+	at org.eclipse.draw2d.Shape.paintFill(Shape.java:187)
+	at org.eclipse.draw2d.Shape.paintFigure(Shape.java:139)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1082)
+	at org.eclipse.sirius.diagram.ui.tools.api.figure.GradientRoundedRectangle.paint(GradientRoundedRectangle.java:108)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.emf.ecoretools.design.ui.parts.DNodeListEditPartWithAlpha$TransparencyFigure.paintChildren(DNodeListEditPartWithAlpha.java:72)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1167)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.sirius.diagram.ui.edit.api.part.AbstractDiagramElementContainerEditPart$1.paint(AbstractDiagramElementContainerEditPart.java:584)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.ScalableFreeformLayeredPane.paintClientArea(ScalableFreeformLayeredPane.java:59)
+	at org.eclipse.gmf.runtime.draw2d.ui.internal.graphics.ScalableFreeformLayeredPane.paintClientArea(ScalableFreeformLayeredPane.java:82)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1158)
+	at org.eclipse.draw2d.Viewport.paintClientArea(Viewport.java:155)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.DeferredUpdateManager.paint(DeferredUpdateManager.java:158)
+	at org.eclipse.draw2d.LightweightSystem.paint(LightweightSystem.java:201)
+	at org.eclipse.draw2d.LightweightSystem$2.handleEvent(LightweightSystem.java:109)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4256)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075)
+	at org.eclipse.swt.widgets.Composite.WM_PAINT(Composite.java:1536)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4800)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5022)
+	at org.eclipse.swt.internal.win32.OS.RedrawWindow(Native Method)
+	at org.eclipse.swt.widgets.Canvas.scrollInPixels(Canvas.java:221)
+	at org.eclipse.swt.widgets.Canvas.scroll(Canvas.java:208)
+	at org.eclipse.draw2d.FigureCanvas.scrollToY(FigureCanvas.java:453)
+	at org.eclipse.draw2d.FigureCanvas.scrollTo(FigureCanvas.java:365)
+	at org.eclipse.draw2d.FigureCanvas.scrollSmoothTo(FigureCanvas.java:346)
+	at org.eclipse.gef.ui.parts.ScrollingGraphicalViewer.reveal(ScrollingGraphicalViewer.java:100)
+	at org.eclipse.gmf.runtime.diagram.ui.tools.DragEditPartsTrackerEx.reveal(DragEditPartsTrackerEx.java:174)
+	at org.eclipse.sirius.diagram.ui.tools.internal.ui.NoCopyDragEditPartsTrackerEx.reveal(NoCopyDragEditPartsTrackerEx.java:63)
+	at org.eclipse.gmf.runtime.diagram.ui.tools.DragEditPartsTrackerEx.executeCurrentCommand(DragEditPartsTrackerEx.java:164)
+	at org.eclipse.gef.tools.DragEditPartsTracker.performDrag(DragEditPartsTracker.java:519)
+	at org.eclipse.sirius.diagram.ui.tools.internal.ui.NoCopyDragEditPartsTrackerEx.handleButtonUp(NoCopyDragEditPartsTrackerEx.java:123)
+	at org.eclipse.gef.tools.AbstractTool.mouseUp(AbstractTool.java:1140)
+	at org.eclipse.gef.tools.SelectionTool.mouseUp(SelectionTool.java:555)
+	at org.eclipse.gef.EditDomain.mouseUp(EditDomain.java:277)
+	at org.eclipse.gef.ui.parts.DomainEventDispatcher.dispatchMouseReleased(DomainEventDispatcher.java:374)
+	at org.eclipse.draw2d.LightweightSystem$EventHandler.mouseUp(LightweightSystem.java:536)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:224)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4256)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4054)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3642)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.ui.ide 4 4 2023-06-03 11:44:03.335
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:120)
+	at org.eclipse.swt.graphics.Pattern.<init>(Pattern.java:182)
+	at org.eclipse.swt.graphics.Pattern.<init>(Pattern.java:139)
+	at org.eclipse.sirius.ui.tools.api.color.VisualBindingManager$PatternDescriptor.createPattern(VisualBindingManager.java:546)
+	at org.eclipse.sirius.ui.tools.api.color.VisualBindingManager.getPatternFromCache(VisualBindingManager.java:557)
+	at org.eclipse.sirius.ui.tools.api.color.VisualBindingManager.getPatternFromValue(VisualBindingManager.java:588)
+	at org.eclipse.sirius.diagram.ui.tools.api.figure.GradientHelper.getGradientDiag(GradientHelper.java:166)
+	at org.eclipse.sirius.diagram.ui.tools.api.figure.GradientHelper.getGradientPattern(GradientHelper.java:85)
+	at org.eclipse.sirius.diagram.ui.tools.api.figure.GradientHelper.setColorsGradation(GradientHelper.java:54)
+	at org.eclipse.sirius.diagram.ui.tools.api.figure.GradientRoundedRectangle.fillShape(GradientRoundedRectangle.java:191)
+	at org.eclipse.draw2d.Shape.paintFill(Shape.java:187)
+	at org.eclipse.draw2d.Shape.paintFigure(Shape.java:139)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1082)
+	at org.eclipse.sirius.diagram.ui.tools.api.figure.GradientRoundedRectangle.paint(GradientRoundedRectangle.java:108)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.emf.ecoretools.design.ui.parts.DNodeListEditPartWithAlpha$TransparencyFigure.paintChildren(DNodeListEditPartWithAlpha.java:72)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1167)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.sirius.diagram.ui.edit.api.part.AbstractDiagramElementContainerEditPart$1.paint(AbstractDiagramElementContainerEditPart.java:584)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.ScalableFreeformLayeredPane.paintClientArea(ScalableFreeformLayeredPane.java:59)
+	at org.eclipse.gmf.runtime.draw2d.ui.internal.graphics.ScalableFreeformLayeredPane.paintClientArea(ScalableFreeformLayeredPane.java:82)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1158)
+	at org.eclipse.draw2d.Viewport.paintClientArea(Viewport.java:155)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.DeferredUpdateManager.paint(DeferredUpdateManager.java:158)
+	at org.eclipse.draw2d.LightweightSystem.paint(LightweightSystem.java:201)
+	at org.eclipse.draw2d.LightweightSystem$2.handleEvent(LightweightSystem.java:109)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4256)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075)
+	at org.eclipse.swt.widgets.Composite.WM_PAINT(Composite.java:1536)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4800)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5022)
+	at org.eclipse.swt.internal.win32.OS.RedrawWindow(Native Method)
+	at org.eclipse.swt.widgets.Canvas.scrollInPixels(Canvas.java:221)
+	at org.eclipse.swt.widgets.Canvas.scroll(Canvas.java:208)
+	at org.eclipse.draw2d.FigureCanvas.scrollToY(FigureCanvas.java:453)
+	at org.eclipse.draw2d.FigureCanvas.scrollTo(FigureCanvas.java:365)
+	at org.eclipse.draw2d.FigureCanvas.scrollSmoothTo(FigureCanvas.java:346)
+	at org.eclipse.gef.ui.parts.ScrollingGraphicalViewer.reveal(ScrollingGraphicalViewer.java:100)
+	at org.eclipse.gmf.runtime.diagram.ui.tools.DragEditPartsTrackerEx.reveal(DragEditPartsTrackerEx.java:174)
+	at org.eclipse.sirius.diagram.ui.tools.internal.ui.NoCopyDragEditPartsTrackerEx.reveal(NoCopyDragEditPartsTrackerEx.java:63)
+	at org.eclipse.gmf.runtime.diagram.ui.tools.DragEditPartsTrackerEx.executeCurrentCommand(DragEditPartsTrackerEx.java:164)
+	at org.eclipse.gef.tools.DragEditPartsTracker.performDrag(DragEditPartsTracker.java:519)
+	at org.eclipse.sirius.diagram.ui.tools.internal.ui.NoCopyDragEditPartsTrackerEx.handleButtonUp(NoCopyDragEditPartsTrackerEx.java:123)
+	at org.eclipse.gef.tools.AbstractTool.mouseUp(AbstractTool.java:1140)
+	at org.eclipse.gef.tools.SelectionTool.mouseUp(SelectionTool.java:555)
+	at org.eclipse.gef.EditDomain.mouseUp(EditDomain.java:277)
+	at org.eclipse.gef.ui.parts.DomainEventDispatcher.dispatchMouseReleased(DomainEventDispatcher.java:374)
+	at org.eclipse.draw2d.LightweightSystem$EventHandler.mouseUp(LightweightSystem.java:536)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:224)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4256)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4054)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3642)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.ui.ide 4 4 2023-06-03 11:44:03.336
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:120)
+	at org.eclipse.swt.graphics.Pattern.<init>(Pattern.java:182)
+	at org.eclipse.swt.graphics.Pattern.<init>(Pattern.java:139)
+	at org.eclipse.sirius.ui.tools.api.color.VisualBindingManager$PatternDescriptor.createPattern(VisualBindingManager.java:546)
+	at org.eclipse.sirius.ui.tools.api.color.VisualBindingManager.getPatternFromCache(VisualBindingManager.java:557)
+	at org.eclipse.sirius.ui.tools.api.color.VisualBindingManager.getPatternFromValue(VisualBindingManager.java:588)
+	at org.eclipse.sirius.diagram.ui.tools.api.figure.GradientHelper.getGradientDiag(GradientHelper.java:166)
+	at org.eclipse.sirius.diagram.ui.tools.api.figure.GradientHelper.getGradientPattern(GradientHelper.java:85)
+	at org.eclipse.sirius.diagram.ui.tools.api.figure.GradientHelper.setColorsGradation(GradientHelper.java:54)
+	at org.eclipse.sirius.diagram.ui.tools.api.figure.GradientRoundedRectangle.fillShape(GradientRoundedRectangle.java:191)
+	at org.eclipse.draw2d.Shape.paintFill(Shape.java:187)
+	at org.eclipse.draw2d.Shape.paintFigure(Shape.java:139)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1082)
+	at org.eclipse.sirius.diagram.ui.tools.api.figure.GradientRoundedRectangle.paint(GradientRoundedRectangle.java:108)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.emf.ecoretools.design.ui.parts.DNodeListEditPartWithAlpha$TransparencyFigure.paintChildren(DNodeListEditPartWithAlpha.java:72)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1167)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.sirius.diagram.ui.edit.api.part.AbstractDiagramElementContainerEditPart$1.paint(AbstractDiagramElementContainerEditPart.java:584)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.ScalableFreeformLayeredPane.paintClientArea(ScalableFreeformLayeredPane.java:59)
+	at org.eclipse.gmf.runtime.draw2d.ui.internal.graphics.ScalableFreeformLayeredPane.paintClientArea(ScalableFreeformLayeredPane.java:82)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1158)
+	at org.eclipse.draw2d.Viewport.paintClientArea(Viewport.java:155)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.DeferredUpdateManager.paint(DeferredUpdateManager.java:158)
+	at org.eclipse.draw2d.LightweightSystem.paint(LightweightSystem.java:201)
+	at org.eclipse.draw2d.LightweightSystem$2.handleEvent(LightweightSystem.java:109)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4256)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075)
+	at org.eclipse.swt.widgets.Composite.WM_PAINT(Composite.java:1536)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4800)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5022)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3640)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.ui.ide 4 4 2023-06-03 11:44:03.337
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:120)
+	at org.eclipse.swt.graphics.Pattern.<init>(Pattern.java:182)
+	at org.eclipse.swt.graphics.Pattern.<init>(Pattern.java:139)
+	at org.eclipse.sirius.ui.tools.api.color.VisualBindingManager$PatternDescriptor.createPattern(VisualBindingManager.java:546)
+	at org.eclipse.sirius.ui.tools.api.color.VisualBindingManager.getPatternFromCache(VisualBindingManager.java:557)
+	at org.eclipse.sirius.ui.tools.api.color.VisualBindingManager.getPatternFromValue(VisualBindingManager.java:588)
+	at org.eclipse.sirius.diagram.ui.tools.api.figure.GradientHelper.getGradientDiag(GradientHelper.java:166)
+	at org.eclipse.sirius.diagram.ui.tools.api.figure.GradientHelper.getGradientPattern(GradientHelper.java:85)
+	at org.eclipse.sirius.diagram.ui.tools.api.figure.GradientHelper.setColorsGradation(GradientHelper.java:54)
+	at org.eclipse.sirius.diagram.ui.tools.api.figure.GradientRoundedRectangle.fillShape(GradientRoundedRectangle.java:191)
+	at org.eclipse.draw2d.Shape.paintFill(Shape.java:187)
+	at org.eclipse.draw2d.Shape.paintFigure(Shape.java:139)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1082)
+	at org.eclipse.sirius.diagram.ui.tools.api.figure.GradientRoundedRectangle.paint(GradientRoundedRectangle.java:108)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.emf.ecoretools.design.ui.parts.DNodeListEditPartWithAlpha$TransparencyFigure.paintChildren(DNodeListEditPartWithAlpha.java:72)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1167)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.sirius.diagram.ui.edit.api.part.AbstractDiagramElementContainerEditPart$1.paint(AbstractDiagramElementContainerEditPart.java:584)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.ScalableFreeformLayeredPane.paintClientArea(ScalableFreeformLayeredPane.java:59)
+	at org.eclipse.gmf.runtime.draw2d.ui.internal.graphics.ScalableFreeformLayeredPane.paintClientArea(ScalableFreeformLayeredPane.java:82)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1158)
+	at org.eclipse.draw2d.Viewport.paintClientArea(Viewport.java:155)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.DeferredUpdateManager.paint(DeferredUpdateManager.java:158)
+	at org.eclipse.draw2d.LightweightSystem.paint(LightweightSystem.java:201)
+	at org.eclipse.draw2d.LightweightSystem$2.handleEvent(LightweightSystem.java:109)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4256)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075)
+	at org.eclipse.swt.widgets.Composite.WM_PAINT(Composite.java:1536)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4800)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5022)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3640)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.ui.ide 4 4 2023-06-03 11:44:03.337
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:120)
+	at org.eclipse.swt.graphics.Pattern.<init>(Pattern.java:182)
+	at org.eclipse.swt.graphics.Pattern.<init>(Pattern.java:139)
+	at org.eclipse.sirius.ui.tools.api.color.VisualBindingManager$PatternDescriptor.createPattern(VisualBindingManager.java:546)
+	at org.eclipse.sirius.ui.tools.api.color.VisualBindingManager.getPatternFromCache(VisualBindingManager.java:557)
+	at org.eclipse.sirius.ui.tools.api.color.VisualBindingManager.getPatternFromValue(VisualBindingManager.java:588)
+	at org.eclipse.sirius.diagram.ui.tools.api.figure.GradientHelper.getGradientDiag(GradientHelper.java:166)
+	at org.eclipse.sirius.diagram.ui.tools.api.figure.GradientHelper.getGradientPattern(GradientHelper.java:85)
+	at org.eclipse.sirius.diagram.ui.tools.api.figure.GradientHelper.setColorsGradation(GradientHelper.java:54)
+	at org.eclipse.sirius.diagram.ui.tools.api.figure.GradientRoundedRectangle.fillShape(GradientRoundedRectangle.java:191)
+	at org.eclipse.draw2d.Shape.paintFill(Shape.java:187)
+	at org.eclipse.draw2d.Shape.paintFigure(Shape.java:139)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1082)
+	at org.eclipse.sirius.diagram.ui.tools.api.figure.GradientRoundedRectangle.paint(GradientRoundedRectangle.java:108)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.emf.ecoretools.design.ui.parts.DNodeListEditPartWithAlpha$TransparencyFigure.paintChildren(DNodeListEditPartWithAlpha.java:72)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1167)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.sirius.diagram.ui.edit.api.part.AbstractDiagramElementContainerEditPart$1.paint(AbstractDiagramElementContainerEditPart.java:584)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.ScalableFreeformLayeredPane.paintClientArea(ScalableFreeformLayeredPane.java:59)
+	at org.eclipse.gmf.runtime.draw2d.ui.internal.graphics.ScalableFreeformLayeredPane.paintClientArea(ScalableFreeformLayeredPane.java:82)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1158)
+	at org.eclipse.draw2d.Viewport.paintClientArea(Viewport.java:155)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.DeferredUpdateManager.paint(DeferredUpdateManager.java:158)
+	at org.eclipse.draw2d.LightweightSystem.paint(LightweightSystem.java:201)
+	at org.eclipse.draw2d.LightweightSystem$2.handleEvent(LightweightSystem.java:109)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4256)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075)
+	at org.eclipse.swt.widgets.Composite.WM_PAINT(Composite.java:1536)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4800)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5022)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3640)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.ui.ide 4 4 2023-06-03 11:44:03.338
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:120)
+	at org.eclipse.swt.graphics.Pattern.<init>(Pattern.java:182)
+	at org.eclipse.swt.graphics.Pattern.<init>(Pattern.java:139)
+	at org.eclipse.sirius.ui.tools.api.color.VisualBindingManager$PatternDescriptor.createPattern(VisualBindingManager.java:546)
+	at org.eclipse.sirius.ui.tools.api.color.VisualBindingManager.getPatternFromCache(VisualBindingManager.java:557)
+	at org.eclipse.sirius.ui.tools.api.color.VisualBindingManager.getPatternFromValue(VisualBindingManager.java:588)
+	at org.eclipse.sirius.diagram.ui.tools.api.figure.GradientHelper.getGradientDiag(GradientHelper.java:166)
+	at org.eclipse.sirius.diagram.ui.tools.api.figure.GradientHelper.getGradientPattern(GradientHelper.java:85)
+	at org.eclipse.sirius.diagram.ui.tools.api.figure.GradientHelper.setColorsGradation(GradientHelper.java:54)
+	at org.eclipse.sirius.diagram.ui.tools.api.figure.GradientRoundedRectangle.fillShape(GradientRoundedRectangle.java:191)
+	at org.eclipse.draw2d.Shape.paintFill(Shape.java:187)
+	at org.eclipse.draw2d.Shape.paintFigure(Shape.java:139)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1082)
+	at org.eclipse.sirius.diagram.ui.tools.api.figure.GradientRoundedRectangle.paint(GradientRoundedRectangle.java:108)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.emf.ecoretools.design.ui.parts.DNodeListEditPartWithAlpha$TransparencyFigure.paintChildren(DNodeListEditPartWithAlpha.java:72)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1167)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.sirius.diagram.ui.edit.api.part.AbstractDiagramElementContainerEditPart$1.paint(AbstractDiagramElementContainerEditPart.java:584)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.ScalableFreeformLayeredPane.paintClientArea(ScalableFreeformLayeredPane.java:59)
+	at org.eclipse.gmf.runtime.draw2d.ui.internal.graphics.ScalableFreeformLayeredPane.paintClientArea(ScalableFreeformLayeredPane.java:82)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1158)
+	at org.eclipse.draw2d.Viewport.paintClientArea(Viewport.java:155)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.DeferredUpdateManager.paint(DeferredUpdateManager.java:158)
+	at org.eclipse.draw2d.LightweightSystem.paint(LightweightSystem.java:201)
+	at org.eclipse.draw2d.LightweightSystem$2.handleEvent(LightweightSystem.java:109)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4256)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075)
+	at org.eclipse.swt.widgets.Composite.WM_PAINT(Composite.java:1536)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4800)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5022)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3640)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.ui.ide 4 4 2023-06-03 11:44:03.338
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:120)
+	at org.eclipse.swt.graphics.Pattern.<init>(Pattern.java:182)
+	at org.eclipse.swt.graphics.Pattern.<init>(Pattern.java:139)
+	at org.eclipse.sirius.ui.tools.api.color.VisualBindingManager$PatternDescriptor.createPattern(VisualBindingManager.java:546)
+	at org.eclipse.sirius.ui.tools.api.color.VisualBindingManager.getPatternFromCache(VisualBindingManager.java:557)
+	at org.eclipse.sirius.ui.tools.api.color.VisualBindingManager.getPatternFromValue(VisualBindingManager.java:588)
+	at org.eclipse.sirius.diagram.ui.tools.api.figure.GradientHelper.getGradientDiag(GradientHelper.java:166)
+	at org.eclipse.sirius.diagram.ui.tools.api.figure.GradientHelper.getGradientPattern(GradientHelper.java:85)
+	at org.eclipse.sirius.diagram.ui.tools.api.figure.GradientHelper.setColorsGradation(GradientHelper.java:54)
+	at org.eclipse.sirius.diagram.ui.tools.api.figure.GradientRoundedRectangle.fillShape(GradientRoundedRectangle.java:191)
+	at org.eclipse.draw2d.Shape.paintFill(Shape.java:187)
+	at org.eclipse.draw2d.Shape.paintFigure(Shape.java:139)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1082)
+	at org.eclipse.sirius.diagram.ui.tools.api.figure.GradientRoundedRectangle.paint(GradientRoundedRectangle.java:108)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.emf.ecoretools.design.ui.parts.DNodeListEditPartWithAlpha$TransparencyFigure.paintChildren(DNodeListEditPartWithAlpha.java:72)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1167)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.sirius.diagram.ui.edit.api.part.AbstractDiagramElementContainerEditPart$1.paint(AbstractDiagramElementContainerEditPart.java:584)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.ScalableFreeformLayeredPane.paintClientArea(ScalableFreeformLayeredPane.java:59)
+	at org.eclipse.gmf.runtime.draw2d.ui.internal.graphics.ScalableFreeformLayeredPane.paintClientArea(ScalableFreeformLayeredPane.java:82)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1158)
+	at org.eclipse.draw2d.Viewport.paintClientArea(Viewport.java:155)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.DeferredUpdateManager.paint(DeferredUpdateManager.java:158)
+	at org.eclipse.draw2d.LightweightSystem.paint(LightweightSystem.java:201)
+	at org.eclipse.draw2d.LightweightSystem$2.handleEvent(LightweightSystem.java:109)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4256)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075)
+	at org.eclipse.swt.widgets.Composite.WM_PAINT(Composite.java:1536)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4800)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5022)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3640)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.ui.ide 4 4 2023-06-03 11:44:03.339
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:120)
+	at org.eclipse.swt.graphics.Pattern.<init>(Pattern.java:182)
+	at org.eclipse.swt.graphics.Pattern.<init>(Pattern.java:139)
+	at org.eclipse.sirius.ui.tools.api.color.VisualBindingManager$PatternDescriptor.createPattern(VisualBindingManager.java:546)
+	at org.eclipse.sirius.ui.tools.api.color.VisualBindingManager.getPatternFromCache(VisualBindingManager.java:557)
+	at org.eclipse.sirius.ui.tools.api.color.VisualBindingManager.getPatternFromValue(VisualBindingManager.java:588)
+	at org.eclipse.sirius.diagram.ui.tools.api.figure.GradientHelper.getGradientDiag(GradientHelper.java:166)
+	at org.eclipse.sirius.diagram.ui.tools.api.figure.GradientHelper.getGradientPattern(GradientHelper.java:85)
+	at org.eclipse.sirius.diagram.ui.tools.api.figure.GradientHelper.setColorsGradation(GradientHelper.java:54)
+	at org.eclipse.sirius.diagram.ui.tools.api.figure.GradientRoundedRectangle.fillShape(GradientRoundedRectangle.java:191)
+	at org.eclipse.draw2d.Shape.paintFill(Shape.java:187)
+	at org.eclipse.draw2d.Shape.paintFigure(Shape.java:139)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1082)
+	at org.eclipse.sirius.diagram.ui.tools.api.figure.GradientRoundedRectangle.paint(GradientRoundedRectangle.java:108)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.emf.ecoretools.design.ui.parts.DNodeListEditPartWithAlpha$TransparencyFigure.paintChildren(DNodeListEditPartWithAlpha.java:72)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1167)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.sirius.diagram.ui.edit.api.part.AbstractDiagramElementContainerEditPart$1.paint(AbstractDiagramElementContainerEditPart.java:584)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.ScalableFreeformLayeredPane.paintClientArea(ScalableFreeformLayeredPane.java:59)
+	at org.eclipse.gmf.runtime.draw2d.ui.internal.graphics.ScalableFreeformLayeredPane.paintClientArea(ScalableFreeformLayeredPane.java:82)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1158)
+	at org.eclipse.draw2d.Viewport.paintClientArea(Viewport.java:155)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.DeferredUpdateManager.paint(DeferredUpdateManager.java:158)
+	at org.eclipse.draw2d.LightweightSystem.paint(LightweightSystem.java:201)
+	at org.eclipse.draw2d.LightweightSystem$2.handleEvent(LightweightSystem.java:109)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4256)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075)
+	at org.eclipse.swt.widgets.Composite.WM_PAINT(Composite.java:1536)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4800)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5022)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3640)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.ui.ide 4 4 2023-06-03 11:44:03.340
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:120)
+	at org.eclipse.swt.graphics.Pattern.<init>(Pattern.java:182)
+	at org.eclipse.swt.graphics.Pattern.<init>(Pattern.java:139)
+	at org.eclipse.sirius.ui.tools.api.color.VisualBindingManager$PatternDescriptor.createPattern(VisualBindingManager.java:546)
+	at org.eclipse.sirius.ui.tools.api.color.VisualBindingManager.getPatternFromCache(VisualBindingManager.java:557)
+	at org.eclipse.sirius.ui.tools.api.color.VisualBindingManager.getPatternFromValue(VisualBindingManager.java:588)
+	at org.eclipse.sirius.diagram.ui.tools.api.figure.GradientHelper.getGradientDiag(GradientHelper.java:166)
+	at org.eclipse.sirius.diagram.ui.tools.api.figure.GradientHelper.getGradientPattern(GradientHelper.java:85)
+	at org.eclipse.sirius.diagram.ui.tools.api.figure.GradientHelper.setColorsGradation(GradientHelper.java:54)
+	at org.eclipse.sirius.diagram.ui.tools.api.figure.GradientRoundedRectangle.fillShape(GradientRoundedRectangle.java:191)
+	at org.eclipse.draw2d.Shape.paintFill(Shape.java:187)
+	at org.eclipse.draw2d.Shape.paintFigure(Shape.java:139)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1082)
+	at org.eclipse.sirius.diagram.ui.tools.api.figure.GradientRoundedRectangle.paint(GradientRoundedRectangle.java:108)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.emf.ecoretools.design.ui.parts.DNodeListEditPartWithAlpha$TransparencyFigure.paintChildren(DNodeListEditPartWithAlpha.java:72)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1167)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.sirius.diagram.ui.edit.api.part.AbstractDiagramElementContainerEditPart$1.paint(AbstractDiagramElementContainerEditPart.java:584)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.ScalableFreeformLayeredPane.paintClientArea(ScalableFreeformLayeredPane.java:59)
+	at org.eclipse.gmf.runtime.draw2d.ui.internal.graphics.ScalableFreeformLayeredPane.paintClientArea(ScalableFreeformLayeredPane.java:82)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1158)
+	at org.eclipse.draw2d.Viewport.paintClientArea(Viewport.java:155)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.DeferredUpdateManager.paint(DeferredUpdateManager.java:158)
+	at org.eclipse.draw2d.LightweightSystem.paint(LightweightSystem.java:201)
+	at org.eclipse.draw2d.LightweightSystem$2.handleEvent(LightweightSystem.java:109)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4256)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075)
+	at org.eclipse.swt.widgets.Composite.WM_PAINT(Composite.java:1536)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4800)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5022)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3640)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.ui.ide 4 4 2023-06-03 11:44:03.340
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:120)
+	at org.eclipse.swt.graphics.Pattern.<init>(Pattern.java:182)
+	at org.eclipse.swt.graphics.Pattern.<init>(Pattern.java:139)
+	at org.eclipse.sirius.ui.tools.api.color.VisualBindingManager$PatternDescriptor.createPattern(VisualBindingManager.java:546)
+	at org.eclipse.sirius.ui.tools.api.color.VisualBindingManager.getPatternFromCache(VisualBindingManager.java:557)
+	at org.eclipse.sirius.ui.tools.api.color.VisualBindingManager.getPatternFromValue(VisualBindingManager.java:588)
+	at org.eclipse.sirius.diagram.ui.tools.api.figure.GradientHelper.getGradientDiag(GradientHelper.java:166)
+	at org.eclipse.sirius.diagram.ui.tools.api.figure.GradientHelper.getGradientPattern(GradientHelper.java:85)
+	at org.eclipse.sirius.diagram.ui.tools.api.figure.GradientHelper.setColorsGradation(GradientHelper.java:54)
+	at org.eclipse.sirius.diagram.ui.tools.api.figure.GradientRoundedRectangle.fillShape(GradientRoundedRectangle.java:191)
+	at org.eclipse.draw2d.Shape.paintFill(Shape.java:187)
+	at org.eclipse.draw2d.Shape.paintFigure(Shape.java:139)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1082)
+	at org.eclipse.sirius.diagram.ui.tools.api.figure.GradientRoundedRectangle.paint(GradientRoundedRectangle.java:108)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.emf.ecoretools.design.ui.parts.DNodeListEditPartWithAlpha$TransparencyFigure.paintChildren(DNodeListEditPartWithAlpha.java:72)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1167)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.sirius.diagram.ui.edit.api.part.AbstractDiagramElementContainerEditPart$1.paint(AbstractDiagramElementContainerEditPart.java:584)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.ScalableFreeformLayeredPane.paintClientArea(ScalableFreeformLayeredPane.java:59)
+	at org.eclipse.gmf.runtime.draw2d.ui.internal.graphics.ScalableFreeformLayeredPane.paintClientArea(ScalableFreeformLayeredPane.java:82)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1158)
+	at org.eclipse.draw2d.Viewport.paintClientArea(Viewport.java:155)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.Figure.paintChildren(Figure.java:1130)
+	at org.eclipse.draw2d.Figure.paintClientArea(Figure.java:1163)
+	at org.eclipse.draw2d.Figure.paint(Figure.java:1084)
+	at org.eclipse.draw2d.DeferredUpdateManager.paint(DeferredUpdateManager.java:158)
+	at org.eclipse.draw2d.LightweightSystem.paint(LightweightSystem.java:201)
+	at org.eclipse.draw2d.LightweightSystem$2.handleEvent(LightweightSystem.java:109)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4256)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075)
+	at org.eclipse.swt.widgets.Composite.WM_PAINT(Composite.java:1536)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4800)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5022)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3640)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+!SESSION 2023-06-05 12:23:13.087 -----------------------------------------------
+eclipse.buildId=4.25.0.I20220831-1800
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.modeling.product -product org.eclipse.epp.package.modeling.product -product org.eclipse.epp.package.modeling.product -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.modeling.product -product org.eclipse.epp.package.modeling.product -product org.eclipse.epp.package.modeling.product -data C:\Users\Hp\Desktop\Julio\Master\Segundo Cuatrimestre\IngenieriaLenguajesDirigidaModelos\Practica\Practica1B\FabricaCaramelos -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.emf.compare.diagram.ide.ui.sirius 4 0 2023-06-05 12:23:14.253
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.emf.compare.diagram.ide.ui.sirius [224]
+  Unresolved requirement: Require-Bundle: org.eclipse.sirius.diagram.ui
+    -> Bundle-SymbolicName: org.eclipse.sirius.diagram.ui; bundle-version="7.1.0.202303020853"; singleton:="true"
+       org.eclipse.sirius.diagram.ui [1109]
+         Unresolved requirement: Require-Bundle: org.eclipse.gmf.runtime.diagram.ui.render; bundle-version="1.7.1"
+           -> Bundle-SymbolicName: org.eclipse.gmf.runtime.diagram.ui.render; bundle-version="1.7.2.202208271122"; singleton:="true"
+              org.eclipse.gmf.runtime.diagram.ui.render [547]
+                Unresolved requirement: Require-Bundle: org.eclipse.gmf.runtime.diagram.ui.printing.render; bundle-version="[1.2.0,2.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.gmf.runtime.diagram.ui.printing.render; bundle-version="1.8.0.202208271122"
+                     org.eclipse.gmf.runtime.diagram.ui.printing.render [543]
+                       Unresolved requirement: Require-Bundle: org.eclipse.gmf.runtime.draw2d.ui.render.awt; bundle-version="[1.2.0,2.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.gmf.runtime.draw2d.ui.render.awt; bundle-version="1.10.0.202208271122"; singleton:="true"
+                            org.eclipse.gmf.runtime.draw2d.ui.render.awt [552]
+                              No resolution report for the bundle.                Unresolved requirement: Require-Bundle: org.eclipse.gmf.runtime.draw2d.ui.render.awt; bundle-version="[1.2.0,2.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.gmf.runtime.draw2d.ui.render.awt; bundle-version="1.10.0.202208271122"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.gmf.runtime.draw2d.ui.render.awt; bundle-version="1.10.0"
+           -> Bundle-SymbolicName: org.eclipse.gmf.runtime.draw2d.ui.render.awt; bundle-version="1.10.0.202208271122"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.gmf.runtime.diagram.ui.printing.render; bundle-version="1.8.0"
+           -> Bundle-SymbolicName: org.eclipse.gmf.runtime.diagram.ui.printing.render; bundle-version="1.8.0.202208271122"
+  Unresolved requirement: Require-Bundle: org.eclipse.gmf.runtime.diagram.ui.render; bundle-version="1.7.1"
+    -> Bundle-SymbolicName: org.eclipse.gmf.runtime.diagram.ui.render; bundle-version="1.7.2.202208271122"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.gmf.runtime.draw2d.ui.render.awt
+    -> Bundle-SymbolicName: org.eclipse.gmf.runtime.draw2d.ui.render.awt; bundle-version="1.10.0.202208271122"; singleton:="true"
+  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.eclipse.gmf.runtime.draw2d.ui.render.awt [osgi.identity; type="osgi.bundle"; version:Version="1.10.0.202208271122"; osgi.identity="org.eclipse.gmf.runtime.draw2d.ui.render.awt"; singleton:="true"] because it is exposed to package 'org.apache.batik.ext.awt.color' from resources org.apache.batik.awt.util [osgi.identity; type="osgi.bundle"; version:Version="1.14.0.v20210324-0332"; osgi.identity="org.apache.batik.awt.util"] and org.apache.batik.awt.util [osgi.identity; type="osgi.bundle"; version:Version="1.16.0.v20221027-0840"; osgi.identity="org.apache.batik.awt.util"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.gmf.runtime.draw2d.ui.render.awt [osgi.identity; type="osgi.bundle"; version:Version="1.10.0.202208271122"; osgi.identity="org.eclipse.gmf.runtime.draw2d.ui.render.awt"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.apache.batik.awt.util)(&(bundle-version>=1.14.0)(!(bundle-version>=1.15.0))))
+     |
+    provide: osgi.wiring.bundle: org.apache.batik.awt.util
+  org.apache.batik.awt.util [osgi.identity; type="osgi.bundle"; version:Version="1.14.0.v20210324-0332"; osgi.identity="org.apache.batik.awt.util"]
+
+Chain 2:
+  org.eclipse.gmf.runtime.draw2d.ui.render.awt [osgi.identity; type="osgi.bundle"; version:Version="1.10.0.202208271122"; osgi.identity="org.eclipse.gmf.runtime.draw2d.ui.render.awt"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.apache.batik.transcoder)(&(bundle-version>=1.14.0)(!(bundle-version>=1.15.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="1.14.0.v20210324-0332"; osgi.wiring.bundle="org.apache.batik.transcoder"
+  org.apache.batik.transcoder [osgi.identity; type="osgi.bundle"; version:Version="1.14.0.v20210324-0332"; osgi.identity="org.apache.batik.transcoder"]
+    import: (&(osgi.wiring.package=org.apache.batik.bridge)(&(version>=1.14.0)(!(version>=2.0.0))))
+     |
+    export: osgi.wiring.package=org.apache.batik.bridge; uses:=org.apache.batik.ext.awt.color
+  org.apache.batik.bridge [osgi.identity; type="osgi.bundle"; version:Version="1.16.0.v20221027-0840"; osgi.identity="org.apache.batik.bridge"]
+    import: (&(osgi.wiring.package=org.apache.batik.ext.awt.color)(&(version>=1.16.0)(!(version>=2.0.0))))
+     |
+    export: osgi.wiring.package: org.apache.batik.ext.awt.color
+  org.apache.batik.awt.util [osgi.identity; type="osgi.bundle"; version:Version="1.16.0.v20221027-0840"; osgi.identity="org.apache.batik.awt.util"]
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.emf.ecoretools.design.ui 4 0 2023-06-05 12:23:14.301
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.emf.ecoretools.design.ui [246]
+  Unresolved requirement: Require-Bundle: org.eclipse.sirius.diagram.ui; bundle-version="7.0.0"
+    -> Bundle-SymbolicName: org.eclipse.sirius.diagram.ui; bundle-version="7.1.0.202303020853"; singleton:="true"
+       org.eclipse.sirius.diagram.ui [1109]
+         Unresolved requirement: Require-Bundle: org.eclipse.gmf.runtime.diagram.ui.render; bundle-version="1.7.1"
+           -> Bundle-SymbolicName: org.eclipse.gmf.runtime.diagram.ui.render; bundle-version="1.7.2.202208271122"; singleton:="true"
+              org.eclipse.gmf.runtime.diagram.ui.render [547]
+                Unresolved requirement: Require-Bundle: org.eclipse.gmf.runtime.diagram.ui.printing.render; bundle-version="[1.2.0,2.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.gmf.runtime.diagram.ui.printing.render; bundle-version="1.8.0.202208271122"
+                     org.eclipse.gmf.runtime.diagram.ui.printing.render [543]
+                       Unresolved requirement: Require-Bundle: org.eclipse.gmf.runtime.draw2d.ui.render.awt; bundle-version="[1.2.0,2.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.gmf.runtime.draw2d.ui.render.awt; bundle-version="1.10.0.202208271122"; singleton:="true"
+                            org.eclipse.gmf.runtime.draw2d.ui.render.awt [552]
+                              No resolution report for the bundle.                Unresolved requirement: Require-Bundle: org.eclipse.gmf.runtime.draw2d.ui.render.awt; bundle-version="[1.2.0,2.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.gmf.runtime.draw2d.ui.render.awt; bundle-version="1.10.0.202208271122"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.gmf.runtime.draw2d.ui.render.awt; bundle-version="1.10.0"
+           -> Bundle-SymbolicName: org.eclipse.gmf.runtime.draw2d.ui.render.awt; bundle-version="1.10.0.202208271122"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.gmf.runtime.diagram.ui.printing.render; bundle-version="1.8.0"
+           -> Bundle-SymbolicName: org.eclipse.gmf.runtime.diagram.ui.printing.render; bundle-version="1.8.0.202208271122"
+  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.eclipse.gmf.runtime.draw2d.ui.render.awt [osgi.identity; type="osgi.bundle"; version:Version="1.10.0.202208271122"; osgi.identity="org.eclipse.gmf.runtime.draw2d.ui.render.awt"; singleton:="true"] because it is exposed to package 'org.apache.batik.ext.awt.color' from resources org.apache.batik.awt.util [osgi.identity; type="osgi.bundle"; version:Version="1.14.0.v20210324-0332"; osgi.identity="org.apache.batik.awt.util"] and org.apache.batik.awt.util [osgi.identity; type="osgi.bundle"; version:Version="1.16.0.v20221027-0840"; osgi.identity="org.apache.batik.awt.util"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.gmf.runtime.draw2d.ui.render.awt [osgi.identity; type="osgi.bundle"; version:Version="1.10.0.202208271122"; osgi.identity="org.eclipse.gmf.runtime.draw2d.ui.render.awt"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.apache.batik.awt.util)(&(bundle-version>=1.14.0)(!(bundle-version>=1.15.0))))
+     |
+    provide: osgi.wiring.bundle: org.apache.batik.awt.util
+  org.apache.batik.awt.util [osgi.identity; type="osgi.bundle"; version:Version="1.14.0.v20210324-0332"; osgi.identity="org.apache.batik.awt.util"]
+
+Chain 2:
+  org.eclipse.gmf.runtime.draw2d.ui.render.awt [osgi.identity; type="osgi.bundle"; version:Version="1.10.0.202208271122"; osgi.identity="org.eclipse.gmf.runtime.draw2d.ui.render.awt"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.apache.batik.transcoder)(&(bundle-version>=1.14.0)(!(bundle-version>=1.15.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="1.14.0.v20210324-0332"; osgi.wiring.bundle="org.apache.batik.transcoder"
+  org.apache.batik.transcoder [osgi.identity; type="osgi.bundle"; version:Version="1.14.0.v20210324-0332"; osgi.identity="org.apache.batik.transcoder"]
+    import: (&(osgi.wiring.package=org.apache.batik.bridge)(&(version>=1.14.0)(!(version>=2.0.0))))
+     |
+    export: osgi.wiring.package=org.apache.batik.bridge; uses:=org.apache.batik.ext.awt.color
+  org.apache.batik.bridge [osgi.identity; type="osgi.bundle"; version:Version="1.16.0.v20221027-0840"; osgi.identity="org.apache.batik.bridge"]
+    import: (&(osgi.wiring.package=org.apache.batik.ext.awt.color)(&(version>=1.16.0)(!(version>=2.0.0))))
+     |
+    export: osgi.wiring.package: org.apache.batik.ext.awt.color
+  org.apache.batik.awt.util [osgi.identity; type="osgi.bundle"; version:Version="1.16.0.v20221027-0840"; osgi.identity="org.apache.batik.awt.util"]
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.gmf.examples.runtime.diagram.geoshapes 4 0 2023-06-05 12:23:14.541
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.gmf.examples.runtime.diagram.geoshapes [520]
+  Unresolved requirement: Require-Bundle: org.eclipse.gmf.runtime.diagram.ui.render; bundle-version="[1.2.0,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.gmf.runtime.diagram.ui.render; bundle-version="1.7.2.202208271122"; singleton:="true"
+       org.eclipse.gmf.runtime.diagram.ui.render [547]
+         Unresolved requirement: Require-Bundle: org.eclipse.gmf.runtime.diagram.ui.printing.render; bundle-version="[1.2.0,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.gmf.runtime.diagram.ui.printing.render; bundle-version="1.8.0.202208271122"
+              org.eclipse.gmf.runtime.diagram.ui.printing.render [543]
+                Unresolved requirement: Require-Bundle: org.eclipse.gmf.runtime.draw2d.ui.render.awt; bundle-version="[1.2.0,2.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.gmf.runtime.draw2d.ui.render.awt; bundle-version="1.10.0.202208271122"; singleton:="true"
+                     org.eclipse.gmf.runtime.draw2d.ui.render.awt [552]
+                       No resolution report for the bundle.         Unresolved requirement: Require-Bundle: org.eclipse.gmf.runtime.draw2d.ui.render.awt; bundle-version="[1.2.0,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.gmf.runtime.draw2d.ui.render.awt; bundle-version="1.10.0.202208271122"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.gmf.runtime.diagram.ui.printing.render; bundle-version="[1.2.0,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.gmf.runtime.diagram.ui.printing.render; bundle-version="1.8.0.202208271122"
+  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.eclipse.gmf.runtime.draw2d.ui.render.awt [osgi.identity; type="osgi.bundle"; version:Version="1.10.0.202208271122"; osgi.identity="org.eclipse.gmf.runtime.draw2d.ui.render.awt"; singleton:="true"] because it is exposed to package 'org.apache.batik.ext.awt.color' from resources org.apache.batik.awt.util [osgi.identity; type="osgi.bundle"; version:Version="1.14.0.v20210324-0332"; osgi.identity="org.apache.batik.awt.util"] and org.apache.batik.awt.util [osgi.identity; type="osgi.bundle"; version:Version="1.16.0.v20221027-0840"; osgi.identity="org.apache.batik.awt.util"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.gmf.runtime.draw2d.ui.render.awt [osgi.identity; type="osgi.bundle"; version:Version="1.10.0.202208271122"; osgi.identity="org.eclipse.gmf.runtime.draw2d.ui.render.awt"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.apache.batik.awt.util)(&(bundle-version>=1.14.0)(!(bundle-version>=1.15.0))))
+     |
+    provide: osgi.wiring.bundle: org.apache.batik.awt.util
+  org.apache.batik.awt.util [osgi.identity; type="osgi.bundle"; version:Version="1.14.0.v20210324-0332"; osgi.identity="org.apache.batik.awt.util"]
+
+Chain 2:
+  org.eclipse.gmf.runtime.draw2d.ui.render.awt [osgi.identity; type="osgi.bundle"; version:Version="1.10.0.202208271122"; osgi.identity="org.eclipse.gmf.runtime.draw2d.ui.render.awt"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.apache.batik.transcoder)(&(bundle-version>=1.14.0)(!(bundle-version>=1.15.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="1.14.0.v20210324-0332"; osgi.wiring.bundle="org.apache.batik.transcoder"
+  org.apache.batik.transcoder [osgi.identity; type="osgi.bundle"; version:Version="1.14.0.v20210324-0332"; osgi.identity="org.apache.batik.transcoder"]
+    import: (&(osgi.wiring.package=org.apache.batik.bridge)(&(version>=1.14.0)(!(version>=2.0.0))))
+     |
+    export: osgi.wiring.package=org.apache.batik.bridge; uses:=org.apache.batik.ext.awt.color
+  org.apache.batik.bridge [osgi.identity; type="osgi.bundle"; version:Version="1.16.0.v20221027-0840"; osgi.identity="org.apache.batik.bridge"]
+    import: (&(osgi.wiring.package=org.apache.batik.ext.awt.color)(&(version>=1.16.0)(!(version>=2.0.0))))
+     |
+    export: osgi.wiring.package: org.apache.batik.ext.awt.color
+  org.apache.batik.awt.util [osgi.identity; type="osgi.bundle"; version:Version="1.16.0.v20221027-0840"; osgi.identity="org.apache.batik.awt.util"]
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.gmf.examples.runtime.diagram.logic 4 0 2023-06-05 12:23:14.566
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.gmf.examples.runtime.diagram.logic [521]
+  Unresolved requirement: Require-Bundle: org.eclipse.gmf.runtime.diagram.ui.render; bundle-version="[1.2.0,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.gmf.runtime.diagram.ui.render; bundle-version="1.7.2.202208271122"; singleton:="true"
+       org.eclipse.gmf.runtime.diagram.ui.render [547]
+         Unresolved requirement: Require-Bundle: org.eclipse.gmf.runtime.diagram.ui.printing.render; bundle-version="[1.2.0,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.gmf.runtime.diagram.ui.printing.render; bundle-version="1.8.0.202208271122"
+              org.eclipse.gmf.runtime.diagram.ui.printing.render [543]
+                Unresolved requirement: Require-Bundle: org.eclipse.gmf.runtime.draw2d.ui.render.awt; bundle-version="[1.2.0,2.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.gmf.runtime.draw2d.ui.render.awt; bundle-version="1.10.0.202208271122"; singleton:="true"
+                     org.eclipse.gmf.runtime.draw2d.ui.render.awt [552]
+                       No resolution report for the bundle.         Unresolved requirement: Require-Bundle: org.eclipse.gmf.runtime.draw2d.ui.render.awt; bundle-version="[1.2.0,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.gmf.runtime.draw2d.ui.render.awt; bundle-version="1.10.0.202208271122"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.gmf.runtime.diagram.ui.printing.render; bundle-version="[1.2.0,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.gmf.runtime.diagram.ui.printing.render; bundle-version="1.8.0.202208271122"
+  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.eclipse.gmf.runtime.draw2d.ui.render.awt [osgi.identity; type="osgi.bundle"; version:Version="1.10.0.202208271122"; osgi.identity="org.eclipse.gmf.runtime.draw2d.ui.render.awt"; singleton:="true"] because it is exposed to package 'org.apache.batik.ext.awt.color' from resources org.apache.batik.awt.util [osgi.identity; type="osgi.bundle"; version:Version="1.14.0.v20210324-0332"; osgi.identity="org.apache.batik.awt.util"] and org.apache.batik.awt.util [osgi.identity; type="osgi.bundle"; version:Version="1.16.0.v20221027-0840"; osgi.identity="org.apache.batik.awt.util"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.gmf.runtime.draw2d.ui.render.awt [osgi.identity; type="osgi.bundle"; version:Version="1.10.0.202208271122"; osgi.identity="org.eclipse.gmf.runtime.draw2d.ui.render.awt"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.apache.batik.awt.util)(&(bundle-version>=1.14.0)(!(bundle-version>=1.15.0))))
+     |
+    provide: osgi.wiring.bundle: org.apache.batik.awt.util
+  org.apache.batik.awt.util [osgi.identity; type="osgi.bundle"; version:Version="1.14.0.v20210324-0332"; osgi.identity="org.apache.batik.awt.util"]
+
+Chain 2:
+  org.eclipse.gmf.runtime.draw2d.ui.render.awt [osgi.identity; type="osgi.bundle"; version:Version="1.10.0.202208271122"; osgi.identity="org.eclipse.gmf.runtime.draw2d.ui.render.awt"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.apache.batik.transcoder)(&(bundle-version>=1.14.0)(!(bundle-version>=1.15.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="1.14.0.v20210324-0332"; osgi.wiring.bundle="org.apache.batik.transcoder"
+  org.apache.batik.transcoder [osgi.identity; type="osgi.bundle"; version:Version="1.14.0.v20210324-0332"; osgi.identity="org.apache.batik.transcoder"]
+    import: (&(osgi.wiring.package=org.apache.batik.bridge)(&(version>=1.14.0)(!(version>=2.0.0))))
+     |
+    export: osgi.wiring.package=org.apache.batik.bridge; uses:=org.apache.batik.ext.awt.color
+  org.apache.batik.bridge [osgi.identity; type="osgi.bundle"; version:Version="1.16.0.v20221027-0840"; osgi.identity="org.apache.batik.bridge"]
+    import: (&(osgi.wiring.package=org.apache.batik.ext.awt.color)(&(version>=1.16.0)(!(version>=2.0.0))))
+     |
+    export: osgi.wiring.package: org.apache.batik.ext.awt.color
+  org.apache.batik.awt.util [osgi.identity; type="osgi.bundle"; version:Version="1.16.0.v20221027-0840"; osgi.identity="org.apache.batik.awt.util"]
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.gmf.runtime.diagram.ui.printing.render 4 0 2023-06-05 12:23:14.585
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.gmf.runtime.diagram.ui.printing.render [543]
+  Unresolved requirement: Require-Bundle: org.eclipse.gmf.runtime.draw2d.ui.render.awt; bundle-version="[1.2.0,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.gmf.runtime.draw2d.ui.render.awt; bundle-version="1.10.0.202208271122"; singleton:="true"
+       org.eclipse.gmf.runtime.draw2d.ui.render.awt [552]
+         No resolution report for the bundle.  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.eclipse.gmf.runtime.draw2d.ui.render.awt [osgi.identity; type="osgi.bundle"; version:Version="1.10.0.202208271122"; osgi.identity="org.eclipse.gmf.runtime.draw2d.ui.render.awt"; singleton:="true"] because it is exposed to package 'org.apache.batik.ext.awt.color' from resources org.apache.batik.awt.util [osgi.identity; type="osgi.bundle"; version:Version="1.14.0.v20210324-0332"; osgi.identity="org.apache.batik.awt.util"] and org.apache.batik.awt.util [osgi.identity; type="osgi.bundle"; version:Version="1.16.0.v20221027-0840"; osgi.identity="org.apache.batik.awt.util"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.gmf.runtime.draw2d.ui.render.awt [osgi.identity; type="osgi.bundle"; version:Version="1.10.0.202208271122"; osgi.identity="org.eclipse.gmf.runtime.draw2d.ui.render.awt"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.apache.batik.awt.util)(&(bundle-version>=1.14.0)(!(bundle-version>=1.15.0))))
+     |
+    provide: osgi.wiring.bundle: org.apache.batik.awt.util
+  org.apache.batik.awt.util [osgi.identity; type="osgi.bundle"; version:Version="1.14.0.v20210324-0332"; osgi.identity="org.apache.batik.awt.util"]
+
+Chain 2:
+  org.eclipse.gmf.runtime.draw2d.ui.render.awt [osgi.identity; type="osgi.bundle"; version:Version="1.10.0.202208271122"; osgi.identity="org.eclipse.gmf.runtime.draw2d.ui.render.awt"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.apache.batik.transcoder)(&(bundle-version>=1.14.0)(!(bundle-version>=1.15.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="1.14.0.v20210324-0332"; osgi.wiring.bundle="org.apache.batik.transcoder"
+  org.apache.batik.transcoder [osgi.identity; type="osgi.bundle"; version:Version="1.14.0.v20210324-0332"; osgi.identity="org.apache.batik.transcoder"]
+    import: (&(osgi.wiring.package=org.apache.batik.bridge)(&(version>=1.14.0)(!(version>=2.0.0))))
+     |
+    export: osgi.wiring.package=org.apache.batik.bridge; uses:=org.apache.batik.ext.awt.color
+  org.apache.batik.bridge [osgi.identity; type="osgi.bundle"; version:Version="1.16.0.v20221027-0840"; osgi.identity="org.apache.batik.bridge"]
+    import: (&(osgi.wiring.package=org.apache.batik.ext.awt.color)(&(version>=1.16.0)(!(version>=2.0.0))))
+     |
+    export: osgi.wiring.package: org.apache.batik.ext.awt.color
+  org.apache.batik.awt.util [osgi.identity; type="osgi.bundle"; version:Version="1.16.0.v20221027-0840"; osgi.identity="org.apache.batik.awt.util"]
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.gmf.runtime.diagram.ui.render 4 0 2023-06-05 12:23:14.603
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.gmf.runtime.diagram.ui.render [547]
+  Unresolved requirement: Require-Bundle: org.eclipse.gmf.runtime.diagram.ui.printing.render; bundle-version="[1.2.0,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.gmf.runtime.diagram.ui.printing.render; bundle-version="1.8.0.202208271122"
+       org.eclipse.gmf.runtime.diagram.ui.printing.render [543]
+         Unresolved requirement: Require-Bundle: org.eclipse.gmf.runtime.draw2d.ui.render.awt; bundle-version="[1.2.0,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.gmf.runtime.draw2d.ui.render.awt; bundle-version="1.10.0.202208271122"; singleton:="true"
+              org.eclipse.gmf.runtime.draw2d.ui.render.awt [552]
+                No resolution report for the bundle.  Unresolved requirement: Require-Bundle: org.eclipse.gmf.runtime.draw2d.ui.render.awt; bundle-version="[1.2.0,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.gmf.runtime.draw2d.ui.render.awt; bundle-version="1.10.0.202208271122"; singleton:="true"
+  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.eclipse.gmf.runtime.draw2d.ui.render.awt [osgi.identity; type="osgi.bundle"; version:Version="1.10.0.202208271122"; osgi.identity="org.eclipse.gmf.runtime.draw2d.ui.render.awt"; singleton:="true"] because it is exposed to package 'org.apache.batik.ext.awt.color' from resources org.apache.batik.awt.util [osgi.identity; type="osgi.bundle"; version:Version="1.14.0.v20210324-0332"; osgi.identity="org.apache.batik.awt.util"] and org.apache.batik.awt.util [osgi.identity; type="osgi.bundle"; version:Version="1.16.0.v20221027-0840"; osgi.identity="org.apache.batik.awt.util"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.gmf.runtime.draw2d.ui.render.awt [osgi.identity; type="osgi.bundle"; version:Version="1.10.0.202208271122"; osgi.identity="org.eclipse.gmf.runtime.draw2d.ui.render.awt"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.apache.batik.awt.util)(&(bundle-version>=1.14.0)(!(bundle-version>=1.15.0))))
+     |
+    provide: osgi.wiring.bundle: org.apache.batik.awt.util
+  org.apache.batik.awt.util [osgi.identity; type="osgi.bundle"; version:Version="1.14.0.v20210324-0332"; osgi.identity="org.apache.batik.awt.util"]
+
+Chain 2:
+  org.eclipse.gmf.runtime.draw2d.ui.render.awt [osgi.identity; type="osgi.bundle"; version:Version="1.10.0.202208271122"; osgi.identity="org.eclipse.gmf.runtime.draw2d.ui.render.awt"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.apache.batik.transcoder)(&(bundle-version>=1.14.0)(!(bundle-version>=1.15.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="1.14.0.v20210324-0332"; osgi.wiring.bundle="org.apache.batik.transcoder"
+  org.apache.batik.transcoder [osgi.identity; type="osgi.bundle"; version:Version="1.14.0.v20210324-0332"; osgi.identity="org.apache.batik.transcoder"]
+    import: (&(osgi.wiring.package=org.apache.batik.bridge)(&(version>=1.14.0)(!(version>=2.0.0))))
+     |
+    export: osgi.wiring.package=org.apache.batik.bridge; uses:=org.apache.batik.ext.awt.color
+  org.apache.batik.bridge [osgi.identity; type="osgi.bundle"; version:Version="1.16.0.v20221027-0840"; osgi.identity="org.apache.batik.bridge"]
+    import: (&(osgi.wiring.package=org.apache.batik.ext.awt.color)(&(version>=1.16.0)(!(version>=2.0.0))))
+     |
+    export: osgi.wiring.package: org.apache.batik.ext.awt.color
+  org.apache.batik.awt.util [osgi.identity; type="osgi.bundle"; version:Version="1.16.0.v20221027-0840"; osgi.identity="org.apache.batik.awt.util"]
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.gmf.runtime.draw2d.ui.render.awt 4 0 2023-06-05 12:23:14.628
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.gmf.runtime.draw2d.ui.render.awt [552]
+  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.eclipse.gmf.runtime.draw2d.ui.render.awt [osgi.identity; type="osgi.bundle"; version:Version="1.10.0.202208271122"; osgi.identity="org.eclipse.gmf.runtime.draw2d.ui.render.awt"; singleton:="true"] because it is exposed to package 'org.apache.batik.ext.awt.color' from resources org.apache.batik.awt.util [osgi.identity; type="osgi.bundle"; version:Version="1.14.0.v20210324-0332"; osgi.identity="org.apache.batik.awt.util"] and org.apache.batik.awt.util [osgi.identity; type="osgi.bundle"; version:Version="1.16.0.v20221027-0840"; osgi.identity="org.apache.batik.awt.util"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.gmf.runtime.draw2d.ui.render.awt [osgi.identity; type="osgi.bundle"; version:Version="1.10.0.202208271122"; osgi.identity="org.eclipse.gmf.runtime.draw2d.ui.render.awt"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.apache.batik.awt.util)(&(bundle-version>=1.14.0)(!(bundle-version>=1.15.0))))
+     |
+    provide: osgi.wiring.bundle: org.apache.batik.awt.util
+  org.apache.batik.awt.util [osgi.identity; type="osgi.bundle"; version:Version="1.14.0.v20210324-0332"; osgi.identity="org.apache.batik.awt.util"]
+
+Chain 2:
+  org.eclipse.gmf.runtime.draw2d.ui.render.awt [osgi.identity; type="osgi.bundle"; version:Version="1.10.0.202208271122"; osgi.identity="org.eclipse.gmf.runtime.draw2d.ui.render.awt"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.apache.batik.transcoder)(&(bundle-version>=1.14.0)(!(bundle-version>=1.15.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="1.14.0.v20210324-0332"; osgi.wiring.bundle="org.apache.batik.transcoder"
+  org.apache.batik.transcoder [osgi.identity; type="osgi.bundle"; version:Version="1.14.0.v20210324-0332"; osgi.identity="org.apache.batik.transcoder"]
+    import: (&(osgi.wiring.package=org.apache.batik.bridge)(&(version>=1.14.0)(!(version>=2.0.0))))
+     |
+    export: osgi.wiring.package=org.apache.batik.bridge; uses:=org.apache.batik.ext.awt.color
+  org.apache.batik.bridge [osgi.identity; type="osgi.bundle"; version:Version="1.16.0.v20221027-0840"; osgi.identity="org.apache.batik.bridge"]
+    import: (&(osgi.wiring.package=org.apache.batik.ext.awt.color)(&(version>=1.16.0)(!(version>=2.0.0))))
+     |
+    export: osgi.wiring.package: org.apache.batik.ext.awt.color
+  org.apache.batik.awt.util [osgi.identity; type="osgi.bundle"; version:Version="1.16.0.v20221027-0840"; osgi.identity="org.apache.batik.awt.util"]
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.sirius.diagram.elk 4 0 2023-06-05 12:23:14.696
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.sirius.diagram.elk [1102]
+  Unresolved requirement: Require-Bundle: org.eclipse.sirius.diagram.ui; bundle-version="6.0.0"
+    -> Bundle-SymbolicName: org.eclipse.sirius.diagram.ui; bundle-version="7.1.0.202303020853"; singleton:="true"
+       org.eclipse.sirius.diagram.ui [1109]
+         Unresolved requirement: Require-Bundle: org.eclipse.gmf.runtime.diagram.ui.render; bundle-version="1.7.1"
+           -> Bundle-SymbolicName: org.eclipse.gmf.runtime.diagram.ui.render; bundle-version="1.7.2.202208271122"; singleton:="true"
+              org.eclipse.gmf.runtime.diagram.ui.render [547]
+                Unresolved requirement: Require-Bundle: org.eclipse.gmf.runtime.diagram.ui.printing.render; bundle-version="[1.2.0,2.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.gmf.runtime.diagram.ui.printing.render; bundle-version="1.8.0.202208271122"
+                     org.eclipse.gmf.runtime.diagram.ui.printing.render [543]
+                       Unresolved requirement: Require-Bundle: org.eclipse.gmf.runtime.draw2d.ui.render.awt; bundle-version="[1.2.0,2.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.gmf.runtime.draw2d.ui.render.awt; bundle-version="1.10.0.202208271122"; singleton:="true"
+                            org.eclipse.gmf.runtime.draw2d.ui.render.awt [552]
+                              No resolution report for the bundle.                Unresolved requirement: Require-Bundle: org.eclipse.gmf.runtime.draw2d.ui.render.awt; bundle-version="[1.2.0,2.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.gmf.runtime.draw2d.ui.render.awt; bundle-version="1.10.0.202208271122"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.gmf.runtime.draw2d.ui.render.awt; bundle-version="1.10.0"
+           -> Bundle-SymbolicName: org.eclipse.gmf.runtime.draw2d.ui.render.awt; bundle-version="1.10.0.202208271122"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.gmf.runtime.diagram.ui.printing.render; bundle-version="1.8.0"
+           -> Bundle-SymbolicName: org.eclipse.gmf.runtime.diagram.ui.printing.render; bundle-version="1.8.0.202208271122"
+  Unresolved requirement: Require-Bundle: org.eclipse.gmf.runtime.diagram.ui.render; bundle-version="1.7.1"
+    -> Bundle-SymbolicName: org.eclipse.gmf.runtime.diagram.ui.render; bundle-version="1.7.2.202208271122"; singleton:="true"
+  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.eclipse.gmf.runtime.draw2d.ui.render.awt [osgi.identity; type="osgi.bundle"; version:Version="1.10.0.202208271122"; osgi.identity="org.eclipse.gmf.runtime.draw2d.ui.render.awt"; singleton:="true"] because it is exposed to package 'org.apache.batik.ext.awt.color' from resources org.apache.batik.awt.util [osgi.identity; type="osgi.bundle"; version:Version="1.14.0.v20210324-0332"; osgi.identity="org.apache.batik.awt.util"] and org.apache.batik.awt.util [osgi.identity; type="osgi.bundle"; version:Version="1.16.0.v20221027-0840"; osgi.identity="org.apache.batik.awt.util"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.gmf.runtime.draw2d.ui.render.awt [osgi.identity; type="osgi.bundle"; version:Version="1.10.0.202208271122"; osgi.identity="org.eclipse.gmf.runtime.draw2d.ui.render.awt"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.apache.batik.awt.util)(&(bundle-version>=1.14.0)(!(bundle-version>=1.15.0))))
+     |
+    provide: osgi.wiring.bundle: org.apache.batik.awt.util
+  org.apache.batik.awt.util [osgi.identity; type="osgi.bundle"; version:Version="1.14.0.v20210324-0332"; osgi.identity="org.apache.batik.awt.util"]
+
+Chain 2:
+  org.eclipse.gmf.runtime.draw2d.ui.render.awt [osgi.identity; type="osgi.bundle"; version:Version="1.10.0.202208271122"; osgi.identity="org.eclipse.gmf.runtime.draw2d.ui.render.awt"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.apache.batik.transcoder)(&(bundle-version>=1.14.0)(!(bundle-version>=1.15.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="1.14.0.v20210324-0332"; osgi.wiring.bundle="org.apache.batik.transcoder"
+  org.apache.batik.transcoder [osgi.identity; type="osgi.bundle"; version:Version="1.14.0.v20210324-0332"; osgi.identity="org.apache.batik.transcoder"]
+    import: (&(osgi.wiring.package=org.apache.batik.bridge)(&(version>=1.14.0)(!(version>=2.0.0))))
+     |
+    export: osgi.wiring.package=org.apache.batik.bridge; uses:=org.apache.batik.ext.awt.color
+  org.apache.batik.bridge [osgi.identity; type="osgi.bundle"; version:Version="1.16.0.v20221027-0840"; osgi.identity="org.apache.batik.bridge"]
+    import: (&(osgi.wiring.package=org.apache.batik.ext.awt.color)(&(version>=1.16.0)(!(version>=2.0.0))))
+     |
+    export: osgi.wiring.package: org.apache.batik.ext.awt.color
+  org.apache.batik.awt.util [osgi.identity; type="osgi.bundle"; version:Version="1.16.0.v20221027-0840"; osgi.identity="org.apache.batik.awt.util"]
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.sirius.diagram.sequence 4 0 2023-06-05 12:23:14.713
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.sirius.diagram.sequence [1105]
+  Unresolved requirement: Require-Bundle: org.eclipse.sirius.diagram.ui.ext; bundle-version="7.1.0"
+    -> Bundle-SymbolicName: org.eclipse.sirius.diagram.ui.ext; bundle-version="7.1.0.202303020853"; singleton:="true"
+       org.eclipse.sirius.diagram.ui.ext [1110]
+         Unresolved requirement: Require-Bundle: org.eclipse.sirius.diagram.ui; bundle-version="7.1.0"
+           -> Bundle-SymbolicName: org.eclipse.sirius.diagram.ui; bundle-version="7.1.0.202303020853"; singleton:="true"
+              org.eclipse.sirius.diagram.ui [1109]
+                Unresolved requirement: Require-Bundle: org.eclipse.gmf.runtime.diagram.ui.render; bundle-version="1.7.1"
+                  -> Bundle-SymbolicName: org.eclipse.gmf.runtime.diagram.ui.render; bundle-version="1.7.2.202208271122"; singleton:="true"
+                     org.eclipse.gmf.runtime.diagram.ui.render [547]
+                       Unresolved requirement: Require-Bundle: org.eclipse.gmf.runtime.diagram.ui.printing.render; bundle-version="[1.2.0,2.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.gmf.runtime.diagram.ui.printing.render; bundle-version="1.8.0.202208271122"
+                            org.eclipse.gmf.runtime.diagram.ui.printing.render [543]
+                              Unresolved requirement: Require-Bundle: org.eclipse.gmf.runtime.draw2d.ui.render.awt; bundle-version="[1.2.0,2.0.0)"
+                                -> Bundle-SymbolicName: org.eclipse.gmf.runtime.draw2d.ui.render.awt; bundle-version="1.10.0.202208271122"; singleton:="true"
+                                   org.eclipse.gmf.runtime.draw2d.ui.render.awt [552]
+                                     No resolution report for the bundle.                       Unresolved requirement: Require-Bundle: org.eclipse.gmf.runtime.draw2d.ui.render.awt; bundle-version="[1.2.0,2.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.gmf.runtime.draw2d.ui.render.awt; bundle-version="1.10.0.202208271122"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.gmf.runtime.draw2d.ui.render.awt; bundle-version="1.10.0"
+                  -> Bundle-SymbolicName: org.eclipse.gmf.runtime.draw2d.ui.render.awt; bundle-version="1.10.0.202208271122"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.gmf.runtime.diagram.ui.printing.render; bundle-version="1.8.0"
+                  -> Bundle-SymbolicName: org.eclipse.gmf.runtime.diagram.ui.printing.render; bundle-version="1.8.0.202208271122"
+  Unresolved requirement: Require-Bundle: org.eclipse.sirius.diagram.ui; bundle-version="7.1.0"
+    -> Bundle-SymbolicName: org.eclipse.sirius.diagram.ui; bundle-version="7.1.0.202303020853"; singleton:="true"
+  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.eclipse.gmf.runtime.draw2d.ui.render.awt [osgi.identity; type="osgi.bundle"; version:Version="1.10.0.202208271122"; osgi.identity="org.eclipse.gmf.runtime.draw2d.ui.render.awt"; singleton:="true"] because it is exposed to package 'org.apache.batik.ext.awt.color' from resources org.apache.batik.awt.util [osgi.identity; type="osgi.bundle"; version:Version="1.14.0.v20210324-0332"; osgi.identity="org.apache.batik.awt.util"] and org.apache.batik.awt.util [osgi.identity; type="osgi.bundle"; version:Version="1.16.0.v20221027-0840"; osgi.identity="org.apache.batik.awt.util"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.gmf.runtime.draw2d.ui.render.awt [osgi.identity; type="osgi.bundle"; version:Version="1.10.0.202208271122"; osgi.identity="org.eclipse.gmf.runtime.draw2d.ui.render.awt"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.apache.batik.awt.util)(&(bundle-version>=1.14.0)(!(bundle-version>=1.15.0))))
+     |
+    provide: osgi.wiring.bundle: org.apache.batik.awt.util
+  org.apache.batik.awt.util [osgi.identity; type="osgi.bundle"; version:Version="1.14.0.v20210324-0332"; osgi.identity="org.apache.batik.awt.util"]
+
+Chain 2:
+  org.eclipse.gmf.runtime.draw2d.ui.render.awt [osgi.identity; type="osgi.bundle"; version:Version="1.10.0.202208271122"; osgi.identity="org.eclipse.gmf.runtime.draw2d.ui.render.awt"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.apache.batik.transcoder)(&(bundle-version>=1.14.0)(!(bundle-version>=1.15.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="1.14.0.v20210324-0332"; osgi.wiring.bundle="org.apache.batik.transcoder"
+  org.apache.batik.transcoder [osgi.identity; type="osgi.bundle"; version:Version="1.14.0.v20210324-0332"; osgi.identity="org.apache.batik.transcoder"]
+    import: (&(osgi.wiring.package=org.apache.batik.bridge)(&(version>=1.14.0)(!(version>=2.0.0))))
+     |
+    export: osgi.wiring.package=org.apache.batik.bridge; uses:=org.apache.batik.ext.awt.color
+  org.apache.batik.bridge [osgi.identity; type="osgi.bundle"; version:Version="1.16.0.v20221027-0840"; osgi.identity="org.apache.batik.bridge"]
+    import: (&(osgi.wiring.package=org.apache.batik.ext.awt.color)(&(version>=1.16.0)(!(version>=2.0.0))))
+     |
+    export: osgi.wiring.package: org.apache.batik.ext.awt.color
+  org.apache.batik.awt.util [osgi.identity; type="osgi.bundle"; version:Version="1.16.0.v20221027-0840"; osgi.identity="org.apache.batik.awt.util"]
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.sirius.diagram.sequence.edit 4 0 2023-06-05 12:23:14.731
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.sirius.diagram.sequence.edit [1106]
+  Unresolved requirement: Require-Bundle: org.eclipse.sirius.diagram.ui; bundle-version="7.1.0"; visibility:="reexport"
+    -> Bundle-SymbolicName: org.eclipse.sirius.diagram.ui; bundle-version="7.1.0.202303020853"; singleton:="true"
+       org.eclipse.sirius.diagram.ui [1109]
+         Unresolved requirement: Require-Bundle: org.eclipse.gmf.runtime.diagram.ui.render; bundle-version="1.7.1"
+           -> Bundle-SymbolicName: org.eclipse.gmf.runtime.diagram.ui.render; bundle-version="1.7.2.202208271122"; singleton:="true"
+              org.eclipse.gmf.runtime.diagram.ui.render [547]
+                Unresolved requirement: Require-Bundle: org.eclipse.gmf.runtime.diagram.ui.printing.render; bundle-version="[1.2.0,2.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.gmf.runtime.diagram.ui.printing.render; bundle-version="1.8.0.202208271122"
+                     org.eclipse.gmf.runtime.diagram.ui.printing.render [543]
+                       Unresolved requirement: Require-Bundle: org.eclipse.gmf.runtime.draw2d.ui.render.awt; bundle-version="[1.2.0,2.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.gmf.runtime.draw2d.ui.render.awt; bundle-version="1.10.0.202208271122"; singleton:="true"
+                            org.eclipse.gmf.runtime.draw2d.ui.render.awt [552]
+                              No resolution report for the bundle.                Unresolved requirement: Require-Bundle: org.eclipse.gmf.runtime.draw2d.ui.render.awt; bundle-version="[1.2.0,2.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.gmf.runtime.draw2d.ui.render.awt; bundle-version="1.10.0.202208271122"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.gmf.runtime.draw2d.ui.render.awt; bundle-version="1.10.0"
+           -> Bundle-SymbolicName: org.eclipse.gmf.runtime.draw2d.ui.render.awt; bundle-version="1.10.0.202208271122"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.gmf.runtime.diagram.ui.printing.render; bundle-version="1.8.0"
+           -> Bundle-SymbolicName: org.eclipse.gmf.runtime.diagram.ui.printing.render; bundle-version="1.8.0.202208271122"
+  Unresolved requirement: Require-Bundle: org.eclipse.sirius.diagram.sequence; bundle-version="7.1.0"; visibility:="reexport"
+    -> Bundle-SymbolicName: org.eclipse.sirius.diagram.sequence; bundle-version="7.1.0.202303020853"; singleton:="true"
+       org.eclipse.sirius.diagram.sequence [1105]
+         Unresolved requirement: Require-Bundle: org.eclipse.sirius.diagram.ui.ext; bundle-version="7.1.0"
+           -> Bundle-SymbolicName: org.eclipse.sirius.diagram.ui.ext; bundle-version="7.1.0.202303020853"; singleton:="true"
+              org.eclipse.sirius.diagram.ui.ext [1110]
+                Unresolved requirement: Require-Bundle: org.eclipse.sirius.diagram.ui; bundle-version="7.1.0"
+                  -> Bundle-SymbolicName: org.eclipse.sirius.diagram.ui; bundle-version="7.1.0.202303020853"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.sirius.diagram.ui; bundle-version="7.1.0"
+           -> Bundle-SymbolicName: org.eclipse.sirius.diagram.ui; bundle-version="7.1.0.202303020853"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.sirius.diagram.ui.ext; bundle-version="7.1.0"; visibility:="reexport"
+    -> Bundle-SymbolicName: org.eclipse.sirius.diagram.ui.ext; bundle-version="7.1.0.202303020853"; singleton:="true"
+  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.eclipse.gmf.runtime.draw2d.ui.render.awt [osgi.identity; type="osgi.bundle"; version:Version="1.10.0.202208271122"; osgi.identity="org.eclipse.gmf.runtime.draw2d.ui.render.awt"; singleton:="true"] because it is exposed to package 'org.apache.batik.ext.awt.color' from resources org.apache.batik.awt.util [osgi.identity; type="osgi.bundle"; version:Version="1.14.0.v20210324-0332"; osgi.identity="org.apache.batik.awt.util"] and org.apache.batik.awt.util [osgi.identity; type="osgi.bundle"; version:Version="1.16.0.v20221027-0840"; osgi.identity="org.apache.batik.awt.util"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.gmf.runtime.draw2d.ui.render.awt [osgi.identity; type="osgi.bundle"; version:Version="1.10.0.202208271122"; osgi.identity="org.eclipse.gmf.runtime.draw2d.ui.render.awt"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.apache.batik.awt.util)(&(bundle-version>=1.14.0)(!(bundle-version>=1.15.0))))
+     |
+    provide: osgi.wiring.bundle: org.apache.batik.awt.util
+  org.apache.batik.awt.util [osgi.identity; type="osgi.bundle"; version:Version="1.14.0.v20210324-0332"; osgi.identity="org.apache.batik.awt.util"]
+
+Chain 2:
+  org.eclipse.gmf.runtime.draw2d.ui.render.awt [osgi.identity; type="osgi.bundle"; version:Version="1.10.0.202208271122"; osgi.identity="org.eclipse.gmf.runtime.draw2d.ui.render.awt"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.apache.batik.transcoder)(&(bundle-version>=1.14.0)(!(bundle-version>=1.15.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="1.14.0.v20210324-0332"; osgi.wiring.bundle="org.apache.batik.transcoder"
+  org.apache.batik.transcoder [osgi.identity; type="osgi.bundle"; version:Version="1.14.0.v20210324-0332"; osgi.identity="org.apache.batik.transcoder"]
+    import: (&(osgi.wiring.package=org.apache.batik.bridge)(&(version>=1.14.0)(!(version>=2.0.0))))
+     |
+    export: osgi.wiring.package=org.apache.batik.bridge; uses:=org.apache.batik.ext.awt.color
+  org.apache.batik.bridge [osgi.identity; type="osgi.bundle"; version:Version="1.16.0.v20221027-0840"; osgi.identity="org.apache.batik.bridge"]
+    import: (&(osgi.wiring.package=org.apache.batik.ext.awt.color)(&(version>=1.16.0)(!(version>=2.0.0))))
+     |
+    export: osgi.wiring.package: org.apache.batik.ext.awt.color
+  org.apache.batik.awt.util [osgi.identity; type="osgi.bundle"; version:Version="1.16.0.v20221027-0840"; osgi.identity="org.apache.batik.awt.util"]
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.sirius.diagram.sequence.ui 4 0 2023-06-05 12:23:14.750
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.sirius.diagram.sequence.ui [1108]
+  Unresolved requirement: Require-Bundle: org.eclipse.sirius.diagram.ui; bundle-version="7.1.0"
+    -> Bundle-SymbolicName: org.eclipse.sirius.diagram.ui; bundle-version="7.1.0.202303020853"; singleton:="true"
+       org.eclipse.sirius.diagram.ui [1109]
+         Unresolved requirement: Require-Bundle: org.eclipse.gmf.runtime.diagram.ui.render; bundle-version="1.7.1"
+           -> Bundle-SymbolicName: org.eclipse.gmf.runtime.diagram.ui.render; bundle-version="1.7.2.202208271122"; singleton:="true"
+              org.eclipse.gmf.runtime.diagram.ui.render [547]
+                Unresolved requirement: Require-Bundle: org.eclipse.gmf.runtime.diagram.ui.printing.render; bundle-version="[1.2.0,2.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.gmf.runtime.diagram.ui.printing.render; bundle-version="1.8.0.202208271122"
+                     org.eclipse.gmf.runtime.diagram.ui.printing.render [543]
+                       Unresolved requirement: Require-Bundle: org.eclipse.gmf.runtime.draw2d.ui.render.awt; bundle-version="[1.2.0,2.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.gmf.runtime.draw2d.ui.render.awt; bundle-version="1.10.0.202208271122"; singleton:="true"
+                            org.eclipse.gmf.runtime.draw2d.ui.render.awt [552]
+                              No resolution report for the bundle.                Unresolved requirement: Require-Bundle: org.eclipse.gmf.runtime.draw2d.ui.render.awt; bundle-version="[1.2.0,2.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.gmf.runtime.draw2d.ui.render.awt; bundle-version="1.10.0.202208271122"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.gmf.runtime.draw2d.ui.render.awt; bundle-version="1.10.0"
+           -> Bundle-SymbolicName: org.eclipse.gmf.runtime.draw2d.ui.render.awt; bundle-version="1.10.0.202208271122"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.gmf.runtime.diagram.ui.printing.render; bundle-version="1.8.0"
+           -> Bundle-SymbolicName: org.eclipse.gmf.runtime.diagram.ui.printing.render; bundle-version="1.8.0.202208271122"
+  Unresolved requirement: Require-Bundle: org.eclipse.sirius.diagram.ui.ext; bundle-version="7.1.0"
+    -> Bundle-SymbolicName: org.eclipse.sirius.diagram.ui.ext; bundle-version="7.1.0.202303020853"; singleton:="true"
+       org.eclipse.sirius.diagram.ui.ext [1110]
+         Unresolved requirement: Require-Bundle: org.eclipse.sirius.diagram.ui; bundle-version="7.1.0"
+           -> Bundle-SymbolicName: org.eclipse.sirius.diagram.ui; bundle-version="7.1.0.202303020853"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.sirius.diagram.sequence.edit; bundle-version="7.1.0"
+    -> Bundle-SymbolicName: org.eclipse.sirius.diagram.sequence.edit; bundle-version="7.1.0.202303020853"; singleton:="true"
+       org.eclipse.sirius.diagram.sequence.edit [1106]
+         Unresolved requirement: Require-Bundle: org.eclipse.sirius.diagram.ui; bundle-version="7.1.0"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.sirius.diagram.ui; bundle-version="7.1.0.202303020853"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.sirius.diagram.sequence; bundle-version="7.1.0"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.sirius.diagram.sequence; bundle-version="7.1.0.202303020853"; singleton:="true"
+              org.eclipse.sirius.diagram.sequence [1105]
+                Unresolved requirement: Require-Bundle: org.eclipse.sirius.diagram.ui.ext; bundle-version="7.1.0"
+                  -> Bundle-SymbolicName: org.eclipse.sirius.diagram.ui.ext; bundle-version="7.1.0.202303020853"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.sirius.diagram.ui; bundle-version="7.1.0"
+                  -> Bundle-SymbolicName: org.eclipse.sirius.diagram.ui; bundle-version="7.1.0.202303020853"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.sirius.diagram.ui.ext; bundle-version="7.1.0"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.sirius.diagram.ui.ext; bundle-version="7.1.0.202303020853"; singleton:="true"
+  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.eclipse.gmf.runtime.draw2d.ui.render.awt [osgi.identity; type="osgi.bundle"; version:Version="1.10.0.202208271122"; osgi.identity="org.eclipse.gmf.runtime.draw2d.ui.render.awt"; singleton:="true"] because it is exposed to package 'org.apache.batik.ext.awt.color' from resources org.apache.batik.awt.util [osgi.identity; type="osgi.bundle"; version:Version="1.14.0.v20210324-0332"; osgi.identity="org.apache.batik.awt.util"] and org.apache.batik.awt.util [osgi.identity; type="osgi.bundle"; version:Version="1.16.0.v20221027-0840"; osgi.identity="org.apache.batik.awt.util"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.gmf.runtime.draw2d.ui.render.awt [osgi.identity; type="osgi.bundle"; version:Version="1.10.0.202208271122"; osgi.identity="org.eclipse.gmf.runtime.draw2d.ui.render.awt"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.apache.batik.awt.util)(&(bundle-version>=1.14.0)(!(bundle-version>=1.15.0))))
+     |
+    provide: osgi.wiring.bundle: org.apache.batik.awt.util
+  org.apache.batik.awt.util [osgi.identity; type="osgi.bundle"; version:Version="1.14.0.v20210324-0332"; osgi.identity="org.apache.batik.awt.util"]
+
+Chain 2:
+  org.eclipse.gmf.runtime.draw2d.ui.render.awt [osgi.identity; type="osgi.bundle"; version:Version="1.10.0.202208271122"; osgi.identity="org.eclipse.gmf.runtime.draw2d.ui.render.awt"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.apache.batik.transcoder)(&(bundle-version>=1.14.0)(!(bundle-version>=1.15.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="1.14.0.v20210324-0332"; osgi.wiring.bundle="org.apache.batik.transcoder"
+  org.apache.batik.transcoder [osgi.identity; type="osgi.bundle"; version:Version="1.14.0.v20210324-0332"; osgi.identity="org.apache.batik.transcoder"]
+    import: (&(osgi.wiring.package=org.apache.batik.bridge)(&(version>=1.14.0)(!(version>=2.0.0))))
+     |
+    export: osgi.wiring.package=org.apache.batik.bridge; uses:=org.apache.batik.ext.awt.color
+  org.apache.batik.bridge [osgi.identity; type="osgi.bundle"; version:Version="1.16.0.v20221027-0840"; osgi.identity="org.apache.batik.bridge"]
+    import: (&(osgi.wiring.package=org.apache.batik.ext.awt.color)(&(version>=1.16.0)(!(version>=2.0.0))))
+     |
+    export: osgi.wiring.package: org.apache.batik.ext.awt.color
+  org.apache.batik.awt.util [osgi.identity; type="osgi.bundle"; version:Version="1.16.0.v20221027-0840"; osgi.identity="org.apache.batik.awt.util"]
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.sirius.diagram.ui 4 0 2023-06-05 12:23:14.766
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.sirius.diagram.ui [1109]
+  Unresolved requirement: Require-Bundle: org.eclipse.gmf.runtime.diagram.ui.render; bundle-version="1.7.1"
+    -> Bundle-SymbolicName: org.eclipse.gmf.runtime.diagram.ui.render; bundle-version="1.7.2.202208271122"; singleton:="true"
+       org.eclipse.gmf.runtime.diagram.ui.render [547]
+         Unresolved requirement: Require-Bundle: org.eclipse.gmf.runtime.diagram.ui.printing.render; bundle-version="[1.2.0,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.gmf.runtime.diagram.ui.printing.render; bundle-version="1.8.0.202208271122"
+              org.eclipse.gmf.runtime.diagram.ui.printing.render [543]
+                Unresolved requirement: Require-Bundle: org.eclipse.gmf.runtime.draw2d.ui.render.awt; bundle-version="[1.2.0,2.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.gmf.runtime.draw2d.ui.render.awt; bundle-version="1.10.0.202208271122"; singleton:="true"
+                     org.eclipse.gmf.runtime.draw2d.ui.render.awt [552]
+                       No resolution report for the bundle.         Unresolved requirement: Require-Bundle: org.eclipse.gmf.runtime.draw2d.ui.render.awt; bundle-version="[1.2.0,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.gmf.runtime.draw2d.ui.render.awt; bundle-version="1.10.0.202208271122"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.gmf.runtime.draw2d.ui.render.awt; bundle-version="1.10.0"
+    -> Bundle-SymbolicName: org.eclipse.gmf.runtime.draw2d.ui.render.awt; bundle-version="1.10.0.202208271122"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.gmf.runtime.diagram.ui.printing.render; bundle-version="1.8.0"
+    -> Bundle-SymbolicName: org.eclipse.gmf.runtime.diagram.ui.printing.render; bundle-version="1.8.0.202208271122"
+  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.eclipse.gmf.runtime.draw2d.ui.render.awt [osgi.identity; type="osgi.bundle"; version:Version="1.10.0.202208271122"; osgi.identity="org.eclipse.gmf.runtime.draw2d.ui.render.awt"; singleton:="true"] because it is exposed to package 'org.apache.batik.ext.awt.color' from resources org.apache.batik.awt.util [osgi.identity; type="osgi.bundle"; version:Version="1.14.0.v20210324-0332"; osgi.identity="org.apache.batik.awt.util"] and org.apache.batik.awt.util [osgi.identity; type="osgi.bundle"; version:Version="1.16.0.v20221027-0840"; osgi.identity="org.apache.batik.awt.util"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.gmf.runtime.draw2d.ui.render.awt [osgi.identity; type="osgi.bundle"; version:Version="1.10.0.202208271122"; osgi.identity="org.eclipse.gmf.runtime.draw2d.ui.render.awt"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.apache.batik.awt.util)(&(bundle-version>=1.14.0)(!(bundle-version>=1.15.0))))
+     |
+    provide: osgi.wiring.bundle: org.apache.batik.awt.util
+  org.apache.batik.awt.util [osgi.identity; type="osgi.bundle"; version:Version="1.14.0.v20210324-0332"; osgi.identity="org.apache.batik.awt.util"]
+
+Chain 2:
+  org.eclipse.gmf.runtime.draw2d.ui.render.awt [osgi.identity; type="osgi.bundle"; version:Version="1.10.0.202208271122"; osgi.identity="org.eclipse.gmf.runtime.draw2d.ui.render.awt"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.apache.batik.transcoder)(&(bundle-version>=1.14.0)(!(bundle-version>=1.15.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="1.14.0.v20210324-0332"; osgi.wiring.bundle="org.apache.batik.transcoder"
+  org.apache.batik.transcoder [osgi.identity; type="osgi.bundle"; version:Version="1.14.0.v20210324-0332"; osgi.identity="org.apache.batik.transcoder"]
+    import: (&(osgi.wiring.package=org.apache.batik.bridge)(&(version>=1.14.0)(!(version>=2.0.0))))
+     |
+    export: osgi.wiring.package=org.apache.batik.bridge; uses:=org.apache.batik.ext.awt.color
+  org.apache.batik.bridge [osgi.identity; type="osgi.bundle"; version:Version="1.16.0.v20221027-0840"; osgi.identity="org.apache.batik.bridge"]
+    import: (&(osgi.wiring.package=org.apache.batik.ext.awt.color)(&(version>=1.16.0)(!(version>=2.0.0))))
+     |
+    export: osgi.wiring.package: org.apache.batik.ext.awt.color
+  org.apache.batik.awt.util [osgi.identity; type="osgi.bundle"; version:Version="1.16.0.v20221027-0840"; osgi.identity="org.apache.batik.awt.util"]
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.sirius.diagram.ui.ext 4 0 2023-06-05 12:23:14.790
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.sirius.diagram.ui.ext [1110]
+  Unresolved requirement: Require-Bundle: org.eclipse.sirius.diagram.ui; bundle-version="7.1.0"
+    -> Bundle-SymbolicName: org.eclipse.sirius.diagram.ui; bundle-version="7.1.0.202303020853"; singleton:="true"
+       org.eclipse.sirius.diagram.ui [1109]
+         Unresolved requirement: Require-Bundle: org.eclipse.gmf.runtime.diagram.ui.render; bundle-version="1.7.1"
+           -> Bundle-SymbolicName: org.eclipse.gmf.runtime.diagram.ui.render; bundle-version="1.7.2.202208271122"; singleton:="true"
+              org.eclipse.gmf.runtime.diagram.ui.render [547]
+                Unresolved requirement: Require-Bundle: org.eclipse.gmf.runtime.diagram.ui.printing.render; bundle-version="[1.2.0,2.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.gmf.runtime.diagram.ui.printing.render; bundle-version="1.8.0.202208271122"
+                     org.eclipse.gmf.runtime.diagram.ui.printing.render [543]
+                       Unresolved requirement: Require-Bundle: org.eclipse.gmf.runtime.draw2d.ui.render.awt; bundle-version="[1.2.0,2.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.gmf.runtime.draw2d.ui.render.awt; bundle-version="1.10.0.202208271122"; singleton:="true"
+                            org.eclipse.gmf.runtime.draw2d.ui.render.awt [552]
+                              No resolution report for the bundle.                Unresolved requirement: Require-Bundle: org.eclipse.gmf.runtime.draw2d.ui.render.awt; bundle-version="[1.2.0,2.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.gmf.runtime.draw2d.ui.render.awt; bundle-version="1.10.0.202208271122"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.gmf.runtime.draw2d.ui.render.awt; bundle-version="1.10.0"
+           -> Bundle-SymbolicName: org.eclipse.gmf.runtime.draw2d.ui.render.awt; bundle-version="1.10.0.202208271122"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.gmf.runtime.diagram.ui.printing.render; bundle-version="1.8.0"
+           -> Bundle-SymbolicName: org.eclipse.gmf.runtime.diagram.ui.printing.render; bundle-version="1.8.0.202208271122"
+  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.eclipse.gmf.runtime.draw2d.ui.render.awt [osgi.identity; type="osgi.bundle"; version:Version="1.10.0.202208271122"; osgi.identity="org.eclipse.gmf.runtime.draw2d.ui.render.awt"; singleton:="true"] because it is exposed to package 'org.apache.batik.ext.awt.color' from resources org.apache.batik.awt.util [osgi.identity; type="osgi.bundle"; version:Version="1.14.0.v20210324-0332"; osgi.identity="org.apache.batik.awt.util"] and org.apache.batik.awt.util [osgi.identity; type="osgi.bundle"; version:Version="1.16.0.v20221027-0840"; osgi.identity="org.apache.batik.awt.util"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.gmf.runtime.draw2d.ui.render.awt [osgi.identity; type="osgi.bundle"; version:Version="1.10.0.202208271122"; osgi.identity="org.eclipse.gmf.runtime.draw2d.ui.render.awt"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.apache.batik.awt.util)(&(bundle-version>=1.14.0)(!(bundle-version>=1.15.0))))
+     |
+    provide: osgi.wiring.bundle: org.apache.batik.awt.util
+  org.apache.batik.awt.util [osgi.identity; type="osgi.bundle"; version:Version="1.14.0.v20210324-0332"; osgi.identity="org.apache.batik.awt.util"]
+
+Chain 2:
+  org.eclipse.gmf.runtime.draw2d.ui.render.awt [osgi.identity; type="osgi.bundle"; version:Version="1.10.0.202208271122"; osgi.identity="org.eclipse.gmf.runtime.draw2d.ui.render.awt"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.apache.batik.transcoder)(&(bundle-version>=1.14.0)(!(bundle-version>=1.15.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="1.14.0.v20210324-0332"; osgi.wiring.bundle="org.apache.batik.transcoder"
+  org.apache.batik.transcoder [osgi.identity; type="osgi.bundle"; version:Version="1.14.0.v20210324-0332"; osgi.identity="org.apache.batik.transcoder"]
+    import: (&(osgi.wiring.package=org.apache.batik.bridge)(&(version>=1.14.0)(!(version>=2.0.0))))
+     |
+    export: osgi.wiring.package=org.apache.batik.bridge; uses:=org.apache.batik.ext.awt.color
+  org.apache.batik.bridge [osgi.identity; type="osgi.bundle"; version:Version="1.16.0.v20221027-0840"; osgi.identity="org.apache.batik.bridge"]
+    import: (&(osgi.wiring.package=org.apache.batik.ext.awt.color)(&(version>=1.16.0)(!(version>=2.0.0))))
+     |
+    export: osgi.wiring.package: org.apache.batik.ext.awt.color
+  org.apache.batik.awt.util [osgi.identity; type="osgi.bundle"; version:Version="1.16.0.v20221027-0840"; osgi.identity="org.apache.batik.awt.util"]
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.sirius.editor.diagram 4 0 2023-06-05 12:23:14.808
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.sirius.editor.diagram [1114]
+  Unresolved requirement: Require-Bundle: org.eclipse.sirius.diagram.ui; bundle-version="7.1.0"
+    -> Bundle-SymbolicName: org.eclipse.sirius.diagram.ui; bundle-version="7.1.0.202303020853"; singleton:="true"
+       org.eclipse.sirius.diagram.ui [1109]
+         Unresolved requirement: Require-Bundle: org.eclipse.gmf.runtime.diagram.ui.render; bundle-version="1.7.1"
+           -> Bundle-SymbolicName: org.eclipse.gmf.runtime.diagram.ui.render; bundle-version="1.7.2.202208271122"; singleton:="true"
+              org.eclipse.gmf.runtime.diagram.ui.render [547]
+                Unresolved requirement: Require-Bundle: org.eclipse.gmf.runtime.diagram.ui.printing.render; bundle-version="[1.2.0,2.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.gmf.runtime.diagram.ui.printing.render; bundle-version="1.8.0.202208271122"
+                     org.eclipse.gmf.runtime.diagram.ui.printing.render [543]
+                       Unresolved requirement: Require-Bundle: org.eclipse.gmf.runtime.draw2d.ui.render.awt; bundle-version="[1.2.0,2.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.gmf.runtime.draw2d.ui.render.awt; bundle-version="1.10.0.202208271122"; singleton:="true"
+                            org.eclipse.gmf.runtime.draw2d.ui.render.awt [552]
+                              No resolution report for the bundle.                Unresolved requirement: Require-Bundle: org.eclipse.gmf.runtime.draw2d.ui.render.awt; bundle-version="[1.2.0,2.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.gmf.runtime.draw2d.ui.render.awt; bundle-version="1.10.0.202208271122"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.gmf.runtime.draw2d.ui.render.awt; bundle-version="1.10.0"
+           -> Bundle-SymbolicName: org.eclipse.gmf.runtime.draw2d.ui.render.awt; bundle-version="1.10.0.202208271122"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.gmf.runtime.diagram.ui.printing.render; bundle-version="1.8.0"
+           -> Bundle-SymbolicName: org.eclipse.gmf.runtime.diagram.ui.printing.render; bundle-version="1.8.0.202208271122"
+  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.eclipse.gmf.runtime.draw2d.ui.render.awt [osgi.identity; type="osgi.bundle"; version:Version="1.10.0.202208271122"; osgi.identity="org.eclipse.gmf.runtime.draw2d.ui.render.awt"; singleton:="true"] because it is exposed to package 'org.apache.batik.ext.awt.color' from resources org.apache.batik.awt.util [osgi.identity; type="osgi.bundle"; version:Version="1.14.0.v20210324-0332"; osgi.identity="org.apache.batik.awt.util"] and org.apache.batik.awt.util [osgi.identity; type="osgi.bundle"; version:Version="1.16.0.v20221027-0840"; osgi.identity="org.apache.batik.awt.util"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.gmf.runtime.draw2d.ui.render.awt [osgi.identity; type="osgi.bundle"; version:Version="1.10.0.202208271122"; osgi.identity="org.eclipse.gmf.runtime.draw2d.ui.render.awt"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.apache.batik.awt.util)(&(bundle-version>=1.14.0)(!(bundle-version>=1.15.0))))
+     |
+    provide: osgi.wiring.bundle: org.apache.batik.awt.util
+  org.apache.batik.awt.util [osgi.identity; type="osgi.bundle"; version:Version="1.14.0.v20210324-0332"; osgi.identity="org.apache.batik.awt.util"]
+
+Chain 2:
+  org.eclipse.gmf.runtime.draw2d.ui.render.awt [osgi.identity; type="osgi.bundle"; version:Version="1.10.0.202208271122"; osgi.identity="org.eclipse.gmf.runtime.draw2d.ui.render.awt"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.apache.batik.transcoder)(&(bundle-version>=1.14.0)(!(bundle-version>=1.15.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="1.14.0.v20210324-0332"; osgi.wiring.bundle="org.apache.batik.transcoder"
+  org.apache.batik.transcoder [osgi.identity; type="osgi.bundle"; version:Version="1.14.0.v20210324-0332"; osgi.identity="org.apache.batik.transcoder"]
+    import: (&(osgi.wiring.package=org.apache.batik.bridge)(&(version>=1.14.0)(!(version>=2.0.0))))
+     |
+    export: osgi.wiring.package=org.apache.batik.bridge; uses:=org.apache.batik.ext.awt.color
+  org.apache.batik.bridge [osgi.identity; type="osgi.bundle"; version:Version="1.16.0.v20221027-0840"; osgi.identity="org.apache.batik.bridge"]
+    import: (&(osgi.wiring.package=org.apache.batik.ext.awt.color)(&(version>=1.16.0)(!(version>=2.0.0))))
+     |
+    export: osgi.wiring.package: org.apache.batik.ext.awt.color
+  org.apache.batik.awt.util [osgi.identity; type="osgi.bundle"; version:Version="1.16.0.v20221027-0840"; osgi.identity="org.apache.batik.awt.util"]
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-06-05 12:23:23.008
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Hp'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2023-06-28 20:46:47.610 -----------------------------------------------
+eclipse.buildId=4.26.0.20221201-1200
+java.version=17.0.7
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.modeling.product -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.modeling.product -data C:\Users\Hp\Desktop\Julio\Master\Segundo Cuatrimestre\IngenieriaLenguajesDirigidaModelos\Practica\Practica1B\FabricaCaramelos -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2023-06-28 20:47:04.997
+!MESSAGE Removing PartDescriptorImpl with the "org.eclipse.net4j.debug.RemoteTraceView" id and the "Remote Traces" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2023-06-28 20:47:05.000
+!MESSAGE Removing PartDescriptorImpl with the "seg.jUCMNav.views.ElementView" id and the "Elements" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2023-06-28 20:47:05.000
+!MESSAGE Removing PartDescriptorImpl with the "seg.jUCMNav.views.StrategiesView" id and the "Scenarios and Strategies" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2023-06-28 20:47:05.000
+!MESSAGE Removing PartDescriptorImpl with the "seg.jUCMNav.views.DynamicContextsView" id and the "List of Dynamic Contexts" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2023-06-28 20:47:05.000
+!MESSAGE Removing PartDescriptorImpl with the "seg.jUCMNav.views.DynamicContextEvaluationView" id and the "Dynamic Context Overall Evaluation" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2023-06-28 20:47:05.000
+!MESSAGE Removing PartDescriptorImpl with the "seg.jUCMNav.views.KPIListView" id and the "List of Key Performance Indicators" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2023-06-28 20:47:05.004
+!MESSAGE Removing PartDescriptorImpl with the "seg.jUCMNav.views.KPIView" id and the "Key Performance Indicators" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2023-06-28 20:47:05.004
+!MESSAGE Removing PartDescriptorImpl with the "seg.jUCMNav.CustomCommonNavigator" id and the "Custom Common Navigator" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2023-06-28 20:47:05.004
+!MESSAGE Removing PartDescriptorImpl with the "org.eclipse.emf.emfatic.ui.views.TypesView" id and the "EMF Type Hierarchy" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2023-06-28 20:47:05.004
+!MESSAGE Removing PartDescriptorImpl with the "org.eclipse.gymnast.runtime.ui.views.parsetree" id and the "Parse Tree View" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-06-28 20:47:05.210
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Hp'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2023-06-29 09:23:53.938 -----------------------------------------------
+eclipse.buildId=4.26.0.20221201-1200
+java.version=17.0.7
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-06-29 09:24:21.388
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Hp'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2023-11-20 19:36:24.562 -----------------------------------------------
+eclipse.buildId=4.27.0.20230309-1200
+java.version=17.0.6
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2023-11-20 19:37:00.033
+!MESSAGE Removing PartDescriptorImpl with the "org.eclipse.m2m.atl.profiler.ui.executionviewer.view.ExecutionView" id and the "ATL Profiler - Execution View" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2023-11-20 19:37:00.035
+!MESSAGE Removing PartDescriptorImpl with the "org.eclipse.m2m.atl.profiler.ui.profilingdatatable.ProfilingDataTableView" id and the "ATL Profiler - Rules View" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2023-11-20 19:37:00.036
+!MESSAGE Removing PartDescriptorImpl with the "org.eclipse.xtend.ide.view.DerivedSourceView" id and the "Generated Code" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2023-11-20 19:37:00.037
+!MESSAGE Removing PartDescriptorImpl with the "org.eclipse.xtext.ui.XtextCallHierarchy" id and the "Call Hierarchy" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2023-11-20 19:37:00.037
+!MESSAGE Removing PartDescriptorImpl with the "org.eclipse.xtext.xtext.ui.graph.view" id and the "Xtext Syntax Graph" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-11-20 19:37:00.187
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Hp'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2023-11-20 19:38:08.560 -----------------------------------------------
+eclipse.buildId=4.27.0.20230309-1200
+java.version=17.0.6
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.modeling.product -product org.eclipse.epp.package.modeling.product -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.modeling.product -product org.eclipse.epp.package.modeling.product -data C:\Users\Hp\Desktop\Julio\Master\Segundo Cuatrimestre\IngenieriaLenguajesDirigidaModelos\Practica\Practica1B\FabricaCaramelos -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-11-20 19:38:20.590
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Hp'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.

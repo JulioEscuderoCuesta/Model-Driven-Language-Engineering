@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flight_planner:FlightDeparment
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:flight_planner="http://www.unican.es/ildm/flight_planner"
+    xsi:schemaLocation="http://www.unican.es/ildm/flight_planner flight_planner.ecore">
+  <flights number="1"
+      landing="2"
+      plane="//@planes.0"
+      origin="//@bases.0"
+      destination="//@bases.1"/>
+  <flights number="2"
+      takeoff="4"
+      landing="7"
+      plane="//@planes.0"
+      origin="//@bases.1"
+      destination="//@bases.2"/>
+  <flights number="3"
+      takeoff="10"
+      landing="15"
+      plane="//@planes.0"
+      origin="//@bases.2"
+      destination="//@bases.3"/>
+  <flights number="4"
+      takeoff="5"
+      landing="10"
+      plane="//@planes.1"
+      origin="//@bases.4"
+      destination="//@bases.0"/>
+  <flights number="5"
+      takeoff="12"
+      landing="20"
+      plane="//@planes.1"
+      origin="//@bases.0"
+      destination="//@bases.1"/>
+  <flights number="6"
+      takeoff="21"
+      landing="23"
+      plane="//@planes.1"
+      origin="//@bases.1"
+      destination="//@bases.4"/>
+  <flights number="7"
+      takeoff="1"
+      landing="4"
+      plane="//@planes.2"
+      origin="//@bases.0"
+      destination="//@bases.3"/>
+  <flights number="8"
+      takeoff="7"
+      landing="10"
+      plane="//@planes.2"
+      origin="//@bases.3"
+      destination="//@bases.1"/>
+  <flights number="9"
+      takeoff="12"
+      landing="18"
+      plane="//@planes.2"
+      origin="//@bases.1"
+      destination="//@bases.4"/>
+  <flights number="10"
+      takeoff="20"
+      landing="23"
+      plane="//@planes.2"
+      origin="//@bases.4"
+      destination="//@bases.0"/>
+  <planes name="1"
+      model="1"
+      licensePlate="A32A1DF32ASD1F"
+      flights="//@flights.0 //@flights.1 //@flights.2"/>
+  <planes name="2"
+      flights="//@flights.3 //@flights.4 //@flights.5"/>
+  <planes name="3"
+      flights="//@flights.6 //@flights.7 //@flights.8 //@flights.9"/>
+  <bases xsi:type="flight_planner:Base"
+      name="1">
+    <infrastructure
+        xsi:type="flight_planner:MaintenanceHangar"/>
+  </bases>
+  <bases xsi:type="flight_planner:Base"
+      name="2">
+    <infrastructure
+        xsi:type="flight_planner:MaintenanceHangar"/>
+  </bases>
+  <bases xsi:type="flight_planner:Base"
+      name="3">
+    <infrastructure
+        xsi:type="flight_planner:AdministrationOffice"/>
+  </bases>
+  <bases xsi:type="flight_planner:Base"
+      name="4">
+    <infrastructure
+        xsi:type="flight_planner:MaintenanceHangar"/>
+  </bases>
+  <bases xsi:type="flight_planner:Base"
+      name="5">
+    <infrastructure
+        xsi:type="flight_planner:AdministrationOffice"/>
+  </bases>
+</flight_planner:FlightDeparment>

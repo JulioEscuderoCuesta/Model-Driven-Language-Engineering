@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ecore:EPackage [
+<!ENTITY _0 "http://www.eclipse.org/emf/2002/Ecore">
+]>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="factory" nsURI="http://www.unican.es/ildm/factory" nsPrefix="factory">
+  <eAnnotations source="http://www.eclipse.org/OCL/Import">
+    <details key="ecore" value="http://www.eclipse.org/emf/2002/Ecore"/>
+  </eAnnotations>
+  <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+    <details key="invocationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
+    <details key="settingDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
+    <details key="validationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" name="Factory">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="elements" ordered="false"
+        upperBound="-1" eType="#//Element" containment="true">
+      <eAnnotations source="http://www.eclipse.org/OCL/Collection">
+        <details key="nullFree" value="false"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="totalCounter" lowerBound="1"
+        eType="ecore:EDataType &_0;#//EInt" volatile="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details key="derivation" value="elements -> select(element | element.oclIsKindOf(Maker)) -> collect(element | element.oclAsType(Maker)) -> collect(maker | maker.counter) -> sum()"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="currentParts" lowerBound="1"
+        eType="ecore:EDataType &_0;#//EInt" volatile="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details key="derivation" value="elements -> select(element | element.oclIsKindOf(Tray)) -> collect(element | element.oclAsType(Tray)) -> collect(tray | tray.parts -> size()) -> sum()"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="trays" ordered="false"
+        unique="false" upperBound="-1" eType="#//Tray" changeable="false" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details key="derivation" value="elements -> select(element | element.oclIsKindOf(Tray)) -> collect(element | element.oclAsType(Tray))"/>
+      </eAnnotations>
+      <eAnnotations source="http://www.eclipse.org/OCL/Collection">
+        <details key="nullFree" value="false"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType &_0;#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Element" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="x" lowerBound="1" eType="ecore:EDataType &_0;#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="y" lowerBound="1" eType="ecore:EDataType &_0;#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType &_0;#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="z" lowerBound="1" eType="ecore:EDataType &_0;#//EInt"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Machine" abstract="true" eSuperTypes="#//Element">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="tiempoProcesado" lowerBound="1"
+        eType="ecore:EDataType &_0;#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="input" ordered="false"
+        upperBound="-1" eType="#//Tray" eOpposite="#//Tray/target">
+      <eAnnotations source="http://www.eclipse.org/OCL/Collection">
+        <details key="nullFree" value="false"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="output" eType="#//Tray"
+        eOpposite="#//Tray/source"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Maker" abstract="true" eSuperTypes="#//Machine">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="counter" lowerBound="1"
+        eType="ecore:EDataType &_0;#//EInt"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Assembler" eSuperTypes="#//Machine">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="IncorrectOutput"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="IncorrectOutput" value="&#xA;&#x9;&#x9;&#x9;output=null or output.parts -> forAll(part | part.oclIsTypeOf(Sarten))"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Wrapper" eSuperTypes="#//Machine">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="IncorrectOutput"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="IncorrectOutput" value="&#xA;&#x9;&#x9;&#x9;output=null or output.parts -> forAll(part | part.oclIsTypeOf(Sarten))"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="CuerpoMaker" eSuperTypes="#//Maker">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="IncorrectOutput"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="IncorrectOutput" value="&#xA;&#x9;&#x9;&#x9;output=null or output.parts -> forAll(part | part.oclIsTypeOf(Cuerpo))"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="MangoMaker" eSuperTypes="#//Maker">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="IncorrectOutput"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="IncorrectOutput" value="&#xA;&#x9;&#x9;&#x9;output=null or output.parts -> forAll(part | part.oclIsTypeOf(Mango))"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Tray" eSuperTypes="#//Element">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="OverCapacity"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="OverCapacity" value="Tuple {&#xA;&#x9;message : String = 'Tray has more parts than permitted',&#xA;&#x9;status : Boolean = &#xA;&#x9;&#x9;&#x9;parts -> size() &lt;= capacity&#xA;}.status"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="capacity" lowerBound="1"
+        eType="ecore:EDataType &_0;#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="source" eType="#//Machine"
+        eOpposite="#//Machine/output"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="target" eType="#//Machine"
+        eOpposite="#//Machine/input"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="parts" ordered="false"
+        upperBound="-1" eType="#//Part" containment="true">
+      <eAnnotations source="http://www.eclipse.org/OCL/Collection">
+        <details key="nullFree" value="false"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Part" abstract="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Mango" eSuperTypes="#//Part"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Cuerpo" eSuperTypes="#//Part"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Sarten" eSuperTypes="#//Part"/>
+</ecore:EPackage>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="org.eclipse.xtext.tasks.Task"/>
+    <fullyQualifiedTypeName name="es.unican.ildm.xtext.factory.FactoryPackage"/>
+    <fullyQualifiedTypeName name="es.unican.ildm.xtext.factory.FactoryPackage.Literals"/>
+    <fullyQualifiedTypeName name="org.eclipse.xtext.conversion.IValueConverterService"/>
+    <fullyQualifiedTypeName name="org.eclipse.xtext.validation.Check"/>
+    <fullyQualifiedTypeName name="es.unican.ildm.practica3.factory.Task"/>
+    <fullyQualifiedTypeName name="es.unican.ildm.practica3.factory.Shift"/>
+    <fullyQualifiedTypeName name="es.unican.ildm.practica3.factory.FactoryPackage"/>
+    <fullyQualifiedTypeName name="es.unican.ildm.practica3.factory.FactoryPackage.Literals"/>
+    <fullyQualifiedTypeName name="es.unican.ildm.practica3.factory.Element"/>
+</qualifiedTypeNameHistroy>

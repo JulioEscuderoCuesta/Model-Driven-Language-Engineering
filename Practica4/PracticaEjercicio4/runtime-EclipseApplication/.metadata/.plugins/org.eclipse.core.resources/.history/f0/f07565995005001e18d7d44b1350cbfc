@@ -1,0 +1,80 @@
+-- @nsURI MM=http://www.unican.es/ildm/factory
+-- @nsURI MM1=http://www.unican.es/ildm/inventory
+
+module factory2inventory;
+create OUT : MM1 from IN : MM;
+
+rule Factory2Inventory {
+	from
+		l : Factory!Library
+	to 
+		i : Marketing!Information (
+			name <- l.name + ' Marketing Information',
+			books <- l.books,
+			persons <- l.members
+		)
+}
+
+rule Member2Person {
+	from
+		m : Library!Member
+	to 
+		p : Marketing!Person (
+			name <- m.name,
+			priority <- m.getPriority()
+		)
+}
+
+rule Book2Book {
+	from
+		bi : Library!Book (bi.loans -> size() <= 2)
+	to 
+		bo : Marketing!Book (
+			name <- bi.name,
+			priority <- bi.getPriority()
+		)
+}
+
+rule Book2BookSuper {
+	from
+		bi : Library!Book (bi.loans -> size() > 2)
+	to 
+		bo : Marketing!Book (
+			name <- bi.name,
+			priority <- bi.getPriority(),
+			tag <- thisModule.CreateTag(bi)
+		)
+}
+
+lazy rule CreateTag {
+	from
+		b : Library!Book 
+	to 
+		t : Marketing!Tag (
+			label <- 'SUPERVENTAS ' + b.name + '!!!'
+		)
+}
+
+
+helper context Library!Member def : getPriority() :  Marketing!Level =
+	if self.numberOfLoans <= 1 then 
+		#LOW
+	else 
+		if self.numberOfLoans > 0 and self.numberOfLoans <= 2 then
+			#MEDIUM
+		else
+			#HIGH
+		endif
+	endif;
+
+helper context Library!Book def : getPriority() :  Marketing!Level =
+	let n : Integer = self.loans -> size() in
+	if n = 0 then 
+		#LOW
+	else 
+		if n > 0 and n <= 2 then
+			#MEDIUM
+		else
+			#HIGH
+		endif
+	endif;

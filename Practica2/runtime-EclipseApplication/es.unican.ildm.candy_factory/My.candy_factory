@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<candy_factory:Factory xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:candy_factory="http://www.unican.es/ildm/candy_factory">
+  <elements xsi:type="candy_factory:CandyProducer" id="candyProducer1" output="//@elements.3"/>
+  <elements xsi:type="candy_factory:StickProducer" id="stickProducer1" output="//@elements.4"/>
+  <elements xsi:type="candy_factory:Assembler" id="assembler1" output="//@elements.5" input="//@elements.3 //@elements.4 //@elements.9"/>
+  <elements xsi:type="candy_factory:ConveyorBelt" id="belt1" target="//@elements.2" source="//@elements.0"/>
+  <elements xsi:type="candy_factory:ConveyorBelt" id="belt2" target="//@elements.2" source="//@elements.1"/>
+  <elements xsi:type="candy_factory:ConveyorBelt" id="belt3" target="//@elements.7" source="//@elements.2"/>
+  <elements xsi:type="candy_factory:ConveyorBelt" id="lollipopOut" source="//@elements.7"/>
+  <elements xsi:type="candy_factory:Wrapper" id="wrapper1" output="//@elements.6" input="//@elements.5"/>
+  <elements xsi:type="candy_factory:StickProducer" id="ddd" output="//@elements.9"/>
+  <elements xsi:type="candy_factory:ConveyorBelt" target="//@elements.2" source="//@elements.8"/>
+</candy_factory:Factory>

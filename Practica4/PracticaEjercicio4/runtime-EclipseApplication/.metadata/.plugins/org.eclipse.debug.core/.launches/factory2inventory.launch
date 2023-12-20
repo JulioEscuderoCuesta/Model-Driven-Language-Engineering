@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.m2m.atl.adt.launching.atlTransformation">
+    <stringAttribute key="ATL File Name" value="/es.unican.ildm.practica4.factory2inventory/factory2inventory.atl"/>
+    <stringAttribute key="ATL VM" value="EMF-specific VM Profiler"/>
+    <stringAttribute key="ATL_COMPILER" value="atl2006"/>
+    <booleanAttribute key="IS_REFINING" value="false"/>
+    <mapAttribute key="Input">
+        <mapEntry key="IN" value="Factory"/>
+    </mapAttribute>
+    <mapAttribute key="Libs"/>
+    <mapAttribute key="Model Handler">
+        <mapEntry key="Factory" value="EMF"/>
+        <mapEntry key="Inventory" value="EMF"/>
+    </mapAttribute>
+    <mapAttribute key="ModelType">
+        <mapEntry key="Factory" value="METAMODELINPUT"/>
+        <mapEntry key="IN" value="MODELINPUT"/>
+        <mapEntry key="Inventory" value="METAMODELOUTPUT"/>
+        <mapEntry key="OUT" value="MODELOUTPUT"/>
+    </mapAttribute>
+    <mapAttribute key="Options">
+        <mapEntry key="OPTION_CLEAR" value="false"/>
+        <mapEntry key="OPTION_CONTENT_TYPE" value="false"/>
+        <mapEntry key="OPTION_DERIVED" value="true"/>
+        <mapEntry key="allowInterModelReferences" value="true"/>
+        <mapEntry key="printExecutionTime" value="false"/>
+        <mapEntry key="step" value="false"/>
+        <mapEntry key="supportUML2Stereotypes" value="false"/>
+    </mapAttribute>
+    <listAttribute key="OrderedInput">
+        <listEntry value="IN"/>
+    </listAttribute>
+    <listAttribute key="OrderedOutput">
+        <listEntry value="OUT"/>
+    </listAttribute>
+    <mapAttribute key="Output">
+        <mapEntry key="OUT" value="Inventory"/>
+    </mapAttribute>
+    <mapAttribute key="Path">
+        <mapEntry key="Factory" value="uri:http://www.unican.es/ildm/factory"/>
+        <mapEntry key="IN" value="/es.unican.ildm.practica4.factory2inventory/ejemplos/ejemplo.factory"/>
+        <mapEntry key="Inventory" value="uri:http://www.unican.es/ildm/inventory"/>
+        <mapEntry key="OUT" value="/es.unican.ildm.practica4.factory2inventory/ejemplos/ejemplo.inventory"/>
+    </mapAttribute>
+    <listAttribute key="Superimpose">
+        <listEntry value="/es.unican.ildm.practica4.factory2inventory/factory2inventory.asm"/>
+    </listAttribute>
+    <booleanAttribute key="org.eclipse.debug.core.ATTR_FORCE_SYSTEM_CONSOLE_ENCODING" value="false"/>
+</launchConfiguration>

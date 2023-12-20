@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: es.unican.ildm.xtext.factory.ui
+Bundle-ManifestVersion: 2
+Bundle-Name: es.unican.ildm.xtext.factory.ui
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: es.unican.ildm.xtext.factory.ui; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: es.unican.ildm.xtext.factory,
+ es.unican.ildm.xtext.factory.ide,
+ es.unican.ildm.factory,
+ org.eclipse.xtext.ui,
+ org.eclipse.xtext.ui.shared,
+ org.eclipse.xtext.ui.codetemplates.ui,
+ org.eclipse.ui.editors;bundle-version="3.14.300",
+ org.eclipse.ui.ide;bundle-version="3.18.500"
+Import-Package: org.apache.log4j
+Bundle-RequiredExecutionEnvironment: JavaSE-17

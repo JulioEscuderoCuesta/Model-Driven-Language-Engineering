@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated flight_planner -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="flight_planner.presentation.Flight_plannerModelWizardID"
+            name="%_UI_Flight_plannerModelWizard_label"
+            class="flight_planner.presentation.Flight_plannerModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/Flight_plannerModelFile.gif">
+         <description>%_UI_Flight_plannerModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated flight_planner -->
+      <editor
+            id="flight_planner.presentation.Flight_plannerEditorID"
+            name="%_UI_Flight_plannerEditor_label"
+            icon="icons/full/obj16/Flight_plannerModelFile.gif"
+            extensions="flight_planner"
+            class="flight_planner.presentation.Flight_plannerEditor"
+            contributorClass="flight_planner.presentation.Flight_plannerActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

@@ -1,0 +1,29 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: es.unican.ildm.practica3.factory
+Bundle-ManifestVersion: 2
+Bundle-Name: es.unican.ildm.practica3.factory
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: es.unican.ildm.practica3.factory; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.eclipse.xtext,
+ org.eclipse.xtext.xbase,
+ org.eclipse.equinox.common;bundle-version="3.16.0",
+ org.eclipse.emf.ecore,
+ org.eclipse.xtext.xbase.lib;bundle-version="2.14.0",
+ org.eclipse.xtext.util,
+ org.eclipse.emf.common,
+ org.antlr.runtime;bundle-version="[3.2.0,3.2.1)"
+Bundle-RequiredExecutionEnvironment: JavaSE-17
+Export-Package: es.unican.ildm.practica3.factory.impl,
+ es.unican.ildm.practica3.validation,
+ es.unican.ildm.practica3.generator,
+ es.unican.ildm.practica3.factory,
+ es.unican.ildm.practica3.parser.antlr,
+ es.unican.ildm.practica3,
+ es.unican.ildm.practica3.serializer,
+ es.unican.ildm.practica3.services,
+ es.unican.ildm.practica3.factory.util,
+ es.unican.ildm.practica3.scoping,
+ es.unican.ildm.practica3.parser.antlr.internal
+Import-Package: org.apache.log4j

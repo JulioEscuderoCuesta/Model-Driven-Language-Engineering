@@ -1,0 +1,23 @@
+operator Juan;
+operator Pablo area='Welding';
+operator Luis;
+
+machine welder1;
+machine welder2;
+machine oven1 manufacturer='Bosch';
+machine cooler1;
+
+task t1 duration=1 [Juan -> oven1];
+task t2 duration=1 [Pablo -> welder1];
+task t3 duration=-7 [Pablo -> welder2];
+task t4 duration=1 [Luis -> cooler1];
+task t5 duration=2 [Luis -> oven1];
+
+shift shift1 {
+	date : '15032022_morning';
+	work : t1,t2,t3,t4;
+}
+shift shift2 {
+	date : '15032022_afternoon';
+	work : t2,t3,t5;
+}

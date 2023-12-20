@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;model&apos; to &apos;es.unican.idlm.practica3.factory&apos;&#x0D;&#x0A;- Original project: &apos;es.unican.ildm.practica4.factory&apos;&#x0D;&#x0A;- Destination element: &apos;es.unican.idlm.practica3.factory&apos;&#x0D;&#x0A;- Original element: &apos;model&apos;" description="Copy folder" element1="model" files="0" flags="589830" folders="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1686150156009" target="/es.unican.idlm.practica3.factory" units="0" version="1.0"/>
+</session>

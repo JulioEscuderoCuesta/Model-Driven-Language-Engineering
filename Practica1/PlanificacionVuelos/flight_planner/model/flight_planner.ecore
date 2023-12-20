@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="flight_planner" nsURI="http://www.unican.es/ildm/flight_planner"
+    nsPrefix="flight_planner">
+  <eAnnotations source="http://www.eclipse.org/OCL/Import">
+    <details key="ecore" value="http://www.eclipse.org/emf/2002/Ecore"/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" name="FlightDeparment">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="flights" ordered="false"
+        lowerBound="1" upperBound="-1" eType="#//Flight">
+      <eAnnotations source="http://www.eclipse.org/OCL/Collection">
+        <details key="nullFree" value="false"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="planes" ordered="false"
+        lowerBound="1" upperBound="-1" eType="#//Plane">
+      <eAnnotations source="http://www.eclipse.org/OCL/Collection">
+        <details key="nullFree" value="false"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="places" ordered="false"
+        lowerBound="1" upperBound="-1" eType="#//Place">
+      <eAnnotations source="http://www.eclipse.org/OCL/Collection">
+        <details key="nullFree" value="false"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Plane">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="model" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="licensePlate" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="availability" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean" defaultValueLiteral="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="flight" eType="#//Flight"
+        eOpposite="#//Flight/plane"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="flights" upperBound="-1"
+        eType="#//Flight" derived="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Place" abstract="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Flight">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="number" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="takeoff" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="landing" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="plane" lowerBound="1" eType="#//Plane"
+        eOpposite="#//Plane/flight"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="origin" lowerBound="1"
+        eType="#//Place"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="destination" lowerBound="1"
+        eType="#//Place"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Base" eSuperTypes="#//Place">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="infrastructure" lowerBound="1"
+        upperBound="-1" eType="#//Infrastructure"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Infrastructure" abstract="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="MaintenanceHangar" eSuperTypes="#//Infrastructure"/>
+  <eClassifiers xsi:type="ecore:EClass" name="AdministrationOficine" eSuperTypes="#//Infrastructure"/>
+  <eClassifiers xsi:type="ecore:EClass" name="NoBase" eSuperTypes="#//Place"/>
+</ecore:EPackage>

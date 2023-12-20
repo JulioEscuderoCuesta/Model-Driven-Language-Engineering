@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="candy_factory" version="12.0.0.2017041100">
+  <ownedViewpoints name="MyViewpoint">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="CandyFactory diagram" domainClass="Factory" enablePopupBars="true">
+      <metamodel href="http://www.unican.es/ildm/candy_factory#/"/>
+      <defaultLayer name="Default">
+        <nodeMappings name="CandyProducer" semanticCandidatesExpression="aql:self.elements -> select(c | c.oclIsTypeOf(candy_factory::CandyProducer))" domainClass="candy_factory::CandyProducer">
+          <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="feature:id " sizeComputationExpression="10" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='purple']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="StickProducer" semanticCandidatesExpression="aql:self.elements -> select(c | c.oclIsTypeOf(candy_factory::StickProducer))" domainClass="candy_factory::StickProducer">
+          <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="feature:id " resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='yellow']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="Assembler" semanticCandidatesExpression="aql:self.elements -> select(c | c.oclIsTypeOf(candy_factory::Assembler))" domainClass="candy_factory::Assembler">
+          <style xsi:type="style:LozengeNodeDescription" labelSize="12" labelExpression="feature:id " resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_blue']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="Wrapper" semanticCandidatesExpression="aql:self.elements -> select(c | c.oclIsTypeOf(candy_factory::Wrapper))" domainClass="candy_factory::Wrapper">
+          <style xsi:type="style:LozengeNodeDescription" labelSize="12" labelExpression="feature:id " resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_green']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="Flattener" semanticCandidatesExpression="aql:self.elements -> select(c | c.oclIsTypeOf(candy_factory::Flattener))" domainClass="candy_factory::Flattener">
+          <style xsi:type="style:LozengeNodeDescription" labelSize="12" labelExpression="feature:id " resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_red']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="ConveyorBelt" semanticCandidatesExpression="aql:self.elements -> select(c | c.oclIsTypeOf(candy_factory::ConveyorBelt))" domainClass="candy_factory::ConveyorBelt">
+          <style xsi:type="style:EllipseNodeDescription" labelSize="12" labelExpression="aql:self.id + '(' + self.component -> size() + ')'" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='green']"/>
+          </style>
+        </nodeMappings>
+        <edgeMappings name="CandyProducerToBelt" sourceMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CandyFactory%20diagram']/@defaultLayer/@nodeMappings[name='CandyProducer']" targetMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CandyFactory%20diagram']/@defaultLayer/@nodeMappings[name='ConveyorBelt']" targetFinderExpression="aql:self.output">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="StickProducerToBelt" sourceMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CandyFactory%20diagram']/@defaultLayer/@nodeMappings[name='StickProducer']" targetMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CandyFactory%20diagram']/@defaultLayer/@nodeMappings[name='ConveyorBelt']" targetFinderExpression="aql:self.output">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="AssemblerToBelt" sourceMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CandyFactory%20diagram']/@defaultLayer/@nodeMappings[name='Assembler']" targetMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CandyFactory%20diagram']/@defaultLayer/@nodeMappings[name='ConveyorBelt']" targetFinderExpression="aql:self.output">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="WrapperToBelt" sourceMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CandyFactory%20diagram']/@defaultLayer/@nodeMappings[name='Wrapper']" targetMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CandyFactory%20diagram']/@defaultLayer/@nodeMappings[name='ConveyorBelt']" targetFinderExpression="aql:self.output">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="FlattenerToBelt" sourceMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CandyFactory%20diagram']/@defaultLayer/@nodeMappings[name='Flattener']" targetMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CandyFactory%20diagram']/@defaultLayer/@nodeMappings[name='ConveyorBelt']">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="BeltToAssembler" sourceMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CandyFactory%20diagram']/@defaultLayer/@nodeMappings[name='ConveyorBelt']" targetMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CandyFactory%20diagram']/@defaultLayer/@nodeMappings[name='Assembler']" targetFinderExpression="aql:self.target">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="BeltToWrapper" sourceMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CandyFactory%20diagram']/@defaultLayer/@nodeMappings[name='ConveyorBelt']" targetMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CandyFactory%20diagram']/@defaultLayer/@nodeMappings[name='Wrapper']" targetFinderExpression="aql:self.target">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <toolSections>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Create CandyProducer" nodeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CandyFactory%20diagram']/@defaultLayer/@nodeMappings[name='CandyProducer']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="candy_factory::CandyProducer" referenceName="elements" variableName="candyProducer">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="counter" valueExpression="aql:0"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Create StickProducer" nodeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CandyFactory%20diagram']/@defaultLayer/@nodeMappings[name='StickProducer']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="candy_factory::StickProducer" referenceName="elements" variableName="stickProducer">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="counter" valueExpression="aql:0"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Create Wrapper" nodeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CandyFactory%20diagram']/@defaultLayer/@nodeMappings[name='Wrapper']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="candy_factory::Wrapper" referenceName="elements" variableName="wrapper">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="counter" valueExpression="aql:0"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Create Assembler" nodeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CandyFactory%20diagram']/@defaultLayer/@nodeMappings[name='Assembler']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="candy_factory::Assembler" referenceName="elements" variableName="assembler">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="counter" valueExpression="aql:0"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Create Flattener" nodeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CandyFactory%20diagram']/@defaultLayer/@nodeMappings[name='Flattener']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="candy_factory::Flattener" referenceName="elements" variableName="flattener">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="counter" valueExpression="aql:0"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Create ConveyorBelt" nodeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CandyFactory%20diagram']/@defaultLayer/@nodeMappings[name='ConveyorBelt']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="candy_factory::ConveyorBelt" referenceName="elements" variableName="conveyorBelt"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="CandyProducerToBelt" edgeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CandyFactory%20diagram']/@defaultLayer/@edgeMappings[name='CandyProducerToBelt']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:SetValue" featureName="output" valueExpression="aql:target"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="StickProducerToBelt" edgeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CandyFactory%20diagram']/@defaultLayer/@edgeMappings[name='StickProducerToBelt']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:SetValue" featureName="output" valueExpression="aql:target"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="AssemblerToBelt" edgeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CandyFactory%20diagram']/@defaultLayer/@edgeMappings[name='AssemblerToBelt']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:SetValue" featureName="output" valueExpression="aql:target"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="WrapperToBelt" edgeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CandyFactory%20diagram']/@defaultLayer/@edgeMappings[name='WrapperToBelt']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:SetValue" featureName="output" valueExpression="aql:target"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="FlattenerToBelt" edgeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CandyFactory%20diagram']/@defaultLayer/@edgeMappings[name='FlattenerToBelt']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:SetValue" featureName="output" valueExpression="aql:target"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="BeltToAssembler" edgeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CandyFactory%20diagram']/@defaultLayer/@edgeMappings[name='BeltToAssembler']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:SetValue" featureName="target" valueExpression="aql:target"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="BeltToWrapper" edgeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CandyFactory%20diagram']/@defaultLayer/@edgeMappings[name='BeltToWrapper']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:SetValue" featureName="target" valueExpression="aql:target"/>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </defaultLayer>
+    </ownedRepresentations>
+    <ownedJavaExtensions qualifiedClassName="es.unican.ildm.candy_factory.design.Services"/>
+  </ownedViewpoints>
+</description:Group>

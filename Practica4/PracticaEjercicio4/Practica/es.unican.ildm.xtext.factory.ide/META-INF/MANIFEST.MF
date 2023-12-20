@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: es.unican.ildm.xtext.factory.ide
+Bundle-ManifestVersion: 2
+Bundle-Name: es.unican.ildm.xtext.factory.ide
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: es.unican.ildm.xtext.factory.ide; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: es.unican.ildm.xtext.factory,
+ es.unican.ildm.factory,
+ org.eclipse.xtext.ide,
+ org.eclipse.xtext.xbase.ide
+Bundle-RequiredExecutionEnvironment: JavaSE-17

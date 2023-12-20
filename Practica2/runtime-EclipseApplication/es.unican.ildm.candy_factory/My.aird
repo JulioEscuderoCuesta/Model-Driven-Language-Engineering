@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:candy_factory="http://www.unican.es/ildm/candy_factory" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+  <viewpoint:DAnalysis uid="_qLNHEAOBEe6G5O_UakY7jQ" selectedViews="_rMN4IAOBEe6G5O_UakY7jQ" version="15.1.0.202211301600">
+    <semanticResources>My.candy_factory</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" uid="_rMN4IAOBEe6G5O_UakY7jQ">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/es.unican.ildm.candy_factory.design/description/candy_factory.odesign#//@ownedViewpoints[name='MyViewpoint']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_vmBJ8AOBEe6G5O_UakY7jQ" name="new CandyFactory diagram" repPath="#_vlvdIAOBEe6G5O_UakY7jQ" changeId="1688028295984">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/es.unican.ildm.candy_factory.design/description/candy_factory.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CandyFactory%20diagram']"/>
+        <target xmi:type="candy_factory:Factory" href="My.candy_factory#/"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <diagram:DSemanticDiagram uid="_vlvdIAOBEe6G5O_UakY7jQ">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_vmec8AOBEe6G5O_UakY7jQ" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_vmfEAAOBEe6G5O_UakY7jQ" type="Sirius" element="_vlvdIAOBEe6G5O_UakY7jQ" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_vnRuMAOBEe6G5O_UakY7jQ" type="2001" element="_vm2QYAOBEe6G5O_UakY7jQ">
+          <children xmi:type="notation:Node" xmi:id="_vnWmsAOBEe6G5O_UakY7jQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_vnWmsQOBEe6G5O_UakY7jQ" x="-65" y="31"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_vnlQMAOBEe6G5O_UakY7jQ" type="3003" element="_vm6h0AOBEe6G5O_UakY7jQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_vnlQMQOBEe6G5O_UakY7jQ" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vnlQMgOBEe6G5O_UakY7jQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_vnRuMQOBEe6G5O_UakY7jQ" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vnRuMgOBEe6G5O_UakY7jQ" x="180" y="150" width="30" height="30"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_vnhl0AOBEe6G5O_UakY7jQ" type="2001" element="_vm9lIAOBEe6G5O_UakY7jQ">
+          <children xmi:type="notation:Node" xmi:id="_vniM4AOBEe6G5O_UakY7jQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_vniM4QOBEe6G5O_UakY7jQ" x="-59" y="31"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_vnlQMwOBEe6G5O_UakY7jQ" type="3003" element="_vm9lIQOBEe6G5O_UakY7jQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_vnlQNAOBEe6G5O_UakY7jQ" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vnlQNQOBEe6G5O_UakY7jQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_vnhl0QOBEe6G5O_UakY7jQ" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vnhl0gOBEe6G5O_UakY7jQ" x="168" y="336" width="30" height="30"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_vniM4gOBEe6G5O_UakY7jQ" type="2001" element="_vm-MMAOBEe6G5O_UakY7jQ">
+          <children xmi:type="notation:Node" xmi:id="_vniM5QOBEe6G5O_UakY7jQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_vniM5gOBEe6G5O_UakY7jQ" x="-118" y="2"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_vnl3QAOBEe6G5O_UakY7jQ" type="3017" element="_vm-zQAOBEe6G5O_UakY7jQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_vnl3QQOBEe6G5O_UakY7jQ" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vnl3QgOBEe6G5O_UakY7jQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_vniM4wOBEe6G5O_UakY7jQ" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vniM5AOBEe6G5O_UakY7jQ" x="456" y="252" width="30" height="30"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_vniM5wOBEe6G5O_UakY7jQ" type="2001" element="_vm_aUQOBEe6G5O_UakY7jQ">
+          <children xmi:type="notation:Node" xmi:id="_vniz8AOBEe6G5O_UakY7jQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_vniz8QOBEe6G5O_UakY7jQ" x="-36" y="31"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_vnl3QwOBEe6G5O_UakY7jQ" type="3017" element="_vm_aUgOBEe6G5O_UakY7jQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_vnl3RAOBEe6G5O_UakY7jQ" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vnl3RQOBEe6G5O_UakY7jQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_vniM6AOBEe6G5O_UakY7jQ" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vniM6QOBEe6G5O_UakY7jQ" x="822" y="264" width="30" height="30"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_vniz8gOBEe6G5O_UakY7jQ" type="2001" element="_vnABYAOBEe6G5O_UakY7jQ">
+          <children xmi:type="notation:Node" xmi:id="_vniz9QOBEe6G5O_UakY7jQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_vniz9gOBEe6G5O_UakY7jQ" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_vnmeUAOBEe6G5O_UakY7jQ" type="3016" element="_vnAocAOBEe6G5O_UakY7jQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_vnmeUQOBEe6G5O_UakY7jQ" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vnmeUgOBEe6G5O_UakY7jQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_vniz8wOBEe6G5O_UakY7jQ" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vniz9AOBEe6G5O_UakY7jQ" x="456" y="150" width="30" height="30"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_vnjbAAOBEe6G5O_UakY7jQ" type="2001" element="_vnAocgOBEe6G5O_UakY7jQ">
+          <children xmi:type="notation:Node" xmi:id="_vnjbAwOBEe6G5O_UakY7jQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_vnjbBAOBEe6G5O_UakY7jQ" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_vnmeUwOBEe6G5O_UakY7jQ" type="3016" element="_vnAocwOBEe6G5O_UakY7jQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_vnmeVAOBEe6G5O_UakY7jQ" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vnmeVQOBEe6G5O_UakY7jQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_vnjbAQOBEe6G5O_UakY7jQ" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vnjbAgOBEe6G5O_UakY7jQ" x="456" y="336" width="30" height="30"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_vnjbBQOBEe6G5O_UakY7jQ" type="2001" element="_vnBPgQOBEe6G5O_UakY7jQ">
+          <children xmi:type="notation:Node" xmi:id="_vnkCEAOBEe6G5O_UakY7jQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_vnkCEQOBEe6G5O_UakY7jQ" x="-17" y="31"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_vnmeVgOBEe6G5O_UakY7jQ" type="3016" element="_vnBPggOBEe6G5O_UakY7jQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_vnmeVwOBEe6G5O_UakY7jQ" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vnmeWAOBEe6G5O_UakY7jQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_vnjbBgOBEe6G5O_UakY7jQ" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vnjbBwOBEe6G5O_UakY7jQ" x="660" y="258" width="30" height="30"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_vnkCEgOBEe6G5O_UakY7jQ" type="2001" element="_vnBPhAOBEe6G5O_UakY7jQ">
+          <children xmi:type="notation:Node" xmi:id="_vnkCFQOBEe6G5O_UakY7jQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_vnkCFgOBEe6G5O_UakY7jQ" x="-45" y="31"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_vnnFYAOBEe6G5O_UakY7jQ" type="3016" element="_vnBPhQOBEe6G5O_UakY7jQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_vnnFYQOBEe6G5O_UakY7jQ" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vnnFYgOBEe6G5O_UakY7jQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_vnkCEwOBEe6G5O_UakY7jQ" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vnkCFAOBEe6G5O_UakY7jQ" x="1038" y="264" width="30" height="30"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_85OK0BZYEe6IN5-k16VSUQ" type="2001" element="_843lgBZYEe6IN5-k16VSUQ">
+          <children xmi:type="notation:Node" xmi:id="_85cNQBZYEe6IN5-k16VSUQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_85cNQRZYEe6IN5-k16VSUQ" x="-1"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_85q2wBZYEe6IN5-k16VSUQ" type="3003" element="_844MkBZYEe6IN5-k16VSUQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_85q2wRZYEe6IN5-k16VSUQ" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_85q2whZYEe6IN5-k16VSUQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_85OK0RZYEe6IN5-k16VSUQ" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_85OK0hZYEe6IN5-k16VSUQ" x="48" y="270" width="30" height="30"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_-NeA8BZYEe6IN5-k16VSUQ" type="2001" element="_-NVeEBZYEe6IN5-k16VSUQ">
+          <children xmi:type="notation:Node" xmi:id="_-NeA8xZYEe6IN5-k16VSUQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_-NeA9BZYEe6IN5-k16VSUQ" x="31" y="1"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_-NfPEBZYEe6IN5-k16VSUQ" type="3016" element="_-NVeERZYEe6IN5-k16VSUQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_-NfPERZYEe6IN5-k16VSUQ" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-NfPEhZYEe6IN5-k16VSUQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_-NeA8RZYEe6IN5-k16VSUQ" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-NeA8hZYEe6IN5-k16VSUQ" x="209" y="252" width="30" height="30"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_vmfEAQOBEe6G5O_UakY7jQ"/>
+        <edges xmi:type="notation:Edge" xmi:id="_D8QqUAOCEe6G5O_UakY7jQ" type="4001" element="_D7pmUAOCEe6G5O_UakY7jQ" source="_vnRuMAOBEe6G5O_UakY7jQ" target="_vniz8gOBEe6G5O_UakY7jQ">
+          <children xmi:type="notation:Node" xmi:id="_D8SfgAOCEe6G5O_UakY7jQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_D8SfgQOCEe6G5O_UakY7jQ" x="1" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_D8U7wAOCEe6G5O_UakY7jQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_D8U7wQOCEe6G5O_UakY7jQ" x="-2" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_D8U7wgOCEe6G5O_UakY7jQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_D8U7wwOCEe6G5O_UakY7jQ" x="-3" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_D8QqUQOCEe6G5O_UakY7jQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_D8QqUgOCEe6G5O_UakY7jQ" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_D8QqUwOCEe6G5O_UakY7jQ" points="[15, 0, -261, 0]$[261, 0, -15, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_D8bCYAOCEe6G5O_UakY7jQ" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_D8bCYQOCEe6G5O_UakY7jQ" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_I-RLoAOCEe6G5O_UakY7jQ" type="4001" element="_I9koFAOCEe6G5O_UakY7jQ" source="_vnhl0AOBEe6G5O_UakY7jQ" target="_vnjbAAOBEe6G5O_UakY7jQ">
+          <children xmi:type="notation:Node" xmi:id="_I-RLpAOCEe6G5O_UakY7jQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_I-RLpQOCEe6G5O_UakY7jQ" y="-9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_I-RLpgOCEe6G5O_UakY7jQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_I-RLpwOCEe6G5O_UakY7jQ" x="3" y="9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_I-RLqAOCEe6G5O_UakY7jQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_I-RLqQOCEe6G5O_UakY7jQ" x="6" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_I-RLoQOCEe6G5O_UakY7jQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_I-RLogOCEe6G5O_UakY7jQ" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_I-RLowOCEe6G5O_UakY7jQ" points="[15, 0, -273, 0]$[273, 0, -15, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_I-RysAOCEe6G5O_UakY7jQ" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_I-RysQOCEe6G5O_UakY7jQ" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_MFPjoAOCEe6G5O_UakY7jQ" type="4001" element="_MEofpAOCEe6G5O_UakY7jQ" source="_vniM4gOBEe6G5O_UakY7jQ" target="_vnjbBQOBEe6G5O_UakY7jQ">
+          <children xmi:type="notation:Node" xmi:id="_MFPjpAOCEe6G5O_UakY7jQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MFPjpQOCEe6G5O_UakY7jQ" x="1" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_MFPjpgOCEe6G5O_UakY7jQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MFPjpwOCEe6G5O_UakY7jQ" x="-1" y="6"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_MFPjqAOCEe6G5O_UakY7jQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MFPjqQOCEe6G5O_UakY7jQ" y="9"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_MFPjoQOCEe6G5O_UakY7jQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_MFPjogOCEe6G5O_UakY7jQ" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_MFPjowOCEe6G5O_UakY7jQ" points="[15, 0, -189, -6]$[189, 5, -15, -1]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_MFQKsAOCEe6G5O_UakY7jQ" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_MFQKsQOCEe6G5O_UakY7jQ" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_PKhSgAOCEe6G5O_UakY7jQ" type="4001" element="_PJ7cqAOCEe6G5O_UakY7jQ" source="_vniM5wOBEe6G5O_UakY7jQ" target="_vnkCEgOBEe6G5O_UakY7jQ">
+          <children xmi:type="notation:Node" xmi:id="_PKh5kAOCEe6G5O_UakY7jQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PKh5kQOCEe6G5O_UakY7jQ" x="9" y="-5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_PKh5kgOCEe6G5O_UakY7jQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PKh5kwOCEe6G5O_UakY7jQ" x="-11" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_PKh5lAOCEe6G5O_UakY7jQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PKh5lQOCEe6G5O_UakY7jQ" x="-10" y="4"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_PKhSgQOCEe6G5O_UakY7jQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_PKhSggOCEe6G5O_UakY7jQ" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_PKhSgwOCEe6G5O_UakY7jQ" points="[15, 0, -201, 0]$[201, 0, -15, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_PKh5lgOCEe6G5O_UakY7jQ" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_PKh5lwOCEe6G5O_UakY7jQ" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_cjgs4AOCEe6G5O_UakY7jQ" type="4001" element="_cis0nAOCEe6G5O_UakY7jQ" source="_vniz8gOBEe6G5O_UakY7jQ" target="_vniM4gOBEe6G5O_UakY7jQ">
+          <children xmi:type="notation:Node" xmi:id="_cjhT8QOCEe6G5O_UakY7jQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cjhT8gOCEe6G5O_UakY7jQ" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_cjhT8wOCEe6G5O_UakY7jQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cjhT9AOCEe6G5O_UakY7jQ" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_cjhT9QOCEe6G5O_UakY7jQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cjhT9gOCEe6G5O_UakY7jQ" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_cjgs4QOCEe6G5O_UakY7jQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_cjgs4gOCEe6G5O_UakY7jQ" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_cjhT8AOCEe6G5O_UakY7jQ" points="[0, 15, 0, -87]$[0, 87, 0, -15]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_cjhT9wOCEe6G5O_UakY7jQ" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_cjhT-AOCEe6G5O_UakY7jQ" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_cjhT-QOCEe6G5O_UakY7jQ" type="4001" element="_citbpAOCEe6G5O_UakY7jQ" source="_vnjbAAOBEe6G5O_UakY7jQ" target="_vniM4gOBEe6G5O_UakY7jQ">
+          <children xmi:type="notation:Node" xmi:id="_cjh7AAOCEe6G5O_UakY7jQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cjh7AQOCEe6G5O_UakY7jQ" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_cjh7AgOCEe6G5O_UakY7jQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cjh7AwOCEe6G5O_UakY7jQ" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_cjh7BAOCEe6G5O_UakY7jQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cjh7BQOCEe6G5O_UakY7jQ" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_cjhT-gOCEe6G5O_UakY7jQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_cjhT-wOCEe6G5O_UakY7jQ" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_cjhT_AOCEe6G5O_UakY7jQ" points="[0, -15, 0, 69]$[0, -69, 0, 15]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_cjh7BgOCEe6G5O_UakY7jQ" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_cjh7BwOCEe6G5O_UakY7jQ" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_gb8-EAOCEe6G5O_UakY7jQ" type="4001" element="_gbPzhAOCEe6G5O_UakY7jQ" source="_vnjbBQOBEe6G5O_UakY7jQ" target="_vniM5wOBEe6G5O_UakY7jQ">
+          <children xmi:type="notation:Node" xmi:id="_gb9lIAOCEe6G5O_UakY7jQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gb9lIQOCEe6G5O_UakY7jQ" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_gb9lIgOCEe6G5O_UakY7jQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gb9lIwOCEe6G5O_UakY7jQ" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_gb9lJAOCEe6G5O_UakY7jQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gb9lJQOCEe6G5O_UakY7jQ" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_gb8-EQOCEe6G5O_UakY7jQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_gb8-EgOCEe6G5O_UakY7jQ" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_gb8-EwOCEe6G5O_UakY7jQ" points="[15, 0, -147, -6]$[147, 5, -15, -1]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_gb9lJgOCEe6G5O_UakY7jQ" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_gb9lJwOCEe6G5O_UakY7jQ" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="__ZnD8BZYEe6IN5-k16VSUQ" type="4001" element="__ZB1JBZYEe6IN5-k16VSUQ" source="_85OK0BZYEe6IN5-k16VSUQ" target="_-NeA8BZYEe6IN5-k16VSUQ">
+          <children xmi:type="notation:Node" xmi:id="__ZnrABZYEe6IN5-k16VSUQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="__ZnrARZYEe6IN5-k16VSUQ" x="2" y="-11"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="__Zo5IBZYEe6IN5-k16VSUQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="__Zo5IRZYEe6IN5-k16VSUQ" x="-1" y="9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="__ZquUBZYEe6IN5-k16VSUQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="__ZquURZYEe6IN5-k16VSUQ" x="-3" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="__ZnD8RZYEe6IN5-k16VSUQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="__ZnD8hZYEe6IN5-k16VSUQ" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="__ZnD8xZYEe6IN5-k16VSUQ" points="[0, 0, -131, 21]$[131, -21, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="__Zr8cBZYEe6IN5-k16VSUQ" id="(1.0,0.4666666666666667)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="__Zr8cRZYEe6IN5-k16VSUQ" id="(0.0,0.36666666666666664)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_AK9BUBZZEe6IN5-k16VSUQ" type="4001" element="_AKz3YBZZEe6IN5-k16VSUQ" source="_-NeA8BZYEe6IN5-k16VSUQ" target="_vniM4gOBEe6G5O_UakY7jQ">
+          <children xmi:type="notation:Node" xmi:id="_AK9oYBZZEe6IN5-k16VSUQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AK9oYRZZEe6IN5-k16VSUQ" x="-2" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_AK9oYhZZEe6IN5-k16VSUQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AK9oYxZZEe6IN5-k16VSUQ" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_AK9oZBZZEe6IN5-k16VSUQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AK9oZRZZEe6IN5-k16VSUQ" x="1" y="9"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_AK9BURZZEe6IN5-k16VSUQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_AK9BUhZZEe6IN5-k16VSUQ" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_AK9BUxZZEe6IN5-k16VSUQ" points="[0, 0, -217, -1]$[217, 1, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_AK9oZhZZEe6IN5-k16VSUQ" id="(1.0,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_AK9oZxZZEe6IN5-k16VSUQ" id="(0.0,0.5333333333333333)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_vnDEsAOBEe6G5O_UakY7jQ" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_vnDrwAOBEe6G5O_UakY7jQ"/>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_vm2QYAOBEe6G5O_UakY7jQ" name="candyProducer1" outgoingEdges="_D7pmUAOCEe6G5O_UakY7jQ" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="candy_factory:CandyProducer" href="My.candy_factory#//@elements.0"/>
+      <semanticElements xmi:type="candy_factory:CandyProducer" href="My.candy_factory#//@elements.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_vm6h0AOBEe6G5O_UakY7jQ" labelSize="12" color="173,127,168">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/es.unican.ildm.candy_factory.design/description/candy_factory.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CandyFactory%20diagram']/@defaultLayer/@nodeMappings[name='CandyProducer']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/es.unican.ildm.candy_factory.design/description/candy_factory.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CandyFactory%20diagram']/@defaultLayer/@nodeMappings[name='CandyProducer']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_vm9lIAOBEe6G5O_UakY7jQ" name="stickProducer1" outgoingEdges="_I9koFAOCEe6G5O_UakY7jQ" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="candy_factory:StickProducer" href="My.candy_factory#//@elements.1"/>
+      <semanticElements xmi:type="candy_factory:StickProducer" href="My.candy_factory#//@elements.1"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_vm9lIQOBEe6G5O_UakY7jQ" labelSize="12" color="252,233,79">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/es.unican.ildm.candy_factory.design/description/candy_factory.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CandyFactory%20diagram']/@defaultLayer/@nodeMappings[name='StickProducer']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/es.unican.ildm.candy_factory.design/description/candy_factory.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CandyFactory%20diagram']/@defaultLayer/@nodeMappings[name='StickProducer']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_843lgBZYEe6IN5-k16VSUQ" name="ddd" outgoingEdges="__ZB1JBZYEe6IN5-k16VSUQ" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="candy_factory:StickProducer" href="My.candy_factory#//@elements.8"/>
+      <semanticElements xmi:type="candy_factory:StickProducer" href="My.candy_factory#//@elements.8"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_844MkBZYEe6IN5-k16VSUQ" labelSize="12" color="252,233,79">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/es.unican.ildm.candy_factory.design/description/candy_factory.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CandyFactory%20diagram']/@defaultLayer/@nodeMappings[name='StickProducer']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/es.unican.ildm.candy_factory.design/description/candy_factory.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CandyFactory%20diagram']/@defaultLayer/@nodeMappings[name='StickProducer']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_vm-MMAOBEe6G5O_UakY7jQ" name="assembler1" outgoingEdges="_MEofpAOCEe6G5O_UakY7jQ" incomingEdges="_cis0nAOCEe6G5O_UakY7jQ _citbpAOCEe6G5O_UakY7jQ _AKz3YBZZEe6IN5-k16VSUQ" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="candy_factory:Assembler" href="My.candy_factory#//@elements.2"/>
+      <semanticElements xmi:type="candy_factory:Assembler" href="My.candy_factory#//@elements.2"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Lozenge" uid="_vm-zQAOBEe6G5O_UakY7jQ" labelSize="12" color="39,76,114">
+        <description xmi:type="style:LozengeNodeDescription" href="platform:/resource/es.unican.ildm.candy_factory.design/description/candy_factory.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CandyFactory%20diagram']/@defaultLayer/@nodeMappings[name='Assembler']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/es.unican.ildm.candy_factory.design/description/candy_factory.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CandyFactory%20diagram']/@defaultLayer/@nodeMappings[name='Assembler']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_vm_aUQOBEe6G5O_UakY7jQ" name="wrapper1" outgoingEdges="_PJ7cqAOCEe6G5O_UakY7jQ" incomingEdges="_gbPzhAOCEe6G5O_UakY7jQ" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="candy_factory:Wrapper" href="My.candy_factory#//@elements.7"/>
+      <semanticElements xmi:type="candy_factory:Wrapper" href="My.candy_factory#//@elements.7"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Lozenge" uid="_vm_aUgOBEe6G5O_UakY7jQ" labelSize="12" color="77,137,20">
+        <description xmi:type="style:LozengeNodeDescription" href="platform:/resource/es.unican.ildm.candy_factory.design/description/candy_factory.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CandyFactory%20diagram']/@defaultLayer/@nodeMappings[name='Wrapper']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/es.unican.ildm.candy_factory.design/description/candy_factory.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CandyFactory%20diagram']/@defaultLayer/@nodeMappings[name='Wrapper']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_vnABYAOBEe6G5O_UakY7jQ" name="belt1(0)" outgoingEdges="_cis0nAOCEe6G5O_UakY7jQ" incomingEdges="_D7pmUAOCEe6G5O_UakY7jQ" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="candy_factory:ConveyorBelt" href="My.candy_factory#//@elements.3"/>
+      <semanticElements xmi:type="candy_factory:ConveyorBelt" href="My.candy_factory#//@elements.3"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Ellipse" uid="_vnAocAOBEe6G5O_UakY7jQ" labelSize="12" color="138,226,52">
+        <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/es.unican.ildm.candy_factory.design/description/candy_factory.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CandyFactory%20diagram']/@defaultLayer/@nodeMappings[name='ConveyorBelt']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/es.unican.ildm.candy_factory.design/description/candy_factory.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CandyFactory%20diagram']/@defaultLayer/@nodeMappings[name='ConveyorBelt']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_vnAocgOBEe6G5O_UakY7jQ" name="belt2(0)" outgoingEdges="_citbpAOCEe6G5O_UakY7jQ" incomingEdges="_I9koFAOCEe6G5O_UakY7jQ" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="candy_factory:ConveyorBelt" href="My.candy_factory#//@elements.4"/>
+      <semanticElements xmi:type="candy_factory:ConveyorBelt" href="My.candy_factory#//@elements.4"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Ellipse" uid="_vnAocwOBEe6G5O_UakY7jQ" labelSize="12" color="138,226,52">
+        <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/es.unican.ildm.candy_factory.design/description/candy_factory.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CandyFactory%20diagram']/@defaultLayer/@nodeMappings[name='ConveyorBelt']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/es.unican.ildm.candy_factory.design/description/candy_factory.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CandyFactory%20diagram']/@defaultLayer/@nodeMappings[name='ConveyorBelt']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_vnBPgQOBEe6G5O_UakY7jQ" name="belt3(0)" outgoingEdges="_gbPzhAOCEe6G5O_UakY7jQ" incomingEdges="_MEofpAOCEe6G5O_UakY7jQ" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="candy_factory:ConveyorBelt" href="My.candy_factory#//@elements.5"/>
+      <semanticElements xmi:type="candy_factory:ConveyorBelt" href="My.candy_factory#//@elements.5"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Ellipse" uid="_vnBPggOBEe6G5O_UakY7jQ" labelSize="12" color="138,226,52">
+        <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/es.unican.ildm.candy_factory.design/description/candy_factory.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CandyFactory%20diagram']/@defaultLayer/@nodeMappings[name='ConveyorBelt']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/es.unican.ildm.candy_factory.design/description/candy_factory.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CandyFactory%20diagram']/@defaultLayer/@nodeMappings[name='ConveyorBelt']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_vnBPhAOBEe6G5O_UakY7jQ" name="lollipopOut(0)" incomingEdges="_PJ7cqAOCEe6G5O_UakY7jQ" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="candy_factory:ConveyorBelt" href="My.candy_factory#//@elements.6"/>
+      <semanticElements xmi:type="candy_factory:ConveyorBelt" href="My.candy_factory#//@elements.6"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Ellipse" uid="_vnBPhQOBEe6G5O_UakY7jQ" labelSize="12" color="138,226,52">
+        <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/es.unican.ildm.candy_factory.design/description/candy_factory.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CandyFactory%20diagram']/@defaultLayer/@nodeMappings[name='ConveyorBelt']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/es.unican.ildm.candy_factory.design/description/candy_factory.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CandyFactory%20diagram']/@defaultLayer/@nodeMappings[name='ConveyorBelt']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_-NVeEBZYEe6IN5-k16VSUQ" name="(0)" outgoingEdges="_AKz3YBZZEe6IN5-k16VSUQ" incomingEdges="__ZB1JBZYEe6IN5-k16VSUQ" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="candy_factory:ConveyorBelt" href="My.candy_factory#//@elements.9"/>
+      <semanticElements xmi:type="candy_factory:ConveyorBelt" href="My.candy_factory#//@elements.9"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Ellipse" uid="_-NVeERZYEe6IN5-k16VSUQ" labelSize="12" color="138,226,52">
+        <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/es.unican.ildm.candy_factory.design/description/candy_factory.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CandyFactory%20diagram']/@defaultLayer/@nodeMappings[name='ConveyorBelt']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/es.unican.ildm.candy_factory.design/description/candy_factory.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CandyFactory%20diagram']/@defaultLayer/@nodeMappings[name='ConveyorBelt']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_D7pmUAOCEe6G5O_UakY7jQ" sourceNode="_vm2QYAOBEe6G5O_UakY7jQ" targetNode="_vnABYAOBEe6G5O_UakY7jQ">
+      <target xmi:type="candy_factory:CandyProducer" href="My.candy_factory#//@elements.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_D7spoAOCEe6G5O_UakY7jQ" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/es.unican.ildm.candy_factory.design/description/candy_factory.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CandyFactory%20diagram']/@defaultLayer/@edgeMappings[name='CandyProducerToBelt']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_D7tQsAOCEe6G5O_UakY7jQ" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/es.unican.ildm.candy_factory.design/description/candy_factory.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CandyFactory%20diagram']/@defaultLayer/@edgeMappings[name='CandyProducerToBelt']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_I9koFAOCEe6G5O_UakY7jQ" sourceNode="_vm9lIAOBEe6G5O_UakY7jQ" targetNode="_vnAocgOBEe6G5O_UakY7jQ">
+      <target xmi:type="candy_factory:StickProducer" href="My.candy_factory#//@elements.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_I9lPIAOCEe6G5O_UakY7jQ" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/es.unican.ildm.candy_factory.design/description/candy_factory.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CandyFactory%20diagram']/@defaultLayer/@edgeMappings[name='StickProducerToBelt']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_I9lPIQOCEe6G5O_UakY7jQ" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/es.unican.ildm.candy_factory.design/description/candy_factory.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CandyFactory%20diagram']/@defaultLayer/@edgeMappings[name='StickProducerToBelt']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_MEofpAOCEe6G5O_UakY7jQ" sourceNode="_vm-MMAOBEe6G5O_UakY7jQ" targetNode="_vnBPgQOBEe6G5O_UakY7jQ">
+      <target xmi:type="candy_factory:Assembler" href="My.candy_factory#//@elements.2"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_MEofpQOCEe6G5O_UakY7jQ" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/es.unican.ildm.candy_factory.design/description/candy_factory.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CandyFactory%20diagram']/@defaultLayer/@edgeMappings[name='AssemblerToBelt']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_MEofpgOCEe6G5O_UakY7jQ" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/es.unican.ildm.candy_factory.design/description/candy_factory.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CandyFactory%20diagram']/@defaultLayer/@edgeMappings[name='AssemblerToBelt']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_PJ7cqAOCEe6G5O_UakY7jQ" sourceNode="_vm_aUQOBEe6G5O_UakY7jQ" targetNode="_vnBPhAOBEe6G5O_UakY7jQ">
+      <target xmi:type="candy_factory:Wrapper" href="My.candy_factory#//@elements.7"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_PJ7cqQOCEe6G5O_UakY7jQ" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/es.unican.ildm.candy_factory.design/description/candy_factory.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CandyFactory%20diagram']/@defaultLayer/@edgeMappings[name='WrapperToBelt']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_PJ7cqgOCEe6G5O_UakY7jQ" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/es.unican.ildm.candy_factory.design/description/candy_factory.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CandyFactory%20diagram']/@defaultLayer/@edgeMappings[name='WrapperToBelt']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_cis0nAOCEe6G5O_UakY7jQ" sourceNode="_vnABYAOBEe6G5O_UakY7jQ" targetNode="_vm-MMAOBEe6G5O_UakY7jQ">
+      <target xmi:type="candy_factory:ConveyorBelt" href="My.candy_factory#//@elements.3"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_citboAOCEe6G5O_UakY7jQ" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/es.unican.ildm.candy_factory.design/description/candy_factory.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CandyFactory%20diagram']/@defaultLayer/@edgeMappings[name='BeltToAssembler']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_citboQOCEe6G5O_UakY7jQ" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/es.unican.ildm.candy_factory.design/description/candy_factory.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CandyFactory%20diagram']/@defaultLayer/@edgeMappings[name='BeltToAssembler']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_citbpAOCEe6G5O_UakY7jQ" sourceNode="_vnAocgOBEe6G5O_UakY7jQ" targetNode="_vm-MMAOBEe6G5O_UakY7jQ">
+      <target xmi:type="candy_factory:ConveyorBelt" href="My.candy_factory#//@elements.4"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_citbpQOCEe6G5O_UakY7jQ" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/es.unican.ildm.candy_factory.design/description/candy_factory.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CandyFactory%20diagram']/@defaultLayer/@edgeMappings[name='BeltToAssembler']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_citbpgOCEe6G5O_UakY7jQ" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/es.unican.ildm.candy_factory.design/description/candy_factory.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CandyFactory%20diagram']/@defaultLayer/@edgeMappings[name='BeltToAssembler']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_gbPzhAOCEe6G5O_UakY7jQ" sourceNode="_vnBPgQOBEe6G5O_UakY7jQ" targetNode="_vm_aUQOBEe6G5O_UakY7jQ">
+      <target xmi:type="candy_factory:ConveyorBelt" href="My.candy_factory#//@elements.5"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_gbQagAOCEe6G5O_UakY7jQ" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/es.unican.ildm.candy_factory.design/description/candy_factory.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CandyFactory%20diagram']/@defaultLayer/@edgeMappings[name='BeltToWrapper']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_gbQagQOCEe6G5O_UakY7jQ" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/es.unican.ildm.candy_factory.design/description/candy_factory.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CandyFactory%20diagram']/@defaultLayer/@edgeMappings[name='BeltToWrapper']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="__ZB1JBZYEe6IN5-k16VSUQ" sourceNode="_843lgBZYEe6IN5-k16VSUQ" targetNode="_-NVeEBZYEe6IN5-k16VSUQ">
+      <target xmi:type="candy_factory:StickProducer" href="My.candy_factory#//@elements.8"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="__ZCcMBZYEe6IN5-k16VSUQ" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/es.unican.ildm.candy_factory.design/description/candy_factory.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CandyFactory%20diagram']/@defaultLayer/@edgeMappings[name='StickProducerToBelt']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="__ZCcMRZYEe6IN5-k16VSUQ" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/es.unican.ildm.candy_factory.design/description/candy_factory.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CandyFactory%20diagram']/@defaultLayer/@edgeMappings[name='StickProducerToBelt']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_AKz3YBZZEe6IN5-k16VSUQ" sourceNode="_-NVeEBZYEe6IN5-k16VSUQ" targetNode="_vm-MMAOBEe6G5O_UakY7jQ">
+      <target xmi:type="candy_factory:ConveyorBelt" href="My.candy_factory#//@elements.9"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_AKz3YRZZEe6IN5-k16VSUQ" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/es.unican.ildm.candy_factory.design/description/candy_factory.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CandyFactory%20diagram']/@defaultLayer/@edgeMappings[name='BeltToAssembler']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_AKz3YhZZEe6IN5-k16VSUQ" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/es.unican.ildm.candy_factory.design/description/candy_factory.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CandyFactory%20diagram']/@defaultLayer/@edgeMappings[name='BeltToAssembler']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/es.unican.ildm.candy_factory.design/description/candy_factory.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CandyFactory%20diagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_vl51MAOBEe6G5O_UakY7jQ"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/es.unican.ildm.candy_factory.design/description/candy_factory.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CandyFactory%20diagram']/@defaultLayer"/>
+    <target xmi:type="candy_factory:Factory" href="My.candy_factory#/"/>
+  </diagram:DSemanticDiagram>
+</xmi:XMI>

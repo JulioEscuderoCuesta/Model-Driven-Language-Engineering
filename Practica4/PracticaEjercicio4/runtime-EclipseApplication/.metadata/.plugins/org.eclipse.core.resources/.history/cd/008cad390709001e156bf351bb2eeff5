@@ -1,0 +1,89 @@
+-- @nsURI Factory=http://www.unican.es/ildm/factory
+-- @nsURI Inventory=http://www.unican.es/ildm/inventory
+
+module factory2inventory;
+create OUT : Inventory from IN : Factory;
+
+rule Factory2Inventory {
+	from
+		f : Factory!Factory
+	to 
+		i : Inventory!Inventory (
+			name <- 'Inventory of ' + f.name,
+			assets <- f.elements -> select(e | e.oclIsKindOf(Factory!Machine)),
+			items <- f.elements -> select(e | e.oclIsTypeOf(Factory!Tray)) -> collect(t | t.parts)
+		)
+}
+
+rule Machine2Asset {
+	from
+		m : Factory!Machine
+	to
+		p: Inventory!Asset (
+			assetType <- m.getType() + m.name,
+			location <- m.getZ()
+		)
+}
+
+rule Part2Item {
+	from
+		t : Factory!Part
+	to
+		i : Inventory!Item (
+			itemName <- t.getPartName().toString(),
+			state <- t.getState(),
+			price <- t.getPrice(),
+			tag <- t.getPartName() + ' a la venta por ' + t.getPrice() + ' euros'
+		)
+}
+
+helper context Factory!Machine def : getType() : String =
+	if self.oclIsTypeOf(Factory!CuerpoMaker) then 'CuerpoMaker'
+	else
+		if self.oclIsTypeOf(Factory!MangoMaker) then 'MangoMaker'	
+		else
+			if self.oclIsTypeOf(Factory!Assembler) then 'Assembler'
+			else 'Wrapper'
+			endif
+		endif
+	endif;
+	
+helper context Factory!Machine def : getZ() : Inventory!Location =
+	if self.z <= 2 then 
+		#GROUND_FLOOR
+	else 
+		if self.z >= 2 and self.z < 4 then
+			#FIRST_FLOOR
+		else
+			#SECOND_FLOOR
+		endif
+	endif;
+
+helper context Factory!Part def : getPartName() : String =
+	if self.oclIsTypeOf(Factory!Mango) then 
+		'MANGO'
+	else 
+		if self.oclIsTypeOf(Factory!Cuerpo) then
+			'CUERPO'
+		else
+			'SARTEN'
+		endif
+	endif;
+
+helper context Factory!Part def : getState() : Inventory!State =
+	if self.oclIsTypeOf(Factory!Sarten)then 
+		#FINISHED
+	else 
+		#UNFINISHED
+	endif;
+
+helper context Factory!Part def : getPrice() : Real =
+	if self.oclIsTypeOf(Factory!Mango)then 
+		2.99
+	else 
+		if self.oclIsTypeOf(Factory!Cuerpo) then
+			3.99
+		else
+			9.99
+		endif
+	endif;	

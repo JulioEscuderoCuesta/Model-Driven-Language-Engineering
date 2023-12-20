@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated factory -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="es.unican.ildm.factory.factory.presentation.FactoryModelWizardID"
+            name="%_UI_FactoryModelWizard_label"
+            class="es.unican.ildm.factory.factory.presentation.FactoryModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/FactoryModelFile.gif">
+         <description>%_UI_FactoryModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated factory -->
+      <editor
+            id="es.unican.ildm.factory.factory.presentation.FactoryEditorID"
+            name="%_UI_FactoryEditor_label"
+            icon="icons/full/obj16/FactoryModelFile.gif"
+            extensions="factory"
+            class="es.unican.ildm.factory.factory.presentation.FactoryEditor"
+            contributorClass="es.unican.ildm.factory.factory.presentation.FactoryActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

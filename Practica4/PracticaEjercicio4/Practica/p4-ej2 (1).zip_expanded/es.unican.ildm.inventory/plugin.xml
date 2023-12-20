@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated inventory -->
+      <package
+            uri="http://www.unican.es/ildm/inventory"
+            class="es.unican.ildm.inventory.inventory.InventoryPackage"
+            genModel="model/inventory.genmodel"/>
+   </extension>
+
+</plugin>

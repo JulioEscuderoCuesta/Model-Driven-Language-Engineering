@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<inventory:Inventory xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:inventory="http://www.unican.es/ildm/inventory" name="Inventory of Fabrica A">
+  <assets assetType="CuerpoMaker cuerpo1"/>
+  <assets assetType="MangoMaker mango1"/>
+  <assets assetType="Assembler assem1"/>
+  <assets assetType="Wrapper wrap1" location="SECOND_FLOOR"/>
+  <items itemName="CUERPO" state="UNFINISHED" price="3.99">
+    <tag label="CUERPO a la venta por 3.99 euros"/>
+  </items>
+  <items itemName="CUERPO" state="UNFINISHED" price="3.99">
+    <tag label="CUERPO a la venta por 3.99 euros"/>
+  </items>
+  <items itemName="MANGO" state="UNFINISHED" price="2.99">
+    <tag label="MANGO a la venta por 2.99 euros"/>
+  </items>
+  <items itemName="SARTEN" price="9.99">
+    <tag label="SARTEN a la venta por 9.99 euros"/>
+  </items>
+  <items itemName="SARTEN" price="9.99">
+    <tag label="SARTEN a la venta por 9.99 euros"/>
+  </items>
+  <items itemName="SARTEN" price="9.99">
+    <tag label="SARTEN a la venta por 9.99 euros"/>
+  </items>
+</inventory:Inventory>

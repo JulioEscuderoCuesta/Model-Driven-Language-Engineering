@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated candy_factory -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="candy_factory.presentation.Candy_factoryModelWizardID"
+            name="%_UI_Candy_factoryModelWizard_label"
+            class="candy_factory.presentation.Candy_factoryModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/Candy_factoryModelFile.gif">
+         <description>%_UI_Candy_factoryModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated candy_factory -->
+      <editor
+            id="candy_factory.presentation.Candy_factoryEditorID"
+            name="%_UI_Candy_factoryEditor_label"
+            icon="icons/full/obj16/Candy_factoryModelFile.gif"
+            extensions="candy_factory"
+            class="candy_factory.presentation.Candy_factoryEditor"
+            contributorClass="candy_factory.presentation.Candy_factoryActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

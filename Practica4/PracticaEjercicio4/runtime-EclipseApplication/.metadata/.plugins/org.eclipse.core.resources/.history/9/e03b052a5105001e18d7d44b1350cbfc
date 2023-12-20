@@ -1,0 +1,18 @@
+-- @nsURI MM=http://www.unican.es/ildm/factory
+-- @nsURI MM1=http://www.unican.es/ildm/inventory
+
+module factory2inventory;
+create OUT : MM1 from IN : MM;
+
+rule Factory2Inventory {
+	from
+		f : Factory!Factory
+	to 
+		i : Inventory!Inventory (
+			name <- f.name,
+			assets <- f.machines,
+			items <- f.members
+		)
+}
+
+

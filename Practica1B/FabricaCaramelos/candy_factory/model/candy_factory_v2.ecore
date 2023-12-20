@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="candy_factory_v2" nsURI="http://www.unican.es/ildm/candy_factory_v2"
+    nsPrefix="candy_factory_v2">
+  <eAnnotations source="http://www.eclipse.org/OCL/Import">
+    <details key="ecore" value="http://www.eclipse.org/emf/2002/Ecore"/>
+  </eAnnotations>
+  <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+    <details key="invocationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
+    <details key="settingDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
+    <details key="validationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" name="Factory">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="elements" upperBound="-1"
+        eType="#//Element" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="numberOfElementsProduced"
+        lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBigInteger"
+        volatile="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details key="derivation" value="elements -> select(element | element.oclIsTypeOf(CandyProducer) or element.oclIsTypeOf(StickProducer)) &#xA;&#x9;&#x9;&#x9;-> collect(element |&#xA;&#x9;&#x9;&#x9;&#x9;if element.oclIsTypeOf(CandyProducer) then&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;element.oclAsType(CandyProducer).counter&#xA;&#x9;&#x9;&#x9;&#x9;else&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;element.oclAsType(StickProducer).counter&#xA;&#x9;&#x9;&#x9;&#x9;endif&#xA;&#x9;&#x9;&#x9;) -> sum()"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="numberOfElementsInTheFactory"
+        lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBigInteger"
+        volatile="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details key="derivation" value="elements -> size()"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Element" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Machine" abstract="true" eSuperTypes="#//Element">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="processingTime" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="output" eType="#//ConveyorBelt"
+        eOpposite="#//ConveyorBelt/source"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="input" upperBound="-1"
+        eType="#//ConveyorBelt" eOpposite="#//ConveyorBelt/target"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ConveyorBelt" eSuperTypes="#//Element">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="CapacityExceeded"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="CapacityExceeded" value="Tuple {&#xA;&#x9;message : String = 'Conveyor belt'' + id + ''has exceeded its capacity',&#xA;&#x9;status : Boolean = &#xA;&#x9;&#x9;hasSpaceLeft()&#xA;}.status"/>
+    </eAnnotations>
+    <eOperations name="hasSpaceLeft" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details key="body" value="component -> size() &lt;= capacity"/>
+      </eAnnotations>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="capacity" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="target" eType="#//Machine"
+        eOpposite="#//Machine/input"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="source" eType="#//Machine"
+        eOpposite="#//Machine/output"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="component" upperBound="-1"
+        eType="#//Component" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Producer" abstract="true" eSuperTypes="#//Machine">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="counter" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Assembler" eSuperTypes="#//Machine">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="OutPutIsLollipop"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="OutPutIsLollipop" value="Tuple {&#xA;&#x9;message : String = 'Assembler has only LolliPops as output',&#xA;&#x9;status : Boolean = &#xA;&#x9;&#x9;whichOutput()&#xA;}.status"/>
+    </eAnnotations>
+    <eOperations name="whichOutput" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details key="body" value="output.component -> forAll(oclIsTypeOf(Lollipop))"/>
+      </eAnnotations>
+    </eOperations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Wrapper" eSuperTypes="#//Machine">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="OutPutIsLollipop"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="OutPutIsLollipop" value="Tuple {&#xA;&#x9;message : String = 'Assembler has only LolliPops as output',&#xA;&#x9;status : Boolean = &#xA;&#x9;&#x9;whichOutput()&#xA;}.status"/>
+    </eAnnotations>
+    <eOperations name="whichOutput" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details key="body" value="output.component -> forAll(oclIsTypeOf(Lollipop))"/>
+      </eAnnotations>
+    </eOperations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Flattener" eSuperTypes="#//Machine">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="OutPutIsCandyFlat"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="OutPutIsCandyFlat" value="Tuple {&#xA;&#x9;message : String = 'Flattener has only CandyFlats as output',&#xA;&#x9;status : Boolean = &#xA;&#x9;&#x9;whichOutput()&#xA;}.status"/>
+    </eAnnotations>
+    <eOperations name="whichOutput" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details key="body" value="output.component -> forAll(oclIsTypeOf(CandyFlat))"/>
+      </eAnnotations>
+    </eOperations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Component" abstract="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="CandyProducer" eSuperTypes="#//Producer">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="OutPutIsCandyBall"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="OutPutIsCandyBall" value="Tuple {&#xA;&#x9;message : String = 'CandyProducer must have only CandyBalls as output',&#xA;&#x9;status : Boolean = &#xA;&#x9;&#x9;whichOutput()&#xA;}.status"/>
+    </eAnnotations>
+    <eOperations name="whichOutput" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details key="body" value="output.component -> forAll(oclIsTypeOf(CandyBall))"/>
+      </eAnnotations>
+    </eOperations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="StickProducer" eSuperTypes="#//Producer">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="OutPutIsStick"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="OutPutIsStick" value="Tuple {&#xA;&#x9;message : String = 'StickProducer has only Sticks as output',&#xA;&#x9;status : Boolean = &#xA;&#x9;&#x9;whichOutput()&#xA;}.status"/>
+    </eAnnotations>
+    <eOperations name="whichOutput" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details key="body" value="output.component -> forAll(oclIsTypeOf(Stick))"/>
+      </eAnnotations>
+    </eOperations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Stick" eSuperTypes="#//Component"/>
+  <eClassifiers xsi:type="ecore:EClass" name="CandyFlat" eSuperTypes="#//Component"/>
+  <eClassifiers xsi:type="ecore:EClass" name="CandyBall" eSuperTypes="#//Component"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Lollipop" eSuperTypes="#//Component"/>
+</ecore:EPackage>
